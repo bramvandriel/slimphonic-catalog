@@ -1,0 +1,68 @@
+{
+  "catalog_id": "chow-multi-tool",
+  "order": 25,
+  "oas_id": "chowdhury-dsp/chowmultitool",
+  "editors_pick": false,
+  "score_note": "Several processors in one plugin.",
+  "tested_with": null,
+  "description": "A multi-purpose audio effect: pick a processor (EQ, filters, waveshaper, mid/side and more) and shape it on screen. A compact toolbox for quick mixing jobs.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Chow Multi Tool",
+  "vendor": "Chowdhury DSP",
+  "kind": "effect",
+  "homepage": "https://github.com/Chowdhury-DSP/ChowMultiTool",
+  "source": "https://github.com/Chowdhury-DSP/ChowMultiTool",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "Chowdhury-DSP",
+    "repo": "ChowMultiTool",
+    "snapshot": {
+      "stars": 142,
+      "pushed_at": "2026-08-12T17:21:03Z",
+      "latest_release": "1.1.0",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.chowdsp.ChowMultiTool"
+      ],
+      "features": [
+        "audio-effect",
+        "win32-dpi-aware"
+      ],
+      "paths": [
+        "usr/lib/clap/ChowMultiTool.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb43686f774d6c7434"
+      ],
+      "bundles": [
+        "usr/lib/vst3/ChowMultiTool.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "deb-asset",
+      "version": "1.1.0",
+      "url": "https://github.com/Chowdhury-DSP/ChowMultiTool/releases/download/v1.1.0/ChowMultiTool-Linux-x64-1.1.0.deb",
+      "sha256": "69b6718b08a1072d1f27817dace1e07a689a2b8ce7cee9bc9530b107e2343803",
+      "size_bytes": 11107512,
+      "archive": "deb",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

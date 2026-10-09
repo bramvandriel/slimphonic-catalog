@@ -1,0 +1,61 @@
+{
+  "catalog_id": "ratatouille",
+  "order": 22,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Neural capture loader for guitar and bass.",
+  "tested_with": null,
+  "description": "A neural model and impulse-response loader for guitar and bass: runs NAM and AIDA-X captures through two slots with a cabinet convolver and a few tone controls. Bring your own model files.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Ratatouille",
+  "vendor": "brummer10",
+  "kind": "effect",
+  "homepage": "https://github.com/brummer10/Ratatouille.lv2",
+  "source": "https://github.com/brummer10/Ratatouille.lv2",
+  "image": null,
+  "license": {
+    "spdx": "BSD-3-Clause"
+  },
+  "github": {
+    "owner": "brummer10",
+    "repo": "Ratatouille.lv2",
+    "snapshot": {
+      "stars": 194,
+      "pushed_at": "2026-06-22T18:44:21Z",
+      "latest_release": "0.9.11",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.brummer10.Ratatouille"
+      ],
+      "features": [
+        "audio-effect"
+      ],
+      "paths": [
+        "*/Ratatouille.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "0.9.11",
+      "url": "https://github.com/brummer10/Ratatouille.lv2/releases/download/v0.9.11/Ratatouille.lv2-clap-v0.9.11-linux-x86_64.tar.xz",
+      "sha256": "132b554a04abacf77867bd2335f02294069424ee73cd23531f3a97b5ef040f06",
+      "size_bytes": 2089248,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Needs your own neural model and impulse response files; none are included.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

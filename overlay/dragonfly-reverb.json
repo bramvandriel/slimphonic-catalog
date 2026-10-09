@@ -13,18 +13,24 @@
     "owner": "michaelwillis",
     "repo": "dragonfly-reverb",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 1154,
+      "pushed_at": "2026-05-21T15:59:51Z",
       "latest_release": "3.2.10",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "michaelwillis.dragonfly.hall",
+        "michaelwillis.dragonfly.room",
+        "michaelwillis.dragonfly.plate",
+        "michaelwillis.dragonfly.early"
+      ],
       "features": [
         "audio-effect",
-        "reverb"
+        "reverb",
+        "stereo"
       ],
       "paths": [
         "*/DragonflyHallReverb.clap",
@@ -34,7 +40,12 @@
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "2046504473616c633172666400000000",
+        "2046504473616c633272666400000000",
+        "2046504473616c633370666400000000",
+        "2046504473616c637265666400000000"
+      ],
       "bundles": [
         "*/Dragonfly*.vst3"
       ]

@@ -15,25 +15,28 @@
     "owner": "jerryuhoo",
     "repo": "Fire",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 642,
+      "pushed_at": "2026-10-06T04:30:37Z",
       "latest_release": "2.0.0",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "com.bluewingsmusic.Fire"
+      ],
       "features": [
-        "audio-effect",
-        "distortion"
+        "audio-effect"
       ],
       "paths": [
         "CLAP/Fire.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "abcdef019182faeb57696e6746697265"
+      ],
       "bundles": [
         "VST3/Fire.vst3"
       ]

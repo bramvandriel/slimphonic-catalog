@@ -14,25 +14,30 @@
     "owner": "asb2m10",
     "repo": "dexed",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 3556,
+      "pushed_at": "2026-09-21T03:29:23Z",
       "latest_release": "1.0.1",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "com.digital-suburban.dexed"
+      ],
       "features": [
         "instrument",
-        "synthesizer"
+        "FM",
+        "DX7"
       ],
       "paths": [
         "Dexed.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "abcdef019182faeb4447534244657864"
+      ],
       "bundles": [
         "Dexed.vst3"
       ]

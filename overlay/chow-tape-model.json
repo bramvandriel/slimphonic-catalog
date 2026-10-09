@@ -1,0 +1,69 @@
+{
+  "catalog_id": "chow-tape-model",
+  "order": 24,
+  "oas_id": "chowdhury-dsp/chowtapemodel",
+  "editors_pick": false,
+  "score_note": "Reel-to-reel tape emulation.",
+  "tested_with": null,
+  "description": "A physical model of a reel-to-reel tape machine: hysteresis, wow and flutter, tape loss and degradation. Adds the warmth and wobble of tape. Started as a Sony TC-260 emulation.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Chow Tape Model",
+  "vendor": "Chowdhury DSP",
+  "kind": "effect",
+  "homepage": "https://github.com/jatinchowdhury18/AnalogTapeModel",
+  "source": "https://github.com/jatinchowdhury18/AnalogTapeModel",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "jatinchowdhury18",
+    "repo": "AnalogTapeModel",
+    "snapshot": {
+      "stars": 1439,
+      "pushed_at": "2025-04-09T07:59:02Z",
+      "latest_release": "2.11.4",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.chowdsp.CHOWTapeModel"
+      ],
+      "features": [
+        "audio-effect",
+        "distortion",
+        "win32-dpi-aware"
+      ],
+      "paths": [
+        "usr/lib/clap/CHOWTapeModel.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb43686f774a646f78"
+      ],
+      "bundles": [
+        "usr/lib/vst3/CHOWTapeModel.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "deb-asset",
+      "version": "2.11.4",
+      "url": "https://github.com/jatinchowdhury18/AnalogTapeModel/releases/download/v2.11.4/ChowTapeModel-Linux-x64-2.11.4.deb",
+      "sha256": "71aaae1c454ac83ac16b248d4cc99c12bf6d11452a87376fcb6b1e79060e3a5c",
+      "size_bytes": 5112948,
+      "archive": "deb",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

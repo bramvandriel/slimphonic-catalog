@@ -1,0 +1,71 @@
+{
+  "catalog_id": "lamb",
+  "order": 20,
+  "oas_id": "magnetophon/lamb-rs",
+  "editors_pick": false,
+  "score_note": "Gentle lookahead compressor.",
+  "tested_with": null,
+  "description": "A lookahead compressor and limiter that stays soft: a transparent dynamics processor for mastering and bus work, with a lookahead that avoids pumping. Written in Rust.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "lamb",
+  "vendor": "magnetophon",
+  "kind": "effect",
+  "homepage": "https://github.com/magnetophon/lamb-rs",
+  "source": "https://github.com/magnetophon/lamb-rs",
+  "license": {
+    "spdx": "AGPL-3.0"
+  },
+  "github": {
+    "owner": "magnetophon",
+    "repo": "lamb-rs",
+    "snapshot": {
+      "stars": 134,
+      "pushed_at": "2025-09-29T09:12:09Z",
+      "latest_release": "2.1.0",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "magnetophon.nl lamb"
+      ],
+      "features": [
+        "audio-effect",
+        "stereo",
+        "compressor",
+        "limiter",
+        "mastering"
+      ],
+      "paths": [
+        "lamb.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "6d61676e65746f70686f6e206c616d62"
+      ],
+      "bundles": [
+        "lamb.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2.1.0",
+      "url": "https://github.com/magnetophon/lamb-rs/releases/download/v2.1.0/lamb-v2.1.0-ubuntu-20.04.zip",
+      "sha256": "4539a873c6d5a2f956f2c2ae3620ab8fe91f3ce811000d1dc06b2d7958a3718b",
+      "size_bytes": 12807099,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

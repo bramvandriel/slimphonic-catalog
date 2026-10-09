@@ -1,0 +1,57 @@
+{
+  "catalog_id": "ripplerx",
+  "order": 28,
+  "oas_id": "tiagolr/ripplerx",
+  "editors_pick": false,
+  "score_note": "Physical-modelling synth; VST3 only.",
+  "tested_with": null,
+  "description": "A physically modelled synthesizer: a resonator excited by a mallet or noise, with two resonators, partial control and many material models, in the spirit of AAS Chromaphone. Good for bells, marimbas and strange plucked sounds.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "RipplerX",
+  "vendor": "TiagoLr",
+  "kind": "instrument",
+  "homepage": "https://github.com/tiagolr/ripplerx",
+  "source": "https://github.com/tiagolr/ripplerx",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "tiagolr",
+    "repo": "ripplerx",
+    "snapshot": {
+      "stars": 651,
+      "pushed_at": "2026-08-13T12:36:29Z",
+      "latest_release": "1.5.19",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": null,
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb54696c7252697078"
+      ],
+      "bundles": [
+        "*/VST3/RipplerX.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.5.19",
+      "url": "https://github.com/tiagolr/ripplerx/releases/download/v1.5.19/ripplerx-linux-v1.5.19.zip",
+      "sha256": "3b8ab9add298d2c77a1f81b6b63e4a668a79bf7f1b67edb063165010c9bec166",
+      "size_bytes": 6379092,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

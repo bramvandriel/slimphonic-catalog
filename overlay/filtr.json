@@ -1,0 +1,57 @@
+{
+  "catalog_id": "filtr",
+  "order": 29,
+  "oas_id": "tiagolr/filtr",
+  "editors_pick": false,
+  "score_note": "Drawn rhythmic filter; VST3 only.",
+  "tested_with": null,
+  "description": "A filter modulator: draw a pattern and let it sweep the cutoff in time with the music, in the spirit of ShaperBox and FilterShaper. Rhythmic filtering, gating and sidechain-style ducking from one curve.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "FILT-R",
+  "vendor": "TiagoLr",
+  "kind": "effect",
+  "homepage": "https://github.com/tiagolr/filtr",
+  "source": "https://github.com/tiagolr/filtr",
+  "license": {
+    "spdx": "AGPL-3.0"
+  },
+  "github": {
+    "owner": "tiagolr",
+    "repo": "filtr",
+    "snapshot": {
+      "stars": 175,
+      "pushed_at": "2026-07-06T17:43:36Z",
+      "latest_release": "1.3.0",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": null,
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb54696c72666c7472"
+      ],
+      "bundles": [
+        "*/VST3/FILT-R.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.3.0",
+      "url": "https://github.com/tiagolr/filtr/releases/download/v1.3.0/filtr-linux-v1.3.0.zip",
+      "sha256": "30840e30ed7cf323e7f8142aaba260b538fcdd531be74d2fdf796fb6f0dacfa0",
+      "size_bytes": 5487278,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

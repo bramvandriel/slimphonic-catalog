@@ -25,8 +25,8 @@
         "owner": "surge-synthesizer",
         "repo": "surge",
         "snapshot": {
-          "stars": 4100,
-          "pushed_at": null,
+          "stars": 4053,
+          "pushed_at": "2026-10-09T00:31:30Z",
           "latest_release": "1.3.4",
           "at": "2026-10-09"
         }
@@ -45,11 +45,25 @@
           "features": [
             "instrument",
             "synthesizer",
-            "audio-effect"
+            "stereo",
+            "free and open source",
+            "audio-effect",
+            "filter",
+            "phaser",
+            "rotary speaker",
+            "equalizer",
+            "granular",
+            "frequency-shifter",
+            "distortion",
+            "flanger",
+            "chorus",
+            "delay",
+            "reverb",
+            "multi-effects"
           ],
           "paths": [
-            "*/Surge XT.clap",
-            "*/Surge XT Effects.clap"
+            "Surge XT.clap",
+            "Surge XT Effects.clap"
           ]
         },
         "vst3": {
@@ -58,8 +72,8 @@
             "abcdef019182faeb566d624153465854"
           ],
           "bundles": [
-            "*/Surge XT.vst3",
-            "*/Surge XT Effects.vst3"
+            "Surge XT.vst3",
+            "Surge XT Effects.vst3"
           ]
         }
       },
@@ -103,8 +117,8 @@
         "owner": "asb2m10",
         "repo": "dexed",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 3556,
+          "pushed_at": "2026-09-21T03:29:23Z",
           "latest_release": "1.0.1",
           "at": "2026-10-09"
         }
@@ -116,17 +130,22 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "com.digital-suburban.dexed"
+          ],
           "features": [
             "instrument",
-            "synthesizer"
+            "FM",
+            "DX7"
           ],
           "paths": [
             "Dexed.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "abcdef019182faeb4447534244657864"
+          ],
           "bundles": [
             "Dexed.vst3"
           ]
@@ -172,8 +191,8 @@
         "owner": "surge-synthesizer",
         "repo": "OB-Xf",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 513,
+          "pushed_at": "2026-09-30T10:34:25Z",
           "latest_release": "1.0.3",
           "at": "2026-10-09"
         }
@@ -185,17 +204,23 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "org.surge-synth-team.OB-Xf"
+          ],
           "features": [
             "instrument",
-            "synthesizer"
+            "synthesizer",
+            "virtual analog",
+            "analog"
           ],
           "paths": [
             "obxf_products/OB-Xf.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "abcdef019182faeb535354784f425846"
+          ],
           "bundles": [
             "obxf_products/OB-Xf.vst3"
           ]
@@ -241,8 +266,8 @@
         "owner": "TheWaveWarden",
         "repo": "odin2",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 818,
+          "pushed_at": "2025-09-07T09:05:31Z",
           "latest_release": "2.4.1",
           "at": "2026-10-09"
         }
@@ -254,17 +279,21 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "com.thewavewarden.odin2"
+          ],
           "features": [
             "instrument",
-            "synthesizer"
+            "virtual analog"
           ],
           "paths": [
             "Odin2.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "abcdef019182faeb574157414f44494e"
+          ],
           "bundles": [
             "Odin2.vst3"
           ]
@@ -310,8 +339,8 @@
         "owner": "michaelwillis",
         "repo": "dragonfly-reverb",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 1154,
+          "pushed_at": "2026-05-21T15:59:51Z",
           "latest_release": "3.2.10",
           "at": "2026-10-09"
         }
@@ -323,10 +352,16 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "michaelwillis.dragonfly.hall",
+            "michaelwillis.dragonfly.room",
+            "michaelwillis.dragonfly.plate",
+            "michaelwillis.dragonfly.early"
+          ],
           "features": [
             "audio-effect",
-            "reverb"
+            "reverb",
+            "stereo"
           ],
           "paths": [
             "*/DragonflyHallReverb.clap",
@@ -336,7 +371,12 @@
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "2046504473616c633172666400000000",
+            "2046504473616c633272666400000000",
+            "2046504473616c633370666400000000",
+            "2046504473616c637265666400000000"
+          ],
           "bundles": [
             "*/Dragonfly*.vst3"
           ]
@@ -382,8 +422,8 @@
         "owner": "DISTRHO",
         "repo": "DPF-Plugins",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 128,
+          "pushed_at": "2026-01-04T17:40:11Z",
           "latest_release": "1.7",
           "at": "2026-10-09"
         }
@@ -395,17 +435,56 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "studio.kx.distrho.MVerb",
+            "studio.kx.distrho.MVerb",
+            "niallmoody.ndcplugs.ampimposer",
+            "niallmoody.ndcplugs.cycleshifter",
+            "studio.kx.distrho.Kars",
+            "studio.kx.distrho.MVerb",
+            "studio.kx.distrho.MaBitcrush",
+            "studio.kx.distrho.MaFreeverb",
+            "studio.kx.distrho.MaGigaverb",
+            "studio.kx.distrho.MaPitchshift",
+            "studio.kx.distrho.Nekobi",
+            "studio.kx.distrho.MVerb",
+            "studio.kx.distrho.ProM",
+            "niallmoody.ndcplugs.soulforce",
+            "studio.kx.distrho.glBars"
+          ],
           "features": [
             "audio-effect",
-            "instrument"
+            "equalizer",
+            "stereo",
+            "utility",
+            "instrument",
+            "reverb",
+            "distortion",
+            "pitch-shifter",
+            "analyzer"
           ],
           "paths": [
             "DPF-Plugins-v1.7/*.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "2046504473616c635145334400000000",
+            "2046504473616c635345334400000000",
+            "2046504473616c636d496d4100000000",
+            "2046504473616c637466534300000000",
+            "2046504473616c6373724b4400000000",
+            "2046504473616c636272564d00000000",
+            "2046504473616c6363624d4400000000",
+            "2046504473616c6376664d4400000000",
+            "2046504473616c6376674d4400000000",
+            "2046504473616c6373704d4400000000",
+            "2046504473616c636b654e4400000000",
+            "2046504473616c635050504400000000",
+            "2046504473616c634d72504400000000",
+            "2046504473616c6372466c5300000000",
+            "2046504473616c63426c674400000000"
+          ],
           "bundles": [
             "DPF-Plugins-v1.7/*.vst3"
           ]
@@ -448,8 +527,8 @@
         "owner": "baconpaul",
         "repo": "airwin2rack",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 722,
+          "pushed_at": "2026-10-04T00:42:14Z",
           "latest_release": "2026-10-04",
           "at": "2026-10-09"
         }
@@ -461,16 +540,34 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "com.airwindows.consolidated"
+          ],
           "features": [
-            "audio-effect"
+            "audio-effect",
+            "filter",
+            "phaser",
+            "rotary speaker",
+            "equalizer",
+            "granular",
+            "frequency-shifter",
+            "distortion",
+            "flanger",
+            "chorus",
+            "delay",
+            "reverb",
+            "multi-effects",
+            "stereo",
+            "free and open source"
           ],
           "paths": [
             "awcons-products/Airwindows Consolidated.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "abcdef019182faeb44746872616c4658"
+          ],
           "bundles": [
             "awcons-products/Airwindows Consolidated.vst3"
           ]
@@ -516,8 +613,8 @@
         "owner": "jerryuhoo",
         "repo": "Fire",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 642,
+          "pushed_at": "2026-10-06T04:30:37Z",
           "latest_release": "2.0.0",
           "at": "2026-10-09"
         }
@@ -529,17 +626,20 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "com.bluewingsmusic.Fire"
+          ],
           "features": [
-            "audio-effect",
-            "distortion"
+            "audio-effect"
           ],
           "paths": [
             "CLAP/Fire.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "abcdef019182faeb57696e6746697265"
+          ],
           "bundles": [
             "VST3/Fire.vst3"
           ]
@@ -582,8 +682,8 @@
         "owner": "trummerschlunk",
         "repo": "master_me",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 751,
+          "pushed_at": "2026-04-22T18:09:10Z",
           "latest_release": "1.3.1",
           "at": "2026-10-09"
         }
@@ -595,17 +695,20 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "trummerschlunk.master_me"
+          ],
           "features": [
-            "audio-effect",
-            "mastering"
+            "audio-effect"
           ],
           "paths": [
             "master_me-1.3.1/master_me.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "2046504473616c6347646e5300000000"
+          ],
           "bundles": [
             "master_me-1.3.1/master_me.vst3"
           ]
@@ -651,8 +754,8 @@
         "owner": "wolf-plugins",
         "repo": "wolf-shaper",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 262,
+          "pushed_at": "2023-11-11T14:54:32Z",
           "latest_release": "1.0.2",
           "at": "2026-10-09"
         }
@@ -664,17 +767,22 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "com.github.wolf-plugins.wolf-shaper"
+          ],
           "features": [
             "audio-effect",
-            "distortion"
+            "distortion",
+            "stereo"
           ],
           "paths": [
             "wolf-shaper.clap"
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "2046504473616c637073577300000000"
+          ],
           "bundles": [
             "wolf-shaper.vst3"
           ]
@@ -720,8 +828,8 @@
         "owner": "baconpaul",
         "repo": "six-sines",
         "snapshot": {
-          "stars": null,
-          "pushed_at": null,
+          "stars": 313,
+          "pushed_at": "2026-09-29T20:57:07Z",
           "latest_release": "1.2.1",
           "at": "2026-10-09"
         }
@@ -733,10 +841,15 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "org.baconpaul.six-sines",
+            "org.baconpaul.six-sines.seven-outs"
+          ],
           "features": [
             "instrument",
-            "synthesizer"
+            "synthesizer",
+            "Free and Open Source",
+            "Audio Rate Modulation"
           ],
           "paths": [
             "six-sines_assets/Six Sines.clap"
@@ -779,10 +892,7 @@
         "url": "https://github.com/mtytel/vital"
       },
       "description": "A spectral warping wavetable synthesizer with a visual, drag-and-drop interface, three oscillators, a flexible modulation system and built-in effects. The download is free but needs an account at vital.audio, so it is a link here; once you install it, Slimphonic finds it.",
-      "image": {
-        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/tytel/vital/vital.jpg",
-        "sha256": ""
-      },
+      "image": null,
       "homepage": "https://vital.audio",
       "source": "https://github.com/mtytel/vital",
       "github": null,
@@ -819,6 +929,1592 @@
           "post_install_notes": "Download needs a free account at vital.audio. After installing, the plugin appears in the Instruments tab.",
           "link_url": "https://vital.audio",
           "link_label": "Open vital.audio"
+        }
+      }
+    },
+    {
+      "catalog_id": "jc303",
+      "name": "JC303",
+      "vendor": "Midilab",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/midilab/jc303"
+      },
+      "description": "A bass synthesizer modelled on the Roland TB-303 Bass Line: a sawtooth or square oscillator through a resonant diode-ladder filter, with accent, slide and an envelope that gives the classic acid squelch.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/midilab/jc303/jc303.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/midilab/jc303",
+      "source": "https://github.com/midilab/jc303",
+      "github": {
+        "owner": "midilab",
+        "repo": "jc303",
+        "snapshot": {
+          "stars": 293,
+          "pushed_at": "2026-09-28T20:25:02Z",
+          "latest_release": "0.13.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "The acid bass line.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "co.midilab.JC303"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "*/CLAP/JC303.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb4d6c61624a333033"
+          ],
+          "bundles": [
+            "*/VST3/JC303.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "0.13.0",
+          "url": "https://github.com/midilab/jc303/releases/download/v0.13.0/jc303-0.13.0-linux_x64-plugins.zip",
+          "sha256": "8324378f967ad1178e21411c564acb6266af7301d873f628b17bb1550f6b31f9",
+          "size_bytes": 27277969,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "cardinal",
+      "name": "Cardinal",
+      "vendor": "DISTRHO",
+      "kind": "both",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/DISTRHO/Cardinal"
+      },
+      "description": "A virtual modular synthesizer: the VCV Rack module system and its open-source module collection as a plugin, with a patch-cable user interface. Ships as three plugins (Cardinal, Cardinal FX and Cardinal Synth) in one bundle. A very large download.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/distrho/cardinal/cardinal.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/DISTRHO/Cardinal",
+      "source": "https://github.com/DISTRHO/Cardinal",
+      "github": {
+        "owner": "DISTRHO",
+        "repo": "Cardinal",
+        "snapshot": {
+          "stars": 3217,
+          "pushed_at": "2026-07-28T11:06:35Z",
+          "latest_release": "26.02",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Modular synth. Large: 1.1 GB.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "studio.kx.distrho.cardinal",
+            "studio.kx.distrho.cardinal#fx",
+            "studio.kx.distrho.cardinal#synth"
+          ],
+          "features": [
+            "instrument",
+            "audio-effect"
+          ],
+          "paths": [
+            "Cardinal.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "2046504473616c636e64436400000000",
+            "2046504473616c63466e436400000000",
+            "2046504473616c63536e436400000000"
+          ],
+          "bundles": [
+            "Cardinal.vst3",
+            "CardinalFX.vst3",
+            "CardinalSynth.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "26.02",
+          "url": "https://github.com/DISTRHO/Cardinal/releases/download/26.02/Cardinal-linux-x86_64-26.02.tar.gz",
+          "sha256": "657df0beeec04184de7359cbd3e173a36eeab78077e1e26da81405632f98ec25",
+          "size_bytes": 1113893699,
+          "archive": "tar.gz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Large download: about 1.1 GB, and about the same again on disk. Contains the three Cardinal plugins in one bundle.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "shortcircuit-xt",
+      "name": "Shortcircuit XT",
+      "vendor": "Surge Synth Team",
+      "kind": "instrument",
+      "experimental": true,
+      "rolling_tag": true,
+      "license": {
+        "spdx": "MIT",
+        "url": "https://github.com/surge-synthesizer/shortcircuit-xt"
+      },
+      "description": "A multi-sample sampler and synthesizer: zones and groups, a modulation matrix, filters and effects per part, and a growing library of sample formats. Still in alpha; the build offered here is the rolling nightly, so expect rough edges and a checksum that changes.",
+      "image": null,
+      "homepage": "https://github.com/surge-synthesizer/shortcircuit-xt",
+      "source": "https://github.com/surge-synthesizer/shortcircuit-xt",
+      "github": {
+        "owner": "surge-synthesizer",
+        "repo": "shortcircuit-xt",
+        "snapshot": {
+          "stars": 561,
+          "pushed_at": "2026-10-08T22:41:26Z",
+          "latest_release": "Nightly 2026-10-08",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Alpha software, nightly build.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.surge-synth-team.shortcircuit-xt"
+          ],
+          "features": [
+            "instrument",
+            "sampler",
+            "synthesizer",
+            "Free and Open Source"
+          ],
+          "paths": [
+            "shortcircuit-products/Shortcircuit XT.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2026-10-08",
+          "url": "https://github.com/surge-synthesizer/shortcircuit-xt/releases/download/Nightly/shortcircuit-xt-linux-2026-10-08-24e4feb.zip",
+          "sha256": "dca5cf40b9c3c91d96f7f406656eff7eafdedca46a7d57e017113e93b32ec963",
+          "size_bytes": 39432421,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Alpha software from the nightly build. The VST3 in the same archive crashes when loaded here, so only the CLAP is installed.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "lsp-plugins",
+      "name": "LSP Plugins",
+      "vendor": "Linux Studio Plugins",
+      "kind": "both",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "LGPL-3.0",
+        "url": "https://github.com/lsp-plugins/lsp-plugins"
+      },
+      "description": "A large collection of about 200 audio effects and tools in one CLAP file: compressors, gates, expanders, equalizers, delays, reverb, spectrum analyzers, a sampler and more, each in mono and stereo flavours. Precise, well documented and light on the CPU.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/lsp-plugins/lsp-plugins/lsp-plugins.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://lsp-plug.in/",
+      "source": "https://github.com/lsp-plugins/lsp-plugins",
+      "github": {
+        "owner": "lsp-plugins",
+        "repo": "lsp-plugins",
+        "snapshot": {
+          "stars": 895,
+          "pushed_at": "2026-10-08T20:46:39Z",
+          "latest_release": "1.2.35",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "About 200 plugins in one file.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "in.lsp-plug.ab_tester_x2_mono",
+            "in.lsp-plug.ab_tester_x2_stereo",
+            "in.lsp-plug.ab_tester_x4_mono",
+            "in.lsp-plug.ab_tester_x4_stereo",
+            "in.lsp-plug.ab_tester_x8_mono",
+            "in.lsp-plug.ab_tester_x8_stereo",
+            "in.lsp-plug.art_delay_mono",
+            "in.lsp-plug.art_delay_stereo",
+            "in.lsp-plug.autogain_mono",
+            "in.lsp-plug.autogain_stereo",
+            "in.lsp-plug.beat_breather_mono",
+            "in.lsp-plug.beat_breather_stereo",
+            "in.lsp-plug.chorus_mono",
+            "in.lsp-plug.chorus_stereo",
+            "in.lsp-plug.clipper_mono",
+            "in.lsp-plug.clipper_stereo",
+            "in.lsp-plug.comp_delay_mono",
+            "in.lsp-plug.comp_delay_stereo",
+            "in.lsp-plug.comp_delay_x2_stereo",
+            "in.lsp-plug.compressor_lr",
+            "in.lsp-plug.compressor_mono",
+            "in.lsp-plug.compressor_ms",
+            "in.lsp-plug.compressor_stereo",
+            "in.lsp-plug.crossover_lr",
+            "in.lsp-plug.crossover_mono",
+            "in.lsp-plug.crossover_ms",
+            "in.lsp-plug.crossover_stereo",
+            "in.lsp-plug.deesser_mono",
+            "in.lsp-plug.deesser_stereo",
+            "in.lsp-plug.dyna_processor_lr",
+            "in.lsp-plug.dyna_processor_mono",
+            "in.lsp-plug.dyna_processor_ms",
+            "in.lsp-plug.dyna_processor_stereo",
+            "in.lsp-plug.expander_lr",
+            "in.lsp-plug.expander_mono",
+            "in.lsp-plug.expander_ms",
+            "in.lsp-plug.expander_stereo",
+            "in.lsp-plug.filter_mono",
+            "in.lsp-plug.filter_stereo",
+            "in.lsp-plug.flanger_mono",
+            "in.lsp-plug.flanger_stereo",
+            "in.lsp-plug.gate_lr",
+            "in.lsp-plug.gate_mono",
+            "in.lsp-plug.gate_ms",
+            "in.lsp-plug.gate_stereo",
+            "in.lsp-plug.gott_compressor_lr",
+            "in.lsp-plug.gott_compressor_mono",
+            "in.lsp-plug.gott_compressor_ms",
+            "in.lsp-plug.gott_compressor_stereo",
+            "in.lsp-plug.graph_equalizer_x16_lr",
+            "in.lsp-plug.graph_equalizer_x16_mono",
+            "in.lsp-plug.graph_equalizer_x16_ms",
+            "in.lsp-plug.graph_equalizer_x16_stereo",
+            "in.lsp-plug.graph_equalizer_x32_lr",
+            "in.lsp-plug.graph_equalizer_x32_mono",
+            "in.lsp-plug.graph_equalizer_x32_ms",
+            "in.lsp-plug.graph_equalizer_x32_stereo",
+            "in.lsp-plug.impulse_responses_mono",
+            "in.lsp-plug.impulse_responses_stereo",
+            "in.lsp-plug.impulse_reverb_mono",
+            "in.lsp-plug.impulse_reverb_stereo",
+            "in.lsp-plug.latency_meter",
+            "in.lsp-plug.limiter_mono",
+            "in.lsp-plug.limiter_stereo",
+            "in.lsp-plug.loud_comp_mono",
+            "in.lsp-plug.loud_comp_stereo",
+            "in.lsp-plug.matcher_mono",
+            "in.lsp-plug.matcher_stereo",
+            "in.lsp-plug.mb_clipper_mono",
+            "in.lsp-plug.mb_clipper_stereo",
+            "in.lsp-plug.mb_compressor_lr",
+            "in.lsp-plug.mb_compressor_mono",
+            "in.lsp-plug.mb_compressor_ms",
+            "in.lsp-plug.mb_compressor_stereo",
+            "in.lsp-plug.mb_dyna_processor_lr",
+            "in.lsp-plug.mb_dyna_processor_mono",
+            "in.lsp-plug.mb_dyna_processor_ms",
+            "in.lsp-plug.mb_dyna_processor_stereo",
+            "in.lsp-plug.mb_expander_lr",
+            "in.lsp-plug.mb_expander_mono",
+            "in.lsp-plug.mb_expander_ms",
+            "in.lsp-plug.mb_expander_stereo",
+            "in.lsp-plug.mb_gate_lr",
+            "in.lsp-plug.mb_gate_mono",
+            "in.lsp-plug.mb_gate_ms",
+            "in.lsp-plug.mb_gate_stereo",
+            "in.lsp-plug.mb_limiter_mono",
+            "in.lsp-plug.mb_limiter_stereo",
+            "in.lsp-plug.mb_ringmod_sc_mono",
+            "in.lsp-plug.mb_ringmod_sc_stereo",
+            "in.lsp-plug.mixer_x16_mono",
+            "in.lsp-plug.mixer_x16_stereo",
+            "in.lsp-plug.mixer_x4_mono",
+            "in.lsp-plug.mixer_x4_stereo",
+            "in.lsp-plug.mixer_x8_mono",
+            "in.lsp-plug.mixer_x8_stereo",
+            "in.lsp-plug.multisampler_x12",
+            "in.lsp-plug.multisampler_x12_do",
+            "in.lsp-plug.multisampler_x24",
+            "in.lsp-plug.multisampler_x24_do",
+            "in.lsp-plug.multisampler_x48",
+            "in.lsp-plug.multisampler_x48_do",
+            "in.lsp-plug.noise_generator_x1",
+            "in.lsp-plug.noise_generator_x2",
+            "in.lsp-plug.noise_generator_x4",
+            "in.lsp-plug.oscillator_mono",
+            "in.lsp-plug.oscilloscope_x1",
+            "in.lsp-plug.oscilloscope_x2",
+            "in.lsp-plug.oscilloscope_x4",
+            "in.lsp-plug.para_equalizer_x16_lr",
+            "in.lsp-plug.para_equalizer_x16_mono",
+            "in.lsp-plug.para_equalizer_x16_ms",
+            "in.lsp-plug.para_equalizer_x16_stereo",
+            "in.lsp-plug.para_equalizer_x32_lr",
+            "in.lsp-plug.para_equalizer_x32_mono",
+            "in.lsp-plug.para_equalizer_x32_ms",
+            "in.lsp-plug.para_equalizer_x32_stereo",
+            "in.lsp-plug.para_equalizer_x8_lr",
+            "in.lsp-plug.para_equalizer_x8_mono",
+            "in.lsp-plug.para_equalizer_x8_ms",
+            "in.lsp-plug.para_equalizer_x8_stereo",
+            "in.lsp-plug.phase_detector",
+            "in.lsp-plug.phaser_mono",
+            "in.lsp-plug.phaser_stereo",
+            "in.lsp-plug.profiler_mono",
+            "in.lsp-plug.profiler_stereo",
+            "in.lsp-plug.referencer_mono",
+            "in.lsp-plug.referencer_stereo",
+            "in.lsp-plug.return_mono",
+            "in.lsp-plug.return_stereo",
+            "in.lsp-plug.ringmod_sc_mono",
+            "in.lsp-plug.ringmod_sc_stereo",
+            "in.lsp-plug.room_builder_mono",
+            "in.lsp-plug.room_builder_stereo",
+            "in.lsp-plug.sampler_mono",
+            "in.lsp-plug.sampler_stereo",
+            "in.lsp-plug.sc_autogain_mono",
+            "in.lsp-plug.sc_autogain_stereo",
+            "in.lsp-plug.sc_compressor_lr",
+            "in.lsp-plug.sc_compressor_mono",
+            "in.lsp-plug.sc_compressor_ms",
+            "in.lsp-plug.sc_compressor_stereo",
+            "in.lsp-plug.sc_deesser_mono",
+            "in.lsp-plug.sc_deesser_stereo",
+            "in.lsp-plug.sc_dyna_processor_lr",
+            "in.lsp-plug.sc_dyna_processor_mono",
+            "in.lsp-plug.sc_dyna_processor_ms",
+            "in.lsp-plug.sc_dyna_processor_stereo",
+            "in.lsp-plug.sc_expander_lr",
+            "in.lsp-plug.sc_expander_mono",
+            "in.lsp-plug.sc_expander_ms",
+            "in.lsp-plug.sc_expander_stereo",
+            "in.lsp-plug.sc_gate_lr",
+            "in.lsp-plug.sc_gate_mono",
+            "in.lsp-plug.sc_gate_ms",
+            "in.lsp-plug.sc_gate_stereo",
+            "in.lsp-plug.sc_gott_compressor_lr",
+            "in.lsp-plug.sc_gott_compressor_mono",
+            "in.lsp-plug.sc_gott_compressor_ms",
+            "in.lsp-plug.sc_gott_compressor_stereo",
+            "in.lsp-plug.sc_limiter_mono",
+            "in.lsp-plug.sc_limiter_stereo",
+            "in.lsp-plug.sc_matcher_mono",
+            "in.lsp-plug.sc_matcher_stereo",
+            "in.lsp-plug.sc_mb_compressor_lr",
+            "in.lsp-plug.sc_mb_compressor_mono",
+            "in.lsp-plug.sc_mb_compressor_ms",
+            "in.lsp-plug.sc_mb_compressor_stereo",
+            "in.lsp-plug.sc_mb_dyna_processor_lr",
+            "in.lsp-plug.sc_mb_dyna_processor_mono",
+            "in.lsp-plug.sc_mb_dyna_processor_ms",
+            "in.lsp-plug.sc_mb_dyna_processor_stereo",
+            "in.lsp-plug.sc_mb_expander_lr",
+            "in.lsp-plug.sc_mb_expander_mono",
+            "in.lsp-plug.sc_mb_expander_ms",
+            "in.lsp-plug.sc_mb_expander_stereo",
+            "in.lsp-plug.sc_mb_gate_lr",
+            "in.lsp-plug.sc_mb_gate_mono",
+            "in.lsp-plug.sc_mb_gate_ms",
+            "in.lsp-plug.sc_mb_gate_stereo",
+            "in.lsp-plug.sc_mb_limiter_mono",
+            "in.lsp-plug.sc_mb_limiter_stereo",
+            "in.lsp-plug.send_mono",
+            "in.lsp-plug.send_stereo",
+            "in.lsp-plug.slap_delay_mono",
+            "in.lsp-plug.slap_delay_stereo",
+            "in.lsp-plug.spectrum_analyzer_x1",
+            "in.lsp-plug.spectrum_analyzer_x12",
+            "in.lsp-plug.spectrum_analyzer_x16",
+            "in.lsp-plug.spectrum_analyzer_x2",
+            "in.lsp-plug.spectrum_analyzer_x4",
+            "in.lsp-plug.spectrum_analyzer_x8",
+            "in.lsp-plug.surge_filter_mono",
+            "in.lsp-plug.surge_filter_stereo",
+            "in.lsp-plug.trigger_midi_mono",
+            "in.lsp-plug.trigger_midi_stereo",
+            "in.lsp-plug.trigger_mono",
+            "in.lsp-plug.trigger_stereo"
+          ],
+          "features": [
+            "audio-effect",
+            "utility",
+            "mono",
+            "stereo",
+            "delay",
+            "chorus",
+            "mastering",
+            "compressor",
+            "de-esser",
+            "equalizer",
+            "flanger",
+            "reverb",
+            "analyzer",
+            "limiter",
+            "mixing",
+            "instrument",
+            "sampler",
+            "drum-machine",
+            "phaser"
+          ],
+          "paths": [
+            "*/CLAP/lsp-plugins.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.2.35",
+          "url": "https://github.com/lsp-plugins/lsp-plugins/releases/download/1.2.35/lsp-plugins-1.2.35-Linux-x86_64.7z",
+          "sha256": "4ef3b2f63b29a522fdaf3a18f879c1c85c82f0bdd1e0b3c849a5f3c4b08d2550",
+          "size_bytes": 38793460,
+          "archive": "7z",
+          "companions": [
+            "*/CLAP/liblsp-r3d-glx-lib.so"
+          ],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Needs the 7z tool (p7zip) installed to unpack. The 3D view library installs next to the plugin.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "ildaeil",
+      "name": "Ildaeil",
+      "vendor": "DISTRHO",
+      "kind": "both",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-2.0",
+        "url": "https://github.com/DISTRHO/Ildaeil"
+      },
+      "description": "A plugin host inside a plugin: load another plugin (LV2, VST2, VST3, CLAP, JSFX and more) into an Ildaeil slot to run it in a Carla-based bridge. Comes as an effect, a synth and a MIDI variant in one CLAP bundle. Useful for formats Slimphonic cannot load by itself.",
+      "image": null,
+      "homepage": "https://github.com/DISTRHO/Ildaeil",
+      "source": "https://github.com/DISTRHO/Ildaeil",
+      "github": {
+        "owner": "DISTRHO",
+        "repo": "Ildaeil",
+        "snapshot": {
+          "stars": 183,
+          "pushed_at": "2026-02-21T20:52:28Z",
+          "latest_release": "1.3",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Hosts other plugin formats.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "studio.kx.distrho.ildaeil#fx",
+            "studio.kx.distrho.ildaeil#synth",
+            "studio.kx.distrho.ildaeil#midi"
+          ],
+          "features": [
+            "audio-effect",
+            "stereo",
+            "instrument",
+            "note-effect"
+          ],
+          "paths": [
+            "Ildaeil.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "Ildaeil-FX.vst3",
+            "Ildaeil-Synth.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.3",
+          "url": "https://github.com/DISTRHO/Ildaeil/releases/download/v1.3/Ildaeil-linux-x86_64-v1.3.zip",
+          "sha256": "367e43ae7c36db3feb740f059b704980c8fc5376f93114a7c03c353c8db67f34",
+          "size_bytes": 75458065,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "A 75 MB download because it carries the Carla bridge programs.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "stochas",
+      "name": "Stochas",
+      "vendor": "Surge Synth Team",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/surge-synthesizer/stochas"
+      },
+      "description": "A probabilistic step sequencer that plays notes through whatever instrument follows it: each step has a chance of firing, so patterns drift and vary from bar to bar. It makes no sound itself; it is a note effect.",
+      "image": null,
+      "homepage": "https://github.com/surge-synthesizer/stochas",
+      "source": "https://github.com/surge-synthesizer/stochas",
+      "github": {
+        "owner": "surge-synthesizer",
+        "repo": "stochas",
+        "snapshot": {
+          "stars": 557,
+          "pushed_at": "2026-10-05T12:45:35Z",
+          "latest_release": "1.3.13",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Chance-based sequencer; makes no sound itself.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.surge-synth-team.stochas"
+          ],
+          "features": [
+            "note-effect",
+            "sequencer",
+            "stochastic"
+          ],
+          "paths": [
+            "Stochas/Stochas.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb70726f6a53746f63"
+          ],
+          "bundles": [
+            "Stochas/Stochas.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.3.13",
+          "url": "https://github.com/surge-synthesizer/stochas/releases/download/v1.3.13/stochas-1.3.13.360d5ca.linux-x86_64.tgz",
+          "sha256": "c552d9d63c7e09e5d781d1d5c71b7fe389f2940c8a18b888ef22beebe6e4807c",
+          "size_bytes": 10917720,
+          "archive": "tgz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "A note effect: it sends notes, so route its output to an instrument.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "monique",
+      "name": "Monique",
+      "vendor": "Surge Synth Team",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": true,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/surge-synthesizer/monique-monosynth"
+      },
+      "description": "A monophonic bass and lead synthesizer with a deep modulation system: a morphing sound engine and several envelopes and LFOs. Originally the Monoplugs Monique, relaunched as open source by the Surge Synth Team.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/surge-synthesizer/monique-monosynth/monique.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/surge-synthesizer/monique-monosynth",
+      "source": "https://github.com/surge-synthesizer/monique-monosynth",
+      "github": {
+        "owner": "surge-synthesizer",
+        "repo": "monique-monosynth",
+        "snapshot": {
+          "stars": 413,
+          "pushed_at": "2024-07-30T15:45:35Z",
+          "latest_release": "Nightly 2024-08-07",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Mono bass and lead synth.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.surge-synth-team.monique-monosynth"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer",
+            "mono synth",
+            "basses",
+            "leads"
+          ],
+          "paths": [
+            "monique_products/MoniqueMonosynth.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb566d62416d6f6e69"
+          ],
+          "bundles": [
+            "monique_products/MoniqueMonosynth.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2024-08-07",
+          "url": "https://github.com/surge-synthesizer/monique-monosynth/releases/download/Nightly/MoniqueMonosynth-2024-08-07-df7d339-Linux.zip",
+          "sha256": "a9a9a9b42e111bd41ee24157368ca2499cace806c505f7f8ccd9aeec03f251b7",
+          "size_bytes": 11138914,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "octasine",
+      "name": "OctaSine",
+      "vendor": "Joakim Frostegård",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "AGPL-3.0",
+        "url": "https://github.com/greatest-ape/OctaSine"
+      },
+      "description": "A frequency-modulation synthesizer with four operators, written in Rust. Simple to program, light on the CPU, with four LFOs and a clean interface.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/greatest-ape/octasine/octasine.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/greatest-ape/OctaSine",
+      "source": "https://github.com/greatest-ape/OctaSine",
+      "github": {
+        "owner": "greatest-ape",
+        "repo": "OctaSine",
+        "snapshot": {
+          "stars": 816,
+          "pushed_at": "2024-07-03T10:59:21Z",
+          "latest_release": "0.9.1",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Small, fast FM synth.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "OctaSine"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer",
+            "stereo"
+          ],
+          "paths": [
+            "OctaSine/CLAP/*.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "0.9.1",
+          "url": "https://github.com/greatest-ape/OctaSine/releases/download/v0.9.1/OctaSine-v0.9.1-Ubuntu-20_04.zip",
+          "sha256": "cfa2a955bffdb3537bf782b70c175f3ae2071aded2832b464b6b30e5161de173",
+          "size_bytes": 5760864,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "lamb",
+      "name": "lamb",
+      "vendor": "magnetophon",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "AGPL-3.0",
+        "url": "https://github.com/magnetophon/lamb-rs"
+      },
+      "description": "A lookahead compressor and limiter that stays soft: a transparent dynamics processor for mastering and bus work, with a lookahead that avoids pumping. Written in Rust.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/magnetophon/lamb-rs/lamb.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/magnetophon/lamb-rs",
+      "source": "https://github.com/magnetophon/lamb-rs",
+      "github": {
+        "owner": "magnetophon",
+        "repo": "lamb-rs",
+        "snapshot": {
+          "stars": 134,
+          "pushed_at": "2025-09-29T09:12:09Z",
+          "latest_release": "2.1.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Gentle lookahead compressor.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "magnetophon.nl lamb"
+          ],
+          "features": [
+            "audio-effect",
+            "stereo",
+            "compressor",
+            "limiter",
+            "mastering"
+          ],
+          "paths": [
+            "lamb.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "6d61676e65746f70686f6e206c616d62"
+          ],
+          "bundles": [
+            "lamb.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2.1.0",
+          "url": "https://github.com/magnetophon/lamb-rs/releases/download/v2.1.0/lamb-v2.1.0-ubuntu-20.04.zip",
+          "sha256": "4539a873c6d5a2f956f2c2ae3620ab8fe91f3ce811000d1dc06b2d7958a3718b",
+          "size_bytes": 12807099,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "neuralrack",
+      "name": "NeuralRack",
+      "vendor": "brummer10",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "BSD-3-Clause",
+        "url": "https://github.com/brummer10/NeuralRack"
+      },
+      "description": "A guitar amp and cabinet rack: loads neural amp models (NAM and AIDA-X) and impulse responses, with a noise gate, EQ and a few effects around them. Bring your own model files.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/brummer10/neuralrack/neuralrack.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/brummer10/NeuralRack",
+      "source": "https://github.com/brummer10/NeuralRack",
+      "github": {
+        "owner": "brummer10",
+        "repo": "NeuralRack",
+        "snapshot": {
+          "stars": 217,
+          "pushed_at": "2026-08-06T17:00:27Z",
+          "latest_release": "0.4.1",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Neural amp models plus cabinet IRs.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.brummer10.NeuralRack"
+          ],
+          "features": [
+            "audio-effect",
+            "distortion"
+          ],
+          "paths": [
+            "*/NeuralRack.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "0.4.1",
+          "url": "https://github.com/brummer10/NeuralRack/releases/download/v0.4.1/NeuralRack-v0.4.1-clap-linux-x86_64.tar.xz",
+          "sha256": "6a696bfd88a7e3592bcbbf47c9c173b268091f3847b01a530e3494101ff16627",
+          "size_bytes": 2513940,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Needs your own neural model (.nam or .json) and impulse response files; none are included.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "ratatouille",
+      "name": "Ratatouille",
+      "vendor": "brummer10",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "BSD-3-Clause",
+        "url": "https://github.com/brummer10/Ratatouille.lv2"
+      },
+      "description": "A neural model and impulse-response loader for guitar and bass: runs NAM and AIDA-X captures through two slots with a cabinet convolver and a few tone controls. Bring your own model files.",
+      "image": null,
+      "homepage": "https://github.com/brummer10/Ratatouille.lv2",
+      "source": "https://github.com/brummer10/Ratatouille.lv2",
+      "github": {
+        "owner": "brummer10",
+        "repo": "Ratatouille.lv2",
+        "snapshot": {
+          "stars": 194,
+          "pushed_at": "2026-06-22T18:44:21Z",
+          "latest_release": "0.9.11",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Neural capture loader for guitar and bass.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.brummer10.Ratatouille"
+          ],
+          "features": [
+            "audio-effect"
+          ],
+          "paths": [
+            "*/Ratatouille.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "0.9.11",
+          "url": "https://github.com/brummer10/Ratatouille.lv2/releases/download/v0.9.11/Ratatouille.lv2-clap-v0.9.11-linux-x86_64.tar.xz",
+          "sha256": "132b554a04abacf77867bd2335f02294069424ee73cd23531f3a97b5ef040f06",
+          "size_bytes": 2089248,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Needs your own neural model and impulse response files; none are included.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "byod",
+      "name": "BYOD",
+      "vendor": "Chowdhury DSP",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/Chowdhury-DSP/BYOD"
+      },
+      "description": "Build-your-own guitar distortion: wire up a chain of distortion, amp, filter and modulation modules in any order, with models of classic pedals and circuits. A guitar effects pedalboard in one plugin.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/chowdhury-dsp/byod/byod.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/Chowdhury-DSP/BYOD",
+      "source": "https://github.com/Chowdhury-DSP/BYOD",
+      "github": {
+        "owner": "Chowdhury-DSP",
+        "repo": "BYOD",
+        "snapshot": {
+          "stars": 577,
+          "pushed_at": "2025-08-14T00:15:30Z",
+          "latest_release": "1.3.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Modular guitar pedalboard.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.chowdsp.byod"
+          ],
+          "features": [
+            "audio-effect",
+            "distortion"
+          ],
+          "paths": [
+            "usr/lib/clap/BYOD.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb43686f7744717530"
+          ],
+          "bundles": [
+            "usr/lib/vst3/BYOD.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "deb-asset",
+          "version": "1.3.0",
+          "url": "https://github.com/Chowdhury-DSP/BYOD/releases/download/v1.3.0/BYOD-Linux-x64-1.3.0.deb",
+          "sha256": "c1803ae57b717bab04ef2072c10284bcb7d44fbe352d42645075b0c6875c9aeb",
+          "size_bytes": 22194032,
+          "archive": "deb",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "chow-tape-model",
+      "name": "Chow Tape Model",
+      "vendor": "Chowdhury DSP",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/jatinchowdhury18/AnalogTapeModel"
+      },
+      "description": "A physical model of a reel-to-reel tape machine: hysteresis, wow and flutter, tape loss and degradation. Adds the warmth and wobble of tape. Started as a Sony TC-260 emulation.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/chowdhury-dsp/chowtapemodel/chowtapemodel.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/jatinchowdhury18/AnalogTapeModel",
+      "source": "https://github.com/jatinchowdhury18/AnalogTapeModel",
+      "github": {
+        "owner": "jatinchowdhury18",
+        "repo": "AnalogTapeModel",
+        "snapshot": {
+          "stars": 1439,
+          "pushed_at": "2025-04-09T07:59:02Z",
+          "latest_release": "2.11.4",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Reel-to-reel tape emulation.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.chowdsp.CHOWTapeModel"
+          ],
+          "features": [
+            "audio-effect",
+            "distortion",
+            "win32-dpi-aware"
+          ],
+          "paths": [
+            "usr/lib/clap/CHOWTapeModel.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb43686f774a646f78"
+          ],
+          "bundles": [
+            "usr/lib/vst3/CHOWTapeModel.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "deb-asset",
+          "version": "2.11.4",
+          "url": "https://github.com/jatinchowdhury18/AnalogTapeModel/releases/download/v2.11.4/ChowTapeModel-Linux-x64-2.11.4.deb",
+          "sha256": "71aaae1c454ac83ac16b248d4cc99c12bf6d11452a87376fcb6b1e79060e3a5c",
+          "size_bytes": 5112948,
+          "archive": "deb",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "chow-multi-tool",
+      "name": "Chow Multi Tool",
+      "vendor": "Chowdhury DSP",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/Chowdhury-DSP/ChowMultiTool"
+      },
+      "description": "A multi-purpose audio effect: pick a processor (EQ, filters, waveshaper, mid/side and more) and shape it on screen. A compact toolbox for quick mixing jobs.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/chowdhury-dsp/chowmultitool/chowmultitool.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/Chowdhury-DSP/ChowMultiTool",
+      "source": "https://github.com/Chowdhury-DSP/ChowMultiTool",
+      "github": {
+        "owner": "Chowdhury-DSP",
+        "repo": "ChowMultiTool",
+        "snapshot": {
+          "stars": 142,
+          "pushed_at": "2026-08-12T17:21:03Z",
+          "latest_release": "1.1.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Several processors in one plugin.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.chowdsp.ChowMultiTool"
+          ],
+          "features": [
+            "audio-effect",
+            "win32-dpi-aware"
+          ],
+          "paths": [
+            "usr/lib/clap/ChowMultiTool.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb43686f774d6c7434"
+          ],
+          "bundles": [
+            "usr/lib/vst3/ChowMultiTool.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "deb-asset",
+          "version": "1.1.0",
+          "url": "https://github.com/Chowdhury-DSP/ChowMultiTool/releases/download/v1.1.0/ChowMultiTool-Linux-x64-1.1.0.deb",
+          "sha256": "69b6718b08a1072d1f27817dace1e07a689a2b8ce7cee9bc9530b107e2343803",
+          "size_bytes": 11107512,
+          "archive": "deb",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "chowkick",
+      "name": "ChowKick",
+      "vendor": "Chowdhury DSP",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "BSD-3-Clause",
+        "url": "https://github.com/Chowdhury-DSP/ChowKick"
+      },
+      "description": "A kick drum synthesizer based on old-school drum machine circuits: a resonant filter excited by a pulse, with a few controls for tone, decay and punch.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/chowdhury-dsp/chowkick/chowkick.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/Chowdhury-DSP/ChowKick",
+      "source": "https://github.com/Chowdhury-DSP/ChowKick",
+      "github": {
+        "owner": "Chowdhury-DSP",
+        "repo": "ChowKick",
+        "snapshot": {
+          "stars": 200,
+          "pushed_at": "2023-01-16T09:07:49Z",
+          "latest_release": "1.2.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Analog-style kick drum.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.chowdsp.ChowKick"
+          ],
+          "features": [
+            "instrument",
+            "drum"
+          ],
+          "paths": [
+            "usr/lib/clap/ChowKick.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb43686f774b696b35"
+          ],
+          "bundles": [
+            "usr/lib/vst3/ChowKick.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "deb-asset",
+          "version": "1.2.0",
+          "url": "https://github.com/Chowdhury-DSP/ChowKick/releases/download/v1.2.0/ChowKick-Linux-x64-1.2.0.deb",
+          "sha256": "2c1328c65bd4af1c188f96d088d71527eccbdc5c434cafe57c8352f53969bb2f",
+          "size_bytes": 4371620,
+          "archive": "deb",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "geonkick",
+      "name": "Geonkick",
+      "vendor": "Quamplex",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/quamplex/geonkick"
+      },
+      "description": "A percussion synthesizer for kicks, snares, claps, hi-hats and effect sounds: layered oscillators with envelopes, filters, distortion and a compressor, plus a built-in kit manager.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/quamplex/geonkick/geonkick.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/quamplex/geonkick",
+      "source": "https://github.com/quamplex/geonkick",
+      "github": {
+        "owner": "quamplex",
+        "repo": "geonkick",
+        "snapshot": {
+          "stars": 192,
+          "pushed_at": "2026-10-06T07:37:32Z",
+          "latest_release": "3.9.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Drum synth; VST3 only.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": null,
+        "vst3": {
+          "class_ids": [
+            "e2cc953290e863f06405e13924e34b24"
+          ],
+          "bundles": [
+            "*/lib/vst3/Geonkick.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "3.9.0",
+          "url": "https://github.com/quamplex/geonkick/releases/download/v3.9.0/GNULinux_binaries_v3.9.0_basic.zip",
+          "sha256": "2ac941877bea77983677861f32cd35255fd502e2d96514702bf9e749aeb0c44c",
+          "size_bytes": 3767094,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "ripplerx",
+      "name": "RipplerX",
+      "vendor": "TiagoLr",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/tiagolr/ripplerx"
+      },
+      "description": "A physically modelled synthesizer: a resonator excited by a mallet or noise, with two resonators, partial control and many material models, in the spirit of AAS Chromaphone. Good for bells, marimbas and strange plucked sounds.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/tiagolr/ripplerx/ripplerx.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/tiagolr/ripplerx",
+      "source": "https://github.com/tiagolr/ripplerx",
+      "github": {
+        "owner": "tiagolr",
+        "repo": "ripplerx",
+        "snapshot": {
+          "stars": 651,
+          "pushed_at": "2026-08-13T12:36:29Z",
+          "latest_release": "1.5.19",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Physical-modelling synth; VST3 only.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": null,
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb54696c7252697078"
+          ],
+          "bundles": [
+            "*/VST3/RipplerX.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.5.19",
+          "url": "https://github.com/tiagolr/ripplerx/releases/download/v1.5.19/ripplerx-linux-v1.5.19.zip",
+          "sha256": "3b8ab9add298d2c77a1f81b6b63e4a668a79bf7f1b67edb063165010c9bec166",
+          "size_bytes": 6379092,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "filtr",
+      "name": "FILT-R",
+      "vendor": "TiagoLr",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "AGPL-3.0",
+        "url": "https://github.com/tiagolr/filtr"
+      },
+      "description": "A filter modulator: draw a pattern and let it sweep the cutoff in time with the music, in the spirit of ShaperBox and FilterShaper. Rhythmic filtering, gating and sidechain-style ducking from one curve.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/tiagolr/filtr/filtr.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/tiagolr/filtr",
+      "source": "https://github.com/tiagolr/filtr",
+      "github": {
+        "owner": "tiagolr",
+        "repo": "filtr",
+        "snapshot": {
+          "stars": 175,
+          "pushed_at": "2026-07-06T17:43:36Z",
+          "latest_release": "1.3.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Drawn rhythmic filter; VST3 only.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": null,
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb54696c72666c7472"
+          ],
+          "bundles": [
+            "*/VST3/FILT-R.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.3.0",
+          "url": "https://github.com/tiagolr/filtr/releases/download/v1.3.0/filtr-linux-v1.3.0.zip",
+          "sha256": "30840e30ed7cf323e7f8142aaba260b538fcdd531be74d2fdf796fb6f0dacfa0",
+          "size_bytes": 5487278,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "zl-equalizer",
+      "name": "ZL Equalizer 2",
+      "vendor": "ZL Audio",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "AGPL-3.0",
+        "url": "https://github.com/ZL-Audio/ZLEqualizer"
+      },
+      "description": "A dynamic equalizer with up to 16 bands, each of which can be static, dynamic or side-chained, with several filter types, optional linear-phase mode and a spectrum display.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/zl-audio/zlequalizer2/zlequalizer2.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/ZL-Audio/ZLEqualizer",
+      "source": "https://github.com/ZL-Audio/ZLEqualizer",
+      "github": {
+        "owner": "ZL-Audio",
+        "repo": "ZLEqualizer",
+        "snapshot": {
+          "stars": 1026,
+          "pushed_at": "2026-10-09T03:26:32Z",
+          "latest_release": "1.4.1",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Dynamic EQ; VST3 only.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": null,
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb5a6c697545717532"
+          ],
+          "bundles": [
+            "VST3/ZL Equalizer 2.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.4.1",
+          "url": "https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.4.1/ZL.Equalizer.2-1.4.1-Linux-x86-64.zip",
+          "sha256": "ba253ef4e608e5d6f72b2c341a7bc0d9c48b79e051806c2367d481814a4dc896",
+          "size_bytes": 10850259,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "vitalium",
+      "name": "Vitalium",
+      "vendor": "DISTRHO Ports",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/DISTRHO/DISTRHO-Ports"
+      },
+      "description": "The open-source core of the Vital wavetable synthesizer, built without Vital's factory content, as part of DISTRHO Ports. There is no binary download: install it from your distribution, then it appears in the Instruments tab.",
+      "image": null,
+      "homepage": "https://github.com/DISTRHO/DISTRHO-Ports",
+      "source": "https://github.com/DISTRHO/DISTRHO-Ports",
+      "github": {
+        "owner": "DISTRHO",
+        "repo": "DISTRHO-Ports",
+        "snapshot": {
+          "stars": 319,
+          "pushed_at": "2025-09-14T22:38:50Z",
+          "latest_release": "no binary releases",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Open-source Vital; install from your distribution.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": null,
+        "vst3": {
+          "class_ids": [],
+          "bundles": []
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "manual-link",
+          "version": null,
+          "url": null,
+          "sha256": null,
+          "size_bytes": null,
+          "archive": "none",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": "Packaged as vitalium-vst3 or distrho-ports on Arch (AUR), KXStudio and some Debian-based distributions.",
+          "post_install_notes": "No binary release exists. Install the distribution package, then Slimphonic finds it. It starts without Vital's factory presets.",
+          "link_url": "https://github.com/DISTRHO/DISTRHO-Ports",
+          "link_label": "Open the project page"
         }
       }
     }

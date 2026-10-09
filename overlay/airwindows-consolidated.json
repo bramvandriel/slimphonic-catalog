@@ -21,24 +21,42 @@
     "owner": "baconpaul",
     "repo": "airwin2rack",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 722,
+      "pushed_at": "2026-10-04T00:42:14Z",
       "latest_release": "2026-10-04",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "com.airwindows.consolidated"
+      ],
       "features": [
-        "audio-effect"
+        "audio-effect",
+        "filter",
+        "phaser",
+        "rotary speaker",
+        "equalizer",
+        "granular",
+        "frequency-shifter",
+        "distortion",
+        "flanger",
+        "chorus",
+        "delay",
+        "reverb",
+        "multi-effects",
+        "stereo",
+        "free and open source"
       ],
       "paths": [
         "awcons-products/Airwindows Consolidated.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "abcdef019182faeb44746872616c4658"
+      ],
       "bundles": [
         "awcons-products/Airwindows Consolidated.vst3"
       ]

@@ -21,25 +21,28 @@
     "owner": "trummerschlunk",
     "repo": "master_me",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 751,
+      "pushed_at": "2026-04-22T18:09:10Z",
       "latest_release": "1.3.1",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "trummerschlunk.master_me"
+      ],
       "features": [
-        "audio-effect",
-        "mastering"
+        "audio-effect"
       ],
       "paths": [
         "master_me-1.3.1/master_me.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "2046504473616c6347646e5300000000"
+      ],
       "bundles": [
         "master_me-1.3.1/master_me.vst3"
       ]

@@ -13,18 +13,23 @@
     "owner": "baconpaul",
     "repo": "six-sines",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 313,
+      "pushed_at": "2026-09-29T20:57:07Z",
       "latest_release": "1.2.1",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "org.baconpaul.six-sines",
+        "org.baconpaul.six-sines.seven-outs"
+      ],
       "features": [
         "instrument",
-        "synthesizer"
+        "synthesizer",
+        "Free and Open Source",
+        "Audio Rate Modulation"
       ],
       "paths": [
         "six-sines_assets/Six Sines.clap"

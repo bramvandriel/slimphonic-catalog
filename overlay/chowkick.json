@@ -1,0 +1,68 @@
+{
+  "catalog_id": "chowkick",
+  "order": 26,
+  "oas_id": "chowdhury-dsp/chowkick",
+  "editors_pick": false,
+  "score_note": "Analog-style kick drum.",
+  "tested_with": null,
+  "description": "A kick drum synthesizer based on old-school drum machine circuits: a resonant filter excited by a pulse, with a few controls for tone, decay and punch.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "ChowKick",
+  "vendor": "Chowdhury DSP",
+  "kind": "instrument",
+  "homepage": "https://github.com/Chowdhury-DSP/ChowKick",
+  "source": "https://github.com/Chowdhury-DSP/ChowKick",
+  "license": {
+    "spdx": "BSD-3-Clause"
+  },
+  "github": {
+    "owner": "Chowdhury-DSP",
+    "repo": "ChowKick",
+    "snapshot": {
+      "stars": 200,
+      "pushed_at": "2023-01-16T09:07:49Z",
+      "latest_release": "1.2.0",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.chowdsp.ChowKick"
+      ],
+      "features": [
+        "instrument",
+        "drum"
+      ],
+      "paths": [
+        "usr/lib/clap/ChowKick.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb43686f774b696b35"
+      ],
+      "bundles": [
+        "usr/lib/vst3/ChowKick.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "deb-asset",
+      "version": "1.2.0",
+      "url": "https://github.com/Chowdhury-DSP/ChowKick/releases/download/v1.2.0/ChowKick-Linux-x64-1.2.0.deb",
+      "sha256": "2c1328c65bd4af1c188f96d088d71527eccbdc5c434cafe57c8352f53969bb2f",
+      "size_bytes": 4371620,
+      "archive": "deb",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

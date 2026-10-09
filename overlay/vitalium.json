@@ -1,0 +1,54 @@
+{
+  "catalog_id": "vitalium",
+  "order": 31,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Open-source Vital; install from your distribution.",
+  "tested_with": null,
+  "description": "The open-source core of the Vital wavetable synthesizer, built without Vital's factory content, as part of DISTRHO Ports. There is no binary download: install it from your distribution, then it appears in the Instruments tab.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Vitalium",
+  "vendor": "DISTRHO Ports",
+  "kind": "instrument",
+  "homepage": "https://github.com/DISTRHO/DISTRHO-Ports",
+  "source": "https://github.com/DISTRHO/DISTRHO-Ports",
+  "image": null,
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "DISTRHO",
+    "repo": "DISTRHO-Ports",
+    "snapshot": {
+      "stars": 319,
+      "pushed_at": "2025-09-14T22:38:50Z",
+      "latest_release": "no binary releases",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": null,
+    "vst3": {
+      "class_ids": [],
+      "bundles": []
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "manual-link",
+      "version": null,
+      "url": null,
+      "sha256": null,
+      "size_bytes": null,
+      "archive": "none",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": "Packaged as vitalium-vst3 or distrho-ports on Arch (AUR), KXStudio and some Debian-based distributions.",
+      "post_install_notes": "No binary release exists. Install the distribution package, then Slimphonic finds it. It starts without Vital's factory presets.",
+      "link_url": "https://github.com/DISTRHO/DISTRHO-Ports",
+      "link_label": "Open the project page"
+    }
+  }
+}

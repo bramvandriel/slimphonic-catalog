@@ -1,0 +1,61 @@
+{
+  "catalog_id": "neuralrack",
+  "order": 21,
+  "oas_id": "brummer10/neuralrack",
+  "editors_pick": false,
+  "score_note": "Neural amp models plus cabinet IRs.",
+  "tested_with": null,
+  "description": "A guitar amp and cabinet rack: loads neural amp models (NAM and AIDA-X) and impulse responses, with a noise gate, EQ and a few effects around them. Bring your own model files.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "NeuralRack",
+  "vendor": "brummer10",
+  "kind": "effect",
+  "homepage": "https://github.com/brummer10/NeuralRack",
+  "source": "https://github.com/brummer10/NeuralRack",
+  "license": {
+    "spdx": "BSD-3-Clause"
+  },
+  "github": {
+    "owner": "brummer10",
+    "repo": "NeuralRack",
+    "snapshot": {
+      "stars": 217,
+      "pushed_at": "2026-08-06T17:00:27Z",
+      "latest_release": "0.4.1",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.brummer10.NeuralRack"
+      ],
+      "features": [
+        "audio-effect",
+        "distortion"
+      ],
+      "paths": [
+        "*/NeuralRack.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "0.4.1",
+      "url": "https://github.com/brummer10/NeuralRack/releases/download/v0.4.1/NeuralRack-v0.4.1-clap-linux-x86_64.tar.xz",
+      "sha256": "6a696bfd88a7e3592bcbbf47c9c173b268091f3847b01a530e3494101ff16627",
+      "size_bytes": 2513940,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Needs your own neural model (.nam or .json) and impulse response files; none are included.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

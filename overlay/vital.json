@@ -13,10 +13,7 @@
   "kind": "instrument",
   "homepage": "https://vital.audio",
   "source": "https://github.com/mtytel/vital",
-  "image": {
-    "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/tytel/vital/vital.jpg",
-    "sha256": ""
-  },
+  "image": null,
   "license": {
     "spdx": "GPL-3.0"
   },

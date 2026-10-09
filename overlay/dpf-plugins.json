@@ -18,25 +18,64 @@
     "owner": "DISTRHO",
     "repo": "DPF-Plugins",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 128,
+      "pushed_at": "2026-01-04T17:40:11Z",
       "latest_release": "1.7",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "studio.kx.distrho.MVerb",
+        "studio.kx.distrho.MVerb",
+        "niallmoody.ndcplugs.ampimposer",
+        "niallmoody.ndcplugs.cycleshifter",
+        "studio.kx.distrho.Kars",
+        "studio.kx.distrho.MVerb",
+        "studio.kx.distrho.MaBitcrush",
+        "studio.kx.distrho.MaFreeverb",
+        "studio.kx.distrho.MaGigaverb",
+        "studio.kx.distrho.MaPitchshift",
+        "studio.kx.distrho.Nekobi",
+        "studio.kx.distrho.MVerb",
+        "studio.kx.distrho.ProM",
+        "niallmoody.ndcplugs.soulforce",
+        "studio.kx.distrho.glBars"
+      ],
       "features": [
         "audio-effect",
-        "instrument"
+        "equalizer",
+        "stereo",
+        "utility",
+        "instrument",
+        "reverb",
+        "distortion",
+        "pitch-shifter",
+        "analyzer"
       ],
       "paths": [
         "DPF-Plugins-v1.7/*.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "2046504473616c635145334400000000",
+        "2046504473616c635345334400000000",
+        "2046504473616c636d496d4100000000",
+        "2046504473616c637466534300000000",
+        "2046504473616c6373724b4400000000",
+        "2046504473616c636272564d00000000",
+        "2046504473616c6363624d4400000000",
+        "2046504473616c6376664d4400000000",
+        "2046504473616c6376674d4400000000",
+        "2046504473616c6373704d4400000000",
+        "2046504473616c636b654e4400000000",
+        "2046504473616c635050504400000000",
+        "2046504473616c634d72504400000000",
+        "2046504473616c6372466c5300000000",
+        "2046504473616c63426c674400000000"
+      ],
       "bundles": [
         "DPF-Plugins-v1.7/*.vst3"
       ]

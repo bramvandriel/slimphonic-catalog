@@ -46,6 +46,11 @@ An overlay file holds what OAS cannot provide, and wins over OAS wherever it set
 - only where OAS's value is wrong or missing: `name`, `vendor`, `kind`, `homepage`,
   `source`, `image`, `license` (`spdx`, `url`)
 
+`tools/check_globs.py --overlay overlay/ --archives DIR...` lists each pinned archive found in
+the given directories (tar, unzip, 7z, ar; nothing is extracted) and checks that every plugin
+glob and companion matches a member and that size and sha256 equal the pin.
+`upstream/open-audio-stack.md` lists the corrections to send to the Open Audio Stack registry.
+
 ## Contributing
 
 An entry is accepted when the plugin is open source, has a Linux release asset

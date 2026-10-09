@@ -1,0 +1,72 @@
+{
+  "catalog_id": "ildaeil",
+  "order": 16,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Hosts other plugin formats.",
+  "tested_with": null,
+  "description": "A plugin host inside a plugin: load another plugin (LV2, VST2, VST3, CLAP, JSFX and more) into an Ildaeil slot to run it in a Carla-based bridge. Comes as an effect, a synth and a MIDI variant in one CLAP bundle. Useful for formats Slimphonic cannot load by itself.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Ildaeil",
+  "vendor": "DISTRHO",
+  "kind": "both",
+  "homepage": "https://github.com/DISTRHO/Ildaeil",
+  "source": "https://github.com/DISTRHO/Ildaeil",
+  "image": null,
+  "license": {
+    "spdx": "GPL-2.0"
+  },
+  "github": {
+    "owner": "DISTRHO",
+    "repo": "Ildaeil",
+    "snapshot": {
+      "stars": 183,
+      "pushed_at": "2026-02-21T20:52:28Z",
+      "latest_release": "1.3",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "studio.kx.distrho.ildaeil#fx",
+        "studio.kx.distrho.ildaeil#synth",
+        "studio.kx.distrho.ildaeil#midi"
+      ],
+      "features": [
+        "audio-effect",
+        "stereo",
+        "instrument",
+        "note-effect"
+      ],
+      "paths": [
+        "Ildaeil.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "Ildaeil-FX.vst3",
+        "Ildaeil-Synth.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.3",
+      "url": "https://github.com/DISTRHO/Ildaeil/releases/download/v1.3/Ildaeil-linux-x86_64-v1.3.zip",
+      "sha256": "367e43ae7c36db3feb740f059b704980c8fc5376f93114a7c03c353c8db67f34",
+      "size_bytes": 75458065,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "A 75 MB download because it carries the Carla bridge programs.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

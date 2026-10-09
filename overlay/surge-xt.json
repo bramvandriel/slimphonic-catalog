@@ -14,8 +14,8 @@
     "owner": "surge-synthesizer",
     "repo": "surge",
     "snapshot": {
-      "stars": 4100,
-      "pushed_at": null,
+      "stars": 4053,
+      "pushed_at": "2026-10-09T00:31:30Z",
       "latest_release": "1.3.4",
       "at": "2026-10-09"
     }
@@ -29,11 +29,25 @@
       "features": [
         "instrument",
         "synthesizer",
-        "audio-effect"
+        "stereo",
+        "free and open source",
+        "audio-effect",
+        "filter",
+        "phaser",
+        "rotary speaker",
+        "equalizer",
+        "granular",
+        "frequency-shifter",
+        "distortion",
+        "flanger",
+        "chorus",
+        "delay",
+        "reverb",
+        "multi-effects"
       ],
       "paths": [
-        "*/Surge XT.clap",
-        "*/Surge XT Effects.clap"
+        "Surge XT.clap",
+        "Surge XT Effects.clap"
       ]
     },
     "vst3": {
@@ -42,8 +56,8 @@
         "abcdef019182faeb566d624153465854"
       ],
       "bundles": [
-        "*/Surge XT.vst3",
-        "*/Surge XT Effects.vst3"
+        "Surge XT.vst3",
+        "Surge XT Effects.vst3"
       ]
     }
   },

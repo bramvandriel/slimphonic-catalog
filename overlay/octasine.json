@@ -1,0 +1,62 @@
+{
+  "catalog_id": "octasine",
+  "order": 19,
+  "oas_id": "greatest-ape/octasine",
+  "editors_pick": false,
+  "score_note": "Small, fast FM synth.",
+  "tested_with": null,
+  "description": "A frequency-modulation synthesizer with four operators, written in Rust. Simple to program, light on the CPU, with four LFOs and a clean interface.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "OctaSine",
+  "vendor": "Joakim Frostegård",
+  "kind": "instrument",
+  "homepage": "https://github.com/greatest-ape/OctaSine",
+  "source": "https://github.com/greatest-ape/OctaSine",
+  "license": {
+    "spdx": "AGPL-3.0"
+  },
+  "github": {
+    "owner": "greatest-ape",
+    "repo": "OctaSine",
+    "snapshot": {
+      "stars": 816,
+      "pushed_at": "2024-07-03T10:59:21Z",
+      "latest_release": "0.9.1",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "OctaSine"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer",
+        "stereo"
+      ],
+      "paths": [
+        "OctaSine/CLAP/*.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "0.9.1",
+      "url": "https://github.com/greatest-ape/OctaSine/releases/download/v0.9.1/OctaSine-v0.9.1-Ubuntu-20_04.zip",
+      "sha256": "cfa2a955bffdb3537bf782b70c175f3ae2071aded2832b464b6b30e5161de173",
+      "size_bytes": 5760864,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

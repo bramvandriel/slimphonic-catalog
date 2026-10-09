@@ -13,25 +13,29 @@
     "owner": "TheWaveWarden",
     "repo": "odin2",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 818,
+      "pushed_at": "2025-09-07T09:05:31Z",
       "latest_release": "2.4.1",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "com.thewavewarden.odin2"
+      ],
       "features": [
         "instrument",
-        "synthesizer"
+        "virtual analog"
       ],
       "paths": [
         "Odin2.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "abcdef019182faeb574157414f44494e"
+      ],
       "bundles": [
         "Odin2.vst3"
       ]

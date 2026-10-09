@@ -1,0 +1,57 @@
+{
+  "catalog_id": "zl-equalizer",
+  "order": 30,
+  "oas_id": "zl-audio/zlequalizer2",
+  "editors_pick": false,
+  "score_note": "Dynamic EQ; VST3 only.",
+  "tested_with": null,
+  "description": "A dynamic equalizer with up to 16 bands, each of which can be static, dynamic or side-chained, with several filter types, optional linear-phase mode and a spectrum display.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "ZL Equalizer 2",
+  "vendor": "ZL Audio",
+  "kind": "effect",
+  "homepage": "https://github.com/ZL-Audio/ZLEqualizer",
+  "source": "https://github.com/ZL-Audio/ZLEqualizer",
+  "license": {
+    "spdx": "AGPL-3.0"
+  },
+  "github": {
+    "owner": "ZL-Audio",
+    "repo": "ZLEqualizer",
+    "snapshot": {
+      "stars": 1026,
+      "pushed_at": "2026-10-09T03:26:32Z",
+      "latest_release": "1.4.1",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": null,
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb5a6c697545717532"
+      ],
+      "bundles": [
+        "VST3/ZL Equalizer 2.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.4.1",
+      "url": "https://github.com/ZL-Audio/ZLEqualizer/releases/download/1.4.1/ZL.Equalizer.2-1.4.1-Linux-x86-64.zip",
+      "sha256": "ba253ef4e608e5d6f72b2c341a7bc0d9c48b79e051806c2367d481814a4dc896",
+      "size_bytes": 10850259,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

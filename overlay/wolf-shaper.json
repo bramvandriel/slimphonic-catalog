@@ -13,25 +13,30 @@
     "owner": "wolf-plugins",
     "repo": "wolf-shaper",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 262,
+      "pushed_at": "2023-11-11T14:54:32Z",
       "latest_release": "1.0.2",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "com.github.wolf-plugins.wolf-shaper"
+      ],
       "features": [
         "audio-effect",
-        "distortion"
+        "distortion",
+        "stereo"
       ],
       "paths": [
         "wolf-shaper.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "2046504473616c637073577300000000"
+      ],
       "bundles": [
         "wolf-shaper.vst3"
       ]

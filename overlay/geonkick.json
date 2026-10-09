@@ -1,0 +1,57 @@
+{
+  "catalog_id": "geonkick",
+  "order": 27,
+  "oas_id": "quamplex/geonkick",
+  "editors_pick": false,
+  "score_note": "Drum synth; VST3 only.",
+  "tested_with": null,
+  "description": "A percussion synthesizer for kicks, snares, claps, hi-hats and effect sounds: layered oscillators with envelopes, filters, distortion and a compressor, plus a built-in kit manager.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Geonkick",
+  "vendor": "Quamplex",
+  "kind": "instrument",
+  "homepage": "https://github.com/quamplex/geonkick",
+  "source": "https://github.com/quamplex/geonkick",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "quamplex",
+    "repo": "geonkick",
+    "snapshot": {
+      "stars": 192,
+      "pushed_at": "2026-10-06T07:37:32Z",
+      "latest_release": "3.9.0",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": null,
+    "vst3": {
+      "class_ids": [
+        "e2cc953290e863f06405e13924e34b24"
+      ],
+      "bundles": [
+        "*/lib/vst3/Geonkick.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "3.9.0",
+      "url": "https://github.com/quamplex/geonkick/releases/download/v3.9.0/GNULinux_binaries_v3.9.0_basic.zip",
+      "sha256": "2ac941877bea77983677861f32cd35255fd502e2d96514702bf9e749aeb0c44c",
+      "size_bytes": 3767094,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Only available as VST3; Slimphonic loads it as a VST3 plugin.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "catalog_id": "shortcircuit-xt",
+  "order": 14,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Alpha software, nightly build.",
+  "tested_with": null,
+  "description": "A multi-sample sampler and synthesizer: zones and groups, a modulation matrix, filters and effects per part, and a growing library of sample formats. Still in alpha; the build offered here is the rolling nightly, so expect rough edges and a checksum that changes.",
+  "experimental": true,
+  "rolling_tag": true,
+  "name": "Shortcircuit XT",
+  "vendor": "Surge Synth Team",
+  "kind": "instrument",
+  "homepage": "https://github.com/surge-synthesizer/shortcircuit-xt",
+  "source": "https://github.com/surge-synthesizer/shortcircuit-xt",
+  "image": null,
+  "license": {
+    "spdx": "MIT"
+  },
+  "github": {
+    "owner": "surge-synthesizer",
+    "repo": "shortcircuit-xt",
+    "snapshot": {
+      "stars": 561,
+      "pushed_at": "2026-10-08T22:41:26Z",
+      "latest_release": "Nightly 2026-10-08",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.surge-synth-team.shortcircuit-xt"
+      ],
+      "features": [
+        "instrument",
+        "sampler",
+        "synthesizer",
+        "Free and Open Source"
+      ],
+      "paths": [
+        "shortcircuit-products/Shortcircuit XT.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2026-10-08",
+      "url": "https://github.com/surge-synthesizer/shortcircuit-xt/releases/download/Nightly/shortcircuit-xt-linux-2026-10-08-24e4feb.zip",
+      "sha256": "dca5cf40b9c3c91d96f7f406656eff7eafdedca46a7d57e017113e93b32ec963",
+      "size_bytes": 39432421,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Alpha software from the nightly build. The VST3 in the same archive crashes when loaded here, so only the CLAP is installed.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

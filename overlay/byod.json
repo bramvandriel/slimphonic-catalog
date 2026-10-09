@@ -1,0 +1,68 @@
+{
+  "catalog_id": "byod",
+  "order": 23,
+  "oas_id": "chowdhury-dsp/byod",
+  "editors_pick": false,
+  "score_note": "Modular guitar pedalboard.",
+  "tested_with": null,
+  "description": "Build-your-own guitar distortion: wire up a chain of distortion, amp, filter and modulation modules in any order, with models of classic pedals and circuits. A guitar effects pedalboard in one plugin.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "BYOD",
+  "vendor": "Chowdhury DSP",
+  "kind": "effect",
+  "homepage": "https://github.com/Chowdhury-DSP/BYOD",
+  "source": "https://github.com/Chowdhury-DSP/BYOD",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "Chowdhury-DSP",
+    "repo": "BYOD",
+    "snapshot": {
+      "stars": 577,
+      "pushed_at": "2025-08-14T00:15:30Z",
+      "latest_release": "1.3.0",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.chowdsp.byod"
+      ],
+      "features": [
+        "audio-effect",
+        "distortion"
+      ],
+      "paths": [
+        "usr/lib/clap/BYOD.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb43686f7744717530"
+      ],
+      "bundles": [
+        "usr/lib/vst3/BYOD.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "deb-asset",
+      "version": "1.3.0",
+      "url": "https://github.com/Chowdhury-DSP/BYOD/releases/download/v1.3.0/BYOD-Linux-x64-1.3.0.deb",
+      "sha256": "c1803ae57b717bab04ef2072c10284bcb7d44fbe352d42645075b0c6875c9aeb",
+      "size_bytes": 22194032,
+      "archive": "deb",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

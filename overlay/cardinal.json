@@ -1,0 +1,74 @@
+{
+  "catalog_id": "cardinal",
+  "order": 13,
+  "oas_id": "distrho/cardinal",
+  "editors_pick": false,
+  "score_note": "Modular synth. Large: 1.1 GB.",
+  "tested_with": null,
+  "description": "A virtual modular synthesizer: the VCV Rack module system and its open-source module collection as a plugin, with a patch-cable user interface. Ships as three plugins (Cardinal, Cardinal FX and Cardinal Synth) in one bundle. A very large download.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Cardinal",
+  "vendor": "DISTRHO",
+  "kind": "both",
+  "homepage": "https://github.com/DISTRHO/Cardinal",
+  "source": "https://github.com/DISTRHO/Cardinal",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "DISTRHO",
+    "repo": "Cardinal",
+    "snapshot": {
+      "stars": 3217,
+      "pushed_at": "2026-07-28T11:06:35Z",
+      "latest_release": "26.02",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "studio.kx.distrho.cardinal",
+        "studio.kx.distrho.cardinal#fx",
+        "studio.kx.distrho.cardinal#synth"
+      ],
+      "features": [
+        "instrument",
+        "audio-effect"
+      ],
+      "paths": [
+        "Cardinal.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "2046504473616c636e64436400000000",
+        "2046504473616c63466e436400000000",
+        "2046504473616c63536e436400000000"
+      ],
+      "bundles": [
+        "Cardinal.vst3",
+        "CardinalFX.vst3",
+        "CardinalSynth.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "26.02",
+      "url": "https://github.com/DISTRHO/Cardinal/releases/download/26.02/Cardinal-linux-x86_64-26.02.tar.gz",
+      "sha256": "657df0beeec04184de7359cbd3e173a36eeab78077e1e26da81405632f98ec25",
+      "size_bytes": 1113893699,
+      "archive": "tar.gz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Large download: about 1.1 GB, and about the same again on disk. Contains the three Cardinal plugins in one bundle.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

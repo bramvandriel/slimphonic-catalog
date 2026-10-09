@@ -1,0 +1,71 @@
+{
+  "catalog_id": "monique",
+  "order": 18,
+  "oas_id": "surge-synthesizer/monique-monosynth",
+  "editors_pick": false,
+  "score_note": "Mono bass and lead synth.",
+  "tested_with": null,
+  "description": "A monophonic bass and lead synthesizer with a deep modulation system: a morphing sound engine and several envelopes and LFOs. Originally the Monoplugs Monique, relaunched as open source by the Surge Synth Team.",
+  "experimental": false,
+  "rolling_tag": true,
+  "name": "Monique",
+  "vendor": "Surge Synth Team",
+  "kind": "instrument",
+  "homepage": "https://github.com/surge-synthesizer/monique-monosynth",
+  "source": "https://github.com/surge-synthesizer/monique-monosynth",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "surge-synthesizer",
+    "repo": "monique-monosynth",
+    "snapshot": {
+      "stars": 413,
+      "pushed_at": "2024-07-30T15:45:35Z",
+      "latest_release": "Nightly 2024-08-07",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.surge-synth-team.monique-monosynth"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer",
+        "mono synth",
+        "basses",
+        "leads"
+      ],
+      "paths": [
+        "monique_products/MoniqueMonosynth.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb566d62416d6f6e69"
+      ],
+      "bundles": [
+        "monique_products/MoniqueMonosynth.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2024-08-07",
+      "url": "https://github.com/surge-synthesizer/monique-monosynth/releases/download/Nightly/MoniqueMonosynth-2024-08-07-df7d339-Linux.zip",
+      "sha256": "a9a9a9b42e111bd41ee24157368ca2499cace806c505f7f8ccd9aeec03f251b7",
+      "size_bytes": 11138914,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

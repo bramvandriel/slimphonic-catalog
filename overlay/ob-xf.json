@@ -13,25 +13,31 @@
     "owner": "surge-synthesizer",
     "repo": "OB-Xf",
     "snapshot": {
-      "stars": null,
-      "pushed_at": null,
+      "stars": 513,
+      "pushed_at": "2026-09-30T10:34:25Z",
       "latest_release": "1.0.3",
       "at": "2026-10-09"
     }
   },
   "formats": {
     "clap": {
-      "plugin_ids": [],
+      "plugin_ids": [
+        "org.surge-synth-team.OB-Xf"
+      ],
       "features": [
         "instrument",
-        "synthesizer"
+        "synthesizer",
+        "virtual analog",
+        "analog"
       ],
       "paths": [
         "obxf_products/OB-Xf.clap"
       ]
     },
     "vst3": {
-      "class_ids": [],
+      "class_ids": [
+        "abcdef019182faeb535354784f425846"
+      ],
       "bundles": [
         "obxf_products/OB-Xf.vst3"
       ]
