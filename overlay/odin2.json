@@ -1,0 +1,57 @@
+{
+  "catalog_id": "odin2",
+  "order": 3,
+  "oas_id": "thewavewarden/odin2",
+  "editors_pick": true,
+  "score_note": "Download comes from a rolling release tag.",
+  "tested_with": null,
+  "description": "A semi-modular polyphonic synthesizer with three oscillators, three filters, a modulation matrix, a step sequencer and an effects section. Many wavetables and a large preset library are included.",
+  "experimental": false,
+  "rolling_tag": true,
+  "homepage": "https://www.thewavewarden.com/pages/odin-2",
+  "github": {
+    "owner": "TheWaveWarden",
+    "repo": "odin2",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "2.4.1",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "instrument",
+        "synthesizer"
+      ],
+      "paths": [
+        "Odin2.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "Odin2.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2.4.1",
+      "url": "https://github.com/TheWaveWarden/odin2/releases/download/NightlyDevel/Odin2.4.1Linux.zip",
+      "sha256": "462c4fffda99ff91a6c362d8cf41616b50807778ae7a96471753046a799aed63",
+      "size_bytes": 66588004,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "The download is a rolling release tag; if the checksum no longer matches, the catalogue is out of date.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

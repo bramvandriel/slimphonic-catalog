@@ -1,0 +1,57 @@
+{
+  "catalog_id": "wolf-shaper",
+  "order": 9,
+  "oas_id": "wolf-plugins/wolf-shaper",
+  "editors_pick": true,
+  "score_note": "Draw your own distortion curve.",
+  "tested_with": null,
+  "description": "A waveshaper with a graph editor: draw the transfer curve, bend segments and add points. Includes oversampling and pre/post filters.",
+  "experimental": false,
+  "rolling_tag": false,
+  "vendor": "Patrick Desaulniers",
+  "github": {
+    "owner": "wolf-plugins",
+    "repo": "wolf-shaper",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "1.0.2",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "audio-effect",
+        "distortion"
+      ],
+      "paths": [
+        "wolf-shaper.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "wolf-shaper.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.0.2",
+      "url": "https://github.com/wolf-plugins/wolf-shaper/releases/download/v1.0.2/wolf-shaper-v1.0.2-linux-x64.zip",
+      "sha256": "8b844e9b535d2b8a8a07fc6cec207beae8161f7d6da36e4a856a766aa441b848",
+      "size_bytes": 5089663,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

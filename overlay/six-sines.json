@@ -1,0 +1,57 @@
+{
+  "catalog_id": "six-sines",
+  "order": 10,
+  "oas_id": "baconpaul/six-sines",
+  "editors_pick": true,
+  "score_note": "CLAP-native FM matrix synth.",
+  "tested_with": null,
+  "description": "A small synthesizer built from six sine-wave operators that modulate each other in any direction: FM, ring modulation and feedback from one compact matrix. Fast to program, with a distinctive sound.",
+  "experimental": false,
+  "rolling_tag": false,
+  "vendor": "Paul Walker (baconpaul)",
+  "github": {
+    "owner": "baconpaul",
+    "repo": "six-sines",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "1.2.1",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "instrument",
+        "synthesizer"
+      ],
+      "paths": [
+        "six-sines_assets/Six Sines.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "six-sines_assets/Six Sines.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.2.1",
+      "url": "https://github.com/baconpaul/six-sines/releases/download/v1.2.1/six-sines-Linux-2026-07-20-18ecb36.zip",
+      "sha256": "9b5353eebfec3e462c80ed8c0f53c965e6262bb38537518159cce71de7eace41",
+      "size_bytes": 28862299,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

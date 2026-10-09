@@ -1,0 +1,57 @@
+{
+  "catalog_id": "ob-xf",
+  "order": 2,
+  "oas_id": "surge-synthesizer/ob-xf",
+  "editors_pick": true,
+  "score_note": "Preferred over OB-Xd.",
+  "tested_with": null,
+  "description": "A virtual analog synthesizer in the style of the Oberheim OB-X family, a continuation of OB-Xd. Warm polyphonic pads, brass and basses from a compact interface.",
+  "experimental": false,
+  "rolling_tag": false,
+  "vendor": "Surge Synth Team",
+  "github": {
+    "owner": "surge-synthesizer",
+    "repo": "OB-Xf",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "1.0.3",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "instrument",
+        "synthesizer"
+      ],
+      "paths": [
+        "obxf_products/OB-Xf.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "obxf_products/OB-Xf.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.0.3",
+      "url": "https://github.com/surge-synthesizer/OB-Xf/releases/download/v1.0.3/ob-xf-Linux-v1.0.3.zip",
+      "sha256": "72b60c83cf6426337031df744c34a047104a9d95f1feaf6cd048ecfa39f74c96",
+      "size_bytes": 21867343,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

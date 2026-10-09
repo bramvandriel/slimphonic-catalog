@@ -1,0 +1,67 @@
+{
+  "catalog_id": "surge-xt",
+  "order": 0,
+  "oas_id": "surge-synthesizer/surge",
+  "editors_pick": true,
+  "score_note": "The reference open-source synth.",
+  "tested_with": null,
+  "description": "A deep hybrid synthesizer with a flexible modulation system, many oscillator algorithms, a large factory patch library and a built-in effects section. Ships with a separate Surge XT Effects plugin. The factory content pack is a second, larger download.",
+  "experimental": false,
+  "rolling_tag": false,
+  "kind": "both",
+  "homepage": "https://surge-synthesizer.github.io/",
+  "github": {
+    "owner": "surge-synthesizer",
+    "repo": "surge",
+    "snapshot": {
+      "stars": 4100,
+      "pushed_at": null,
+      "latest_release": "1.3.4",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.surge-synth-team.surge-xt",
+        "org.surge-synth-team.surge-xt-fx"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer",
+        "audio-effect"
+      ],
+      "paths": [
+        "*/Surge XT.clap",
+        "*/Surge XT Effects.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb566d624153675854",
+        "abcdef019182faeb566d624153465854"
+      ],
+      "bundles": [
+        "*/Surge XT.vst3",
+        "*/Surge XT Effects.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.3.4",
+      "url": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-linux-1.3.4-pluginsonly.tar.gz",
+      "sha256": "dd431b75f5fa197c4bffa6ca27ca46970f0a94c834119bb1db7decdeec4c28db",
+      "size_bytes": 97294804,
+      "archive": "tar.gz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

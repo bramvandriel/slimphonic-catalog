@@ -1,0 +1,62 @@
+{
+  "catalog_id": "dpf-plugins",
+  "order": 5,
+  "oas_id": "distrho/dpf-plugins",
+  "editors_pick": true,
+  "score_note": "Fifteen plugins from one download.",
+  "tested_with": null,
+  "description": "A collection of 15 small plugins from the DISTRHO project, among them the MVerb reverb, 3 Band EQ, the Nekobi bass synth, Kars string synth, PingPongPan and ProM. Licences differ per plugin (GPL and ISC).",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "DPF-Plugins",
+  "vendor": "DISTRHO",
+  "kind": "both",
+  "license": {
+    "spdx": "GPL-3.0 AND ISC"
+  },
+  "github": {
+    "owner": "DISTRHO",
+    "repo": "DPF-Plugins",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "1.7",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "audio-effect",
+        "instrument"
+      ],
+      "paths": [
+        "DPF-Plugins-v1.7/*.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "DPF-Plugins-v1.7/*.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.7",
+      "url": "https://github.com/DISTRHO/DPF-Plugins/releases/download/v1.7/DPF-Plugins-v1.7-linux-x86_64.tar.xz",
+      "sha256": "8088e362f9f68fea179abe9f96b83fca07693224ffcf46837c24ff8b59b119cb",
+      "size_bytes": 9827340,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "catalog_id": "vital",
+  "order": 11,
+  "oas_id": null,
+  "editors_pick": true,
+  "score_note": "Free with an account; the binary cannot be redistributed.",
+  "tested_with": null,
+  "description": "A spectral warping wavetable synthesizer with a visual, drag-and-drop interface, three oscillators, a flexible modulation system and built-in effects. The download is free but needs an account at vital.audio, so it is a link here; once you install it, Slimphonic finds it.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Vital",
+  "vendor": "Matt Tytel",
+  "kind": "instrument",
+  "homepage": "https://vital.audio",
+  "source": "https://github.com/mtytel/vital",
+  "image": {
+    "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/tytel/vital/vital.jpg",
+    "sha256": ""
+  },
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "audio.vital.synth"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer"
+      ],
+      "paths": []
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "manual-link",
+      "version": null,
+      "url": null,
+      "sha256": null,
+      "size_bytes": null,
+      "archive": "none",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Download needs a free account at vital.audio. After installing, the plugin appears in the Instruments tab.",
+      "link_url": "https://vital.audio",
+      "link_label": "Open vital.audio"
+    }
+  }
+}

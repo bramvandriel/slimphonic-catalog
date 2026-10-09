@@ -19,6 +19,33 @@ The seed for most entries is the
 link-only entries) on top. Corrections to facts that come from that registry
 are contributed back upstream.
 
+## Regenerating linux.json
+
+`linux.json` is generated; edit `overlay/<catalog_id>.json`, not the manifest.
+
+```
+python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --out linux.json
+python3 -I -m unittest discover -s tools
+git diff linux.json
+```
+
+The script is standard-library Python and never touches the network. `oas/index.json` is a
+dated copy of the Open Audio Stack index (`oas/SNAPSHOT.md`); refresh it by hand. Add
+`--date YYYY-MM-DD` for a reproducible `generated_at`. The script prints `note:` lines where
+OAS no longer lists a pinned asset or its checksum differs (expected for rolling tags), and
+ends by validating the result with the same rules as the app's `manifest::validate`.
+`tools/split_overlay.py` is the one-off that created the overlay from the hand-written file.
+
+An overlay file holds what OAS cannot provide, and wins over OAS wherever it sets a field:
+
+- always: `catalog_id`, `order` (list position), `oas_id` (OAS package key, or null),
+  `editors_pick`, `score_note`, `tested_with`, `description`, `experimental`, `rolling_tag`,
+  `github` (the stars/release snapshot), `formats` (plugin ids, class ids, archive globs),
+  `content`, `install` (per platform: the pinned url, version, sha256, size, archive kind,
+  paths' companions, link-only fields)
+- only where OAS's value is wrong or missing: `name`, `vendor`, `kind`, `homepage`,
+  `source`, `image`, `license` (`spdx`, `url`)
+
 ## Contributing
 
 An entry is accepted when the plugin is open source, has a Linux release asset

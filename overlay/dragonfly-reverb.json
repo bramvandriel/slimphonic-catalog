@@ -1,0 +1,60 @@
+{
+  "catalog_id": "dragonfly-reverb",
+  "order": 4,
+  "oas_id": "michaelwillis/dragonfly-reverb",
+  "editors_pick": true,
+  "score_note": "Four reverbs, 2 MB.",
+  "tested_with": null,
+  "description": "Four reverb plugins in one download: Hall, Room, Plate and Early Reflections. Simple controls and a clean, musical sound, based on the Freeverb3 reverb library.",
+  "experimental": false,
+  "rolling_tag": false,
+  "homepage": "https://michaelwillis.github.io/dragonfly-reverb/",
+  "github": {
+    "owner": "michaelwillis",
+    "repo": "dragonfly-reverb",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "3.2.10",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "audio-effect",
+        "reverb"
+      ],
+      "paths": [
+        "*/DragonflyHallReverb.clap",
+        "*/DragonflyRoomReverb.clap",
+        "*/DragonflyPlateReverb.clap",
+        "*/DragonflyEarlyReflections.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "*/Dragonfly*.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "3.2.10",
+      "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-linux-x86_64.tar.xz",
+      "sha256": "59f1593120de82e31dd194e2ab1536af14fec2b3ec6ec45abf6d9c8ac02ef430",
+      "size_bytes": 2267368,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

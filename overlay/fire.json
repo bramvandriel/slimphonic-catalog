@@ -1,0 +1,59 @@
+{
+  "catalog_id": "fire",
+  "order": 7,
+  "oas_id": "jerryuhoo/fire",
+  "editors_pick": true,
+  "score_note": "Multiband distortion.",
+  "tested_with": null,
+  "description": "A multiband distortion and saturation effect with per-band waveshaping, a drawable shaper curve, a built-in filter and an oversampling option. Suited to anything from subtle warmth to heavy destruction.",
+  "experimental": false,
+  "rolling_tag": false,
+  "vendor": "Wings",
+  "homepage": "https://github.com/jerryuhoo/Fire",
+  "source": "https://github.com/jerryuhoo/Fire",
+  "github": {
+    "owner": "jerryuhoo",
+    "repo": "Fire",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "2.0.0",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "audio-effect",
+        "distortion"
+      ],
+      "paths": [
+        "CLAP/Fire.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "VST3/Fire.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2.0.0",
+      "url": "https://github.com/jerryuhoo/Fire/releases/download/v2.0.0/Fire-2.0.0-Linux.zip",
+      "sha256": "d390fd0e3a432a94191c556b7a49d1b61affd0a3b5cf02b41b5bcbaf179c8a24",
+      "size_bytes": 24423742,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

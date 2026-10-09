@@ -16,7 +16,7 @@
       },
       "description": "A deep hybrid synthesizer with a flexible modulation system, many oscillator algorithms, a large factory patch library and a built-in effects section. Ships with a separate Surge XT Effects plugin. The factory content pack is a second, larger download.",
       "image": {
-        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/surge-synthesizer/surge-xt/surge-xt.jpg",
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/surge-synthesizer/surge/surge.jpg",
         "sha256": ""
       },
       "homepage": "https://surge-synthesizer.github.io/",

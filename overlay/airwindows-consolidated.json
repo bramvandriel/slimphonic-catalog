@@ -1,0 +1,64 @@
+{
+  "catalog_id": "airwindows-consolidated",
+  "order": 6,
+  "oas_id": null,
+  "editors_pick": true,
+  "score_note": "Download comes from a rolling release tag.",
+  "tested_with": null,
+  "description": "Around 400 of Chris Johnson's Airwindows effects in a single plugin: saturation, dynamics, filters, tape and console emulations, reverbs and more. Pick an effect from the list inside the plugin.",
+  "experimental": false,
+  "rolling_tag": true,
+  "name": "Airwindows Consolidated",
+  "vendor": "Chris Johnson (Airwindows), ported by Paul Walker",
+  "kind": "effect",
+  "homepage": "https://www.airwindows.com/",
+  "source": "https://github.com/baconpaul/airwin2rack",
+  "image": null,
+  "license": {
+    "spdx": "MIT"
+  },
+  "github": {
+    "owner": "baconpaul",
+    "repo": "airwin2rack",
+    "snapshot": {
+      "stars": null,
+      "pushed_at": null,
+      "latest_release": "2026-10-04",
+      "at": "2026-10-09"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [],
+      "features": [
+        "audio-effect"
+      ],
+      "paths": [
+        "awcons-products/Airwindows Consolidated.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [],
+      "bundles": [
+        "awcons-products/Airwindows Consolidated.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2026-10-04",
+      "url": "https://github.com/baconpaul/airwin2rack/releases/download/DAWPlugin/AirwindowsConsolidated-2026-10-04-9b87116-Linux.zip",
+      "sha256": "1b0ecf04c418087f84849d85e5c67e8703642d99a423429fce5a11b929f66780",
+      "size_bytes": 32477404,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "The download is a rolling release tag whose file name changes with each drop; if the checksum no longer matches, the catalogue is out of date.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}
