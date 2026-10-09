@@ -1,0 +1,818 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-09",
+  "min_app_version": "0.7.0",
+  "plugins": [
+    {
+      "catalog_id": "surge-xt",
+      "name": "Surge XT",
+      "vendor": "Surge Synth Team",
+      "kind": "both",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/surge-synthesizer/surge"
+      },
+      "description": "A deep hybrid synthesizer with a flexible modulation system, many oscillator algorithms, a large factory patch library and a built-in effects section. Ships with a separate Surge XT Effects plugin. The factory content pack is a second, larger download.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/surge-synthesizer/surge-xt/surge-xt.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://surge-synthesizer.github.io/",
+      "source": "https://github.com/surge-synthesizer/surge",
+      "github": {
+        "owner": "surge-synthesizer",
+        "repo": "surge",
+        "snapshot": {
+          "stars": 4100,
+          "pushed_at": null,
+          "latest_release": "1.3.4",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "The reference open-source synth.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "instrument",
+            "synthesizer",
+            "audio-effect"
+          ],
+          "paths": [
+            "*/Surge XT.clap",
+            "*/Surge XT Effects.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "*/Surge XT.vst3",
+            "*/Surge XT Effects.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.3.4",
+          "url": "https://github.com/surge-synthesizer/releases-xt/releases/download/1.3.4/surge-xt-linux-1.3.4-pluginsonly.tar.gz",
+          "sha256": "dd431b75f5fa197c4bffa6ca27ca46970f0a94c834119bb1db7decdeec4c28db",
+          "size_bytes": 97294804,
+          "archive": "tar.gz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "dexed",
+      "name": "Dexed",
+      "vendor": "Digital Suburban",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/asb2m10/dexed"
+      },
+      "description": "A multi-platform FM synthesizer closely modelled on the Yamaha DX7. It loads DX7 SysEx patch banks, so thousands of existing patches work as they are.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/asb2m10/dexed/dexed.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://asb2m10.github.io/dexed/",
+      "source": "https://github.com/asb2m10/dexed",
+      "github": {
+        "owner": "asb2m10",
+        "repo": "dexed",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "1.0.1",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Classic FM sounds.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "Dexed.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "Dexed.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.0.1",
+          "url": "https://github.com/asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-lnx.zip",
+          "sha256": "2bac3d0c4237e8c22c4274b6d5b59fe6329fcae72864f81b5830393eff354fc1",
+          "size_bytes": 7725160,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "ob-xf",
+      "name": "OB-Xf",
+      "vendor": "Surge Synth Team",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/surge-synthesizer/OB-Xf"
+      },
+      "description": "A virtual analog synthesizer in the style of the Oberheim OB-X family, a continuation of OB-Xd. Warm polyphonic pads, brass and basses from a compact interface.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/surge-synthesizer/ob-xf/ob-xf.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/surge-synthesizer/OB-Xf",
+      "source": "https://github.com/surge-synthesizer/OB-Xf",
+      "github": {
+        "owner": "surge-synthesizer",
+        "repo": "OB-Xf",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "1.0.3",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Preferred over OB-Xd.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "obxf_products/OB-Xf.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "obxf_products/OB-Xf.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.0.3",
+          "url": "https://github.com/surge-synthesizer/OB-Xf/releases/download/v1.0.3/ob-xf-Linux-v1.0.3.zip",
+          "sha256": "72b60c83cf6426337031df744c34a047104a9d95f1feaf6cd048ecfa39f74c96",
+          "size_bytes": 21867343,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "odin2",
+      "name": "Odin 2",
+      "vendor": "TheWaveWarden",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": true,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/TheWaveWarden/odin2"
+      },
+      "description": "A semi-modular polyphonic synthesizer with three oscillators, three filters, a modulation matrix, a step sequencer and an effects section. Many wavetables and a large preset library are included.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/thewavewarden/odin2/odin2.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://www.thewavewarden.com/pages/odin-2",
+      "source": "https://github.com/TheWaveWarden/odin2",
+      "github": {
+        "owner": "TheWaveWarden",
+        "repo": "odin2",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "2.4.1",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Download comes from a rolling release tag.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "Odin2.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "Odin2.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2.4.1",
+          "url": "https://github.com/TheWaveWarden/odin2/releases/download/NightlyDevel/Odin2.4.1Linux.zip",
+          "sha256": "462c4fffda99ff91a6c362d8cf41616b50807778ae7a96471753046a799aed63",
+          "size_bytes": 66588004,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "The download is a rolling release tag; if the checksum no longer matches, the catalogue is out of date.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "dragonfly-reverb",
+      "name": "Dragonfly Reverb",
+      "vendor": "Michael Willis",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/michaelwillis/dragonfly-reverb"
+      },
+      "description": "Four reverb plugins in one download: Hall, Room, Plate and Early Reflections. Simple controls and a clean, musical sound, based on the Freeverb3 reverb library.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/michaelwillis/dragonfly-reverb/dragonfly-reverb.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://michaelwillis.github.io/dragonfly-reverb/",
+      "source": "https://github.com/michaelwillis/dragonfly-reverb",
+      "github": {
+        "owner": "michaelwillis",
+        "repo": "dragonfly-reverb",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "3.2.10",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Four reverbs, 2 MB.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "audio-effect",
+            "reverb"
+          ],
+          "paths": [
+            "*/DragonflyHallReverb.clap",
+            "*/DragonflyRoomReverb.clap",
+            "*/DragonflyPlateReverb.clap",
+            "*/DragonflyEarlyReflections.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "*/Dragonfly*.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "3.2.10",
+          "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-linux-x86_64.tar.xz",
+          "sha256": "59f1593120de82e31dd194e2ab1536af14fec2b3ec6ec45abf6d9c8ac02ef430",
+          "size_bytes": 2267368,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "dpf-plugins",
+      "name": "DPF-Plugins",
+      "vendor": "DISTRHO",
+      "kind": "both",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0 AND ISC",
+        "url": "https://github.com/DISTRHO/DPF-Plugins"
+      },
+      "description": "A collection of 15 small plugins from the DISTRHO project, among them the MVerb reverb, 3 Band EQ, the Nekobi bass synth, Kars string synth, PingPongPan and ProM. Licences differ per plugin (GPL and ISC).",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/distrho/dpf-plugins/dpf-plugins.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/DISTRHO/DPF-Plugins",
+      "source": "https://github.com/DISTRHO/DPF-Plugins",
+      "github": {
+        "owner": "DISTRHO",
+        "repo": "DPF-Plugins",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "1.7",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Fifteen plugins from one download.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "audio-effect",
+            "instrument"
+          ],
+          "paths": [
+            "DPF-Plugins-v1.7/*.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "DPF-Plugins-v1.7/*.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.7",
+          "url": "https://github.com/DISTRHO/DPF-Plugins/releases/download/v1.7/DPF-Plugins-v1.7-linux-x86_64.tar.xz",
+          "sha256": "8088e362f9f68fea179abe9f96b83fca07693224ffcf46837c24ff8b59b119cb",
+          "size_bytes": 9827340,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "airwindows-consolidated",
+      "name": "Airwindows Consolidated",
+      "vendor": "Chris Johnson (Airwindows), ported by Paul Walker",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": true,
+      "license": {
+        "spdx": "MIT",
+        "url": "https://github.com/baconpaul/airwin2rack"
+      },
+      "description": "Around 400 of Chris Johnson's Airwindows effects in a single plugin: saturation, dynamics, filters, tape and console emulations, reverbs and more. Pick an effect from the list inside the plugin.",
+      "image": null,
+      "homepage": "https://www.airwindows.com/",
+      "source": "https://github.com/baconpaul/airwin2rack",
+      "github": {
+        "owner": "baconpaul",
+        "repo": "airwin2rack",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "2026-10-04",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Download comes from a rolling release tag.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "audio-effect"
+          ],
+          "paths": [
+            "awcons-products/Airwindows Consolidated.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "awcons-products/Airwindows Consolidated.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2026-10-04",
+          "url": "https://github.com/baconpaul/airwin2rack/releases/download/DAWPlugin/AirwindowsConsolidated-2026-10-04-9b87116-Linux.zip",
+          "sha256": "1b0ecf04c418087f84849d85e5c67e8703642d99a423429fce5a11b929f66780",
+          "size_bytes": 32477404,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "The download is a rolling release tag whose file name changes with each drop; if the checksum no longer matches, the catalogue is out of date.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "fire",
+      "name": "Fire",
+      "vendor": "Wings",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "AGPL-3.0",
+        "url": "https://github.com/jerryuhoo/Fire"
+      },
+      "description": "A multiband distortion and saturation effect with per-band waveshaping, a drawable shaper curve, a built-in filter and an oversampling option. Suited to anything from subtle warmth to heavy destruction.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/jerryuhoo/fire/fire.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/jerryuhoo/Fire",
+      "source": "https://github.com/jerryuhoo/Fire",
+      "github": {
+        "owner": "jerryuhoo",
+        "repo": "Fire",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "2.0.0",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Multiband distortion.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "audio-effect",
+            "distortion"
+          ],
+          "paths": [
+            "CLAP/Fire.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "VST3/Fire.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2.0.0",
+          "url": "https://github.com/jerryuhoo/Fire/releases/download/v2.0.0/Fire-2.0.0-Linux.zip",
+          "sha256": "d390fd0e3a432a94191c556b7a49d1b61affd0a3b5cf02b41b5bcbaf179c8a24",
+          "size_bytes": 24423742,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "master-me",
+      "name": "master_me",
+      "vendor": "Klaus Scheuermann and others",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/trummerschlunk/master_me"
+      },
+      "description": "An automatic mastering plugin for live streaming, podcasts and music: levelling, compression, EQ and limiting in one small chain that adapts to the incoming signal.",
+      "image": null,
+      "homepage": "https://github.com/trummerschlunk/master_me",
+      "source": "https://github.com/trummerschlunk/master_me",
+      "github": {
+        "owner": "trummerschlunk",
+        "repo": "master_me",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "1.3.1",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Hands-off mastering chain.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "audio-effect",
+            "mastering"
+          ],
+          "paths": [
+            "master_me-1.3.1/master_me.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "master_me-1.3.1/master_me.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.3.1",
+          "url": "https://github.com/trummerschlunk/master_me/releases/download/1.3.1/master_me-1.3.1-linux-x86_64.tar.xz",
+          "sha256": "09f41b4607ea66fd1d2f69c6b2e92ad4a36cd748c9e6da9a39b7e802c143d6a2",
+          "size_bytes": 2342208,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "wolf-shaper",
+      "name": "Wolf Shaper",
+      "vendor": "Patrick Desaulniers",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/wolf-plugins/wolf-shaper"
+      },
+      "description": "A waveshaper with a graph editor: draw the transfer curve, bend segments and add points. Includes oversampling and pre/post filters.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/wolf-plugins/wolf-shaper/wolf-shaper.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/wolf-plugins/wolf-shaper",
+      "source": "https://github.com/wolf-plugins/wolf-shaper",
+      "github": {
+        "owner": "wolf-plugins",
+        "repo": "wolf-shaper",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "1.0.2",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "Draw your own distortion curve.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "audio-effect",
+            "distortion"
+          ],
+          "paths": [
+            "wolf-shaper.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "wolf-shaper.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.0.2",
+          "url": "https://github.com/wolf-plugins/wolf-shaper/releases/download/v1.0.2/wolf-shaper-v1.0.2-linux-x64.zip",
+          "sha256": "8b844e9b535d2b8a8a07fc6cec207beae8161f7d6da36e4a856a766aa441b848",
+          "size_bytes": 5089663,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "six-sines",
+      "name": "Six Sines",
+      "vendor": "Paul Walker (baconpaul)",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "MIT",
+        "url": "https://github.com/baconpaul/six-sines"
+      },
+      "description": "A small synthesizer built from six sine-wave operators that modulate each other in any direction: FM, ring modulation and feedback from one compact matrix. Fast to program, with a distinctive sound.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/baconpaul/six-sines/six-sines.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/baconpaul/six-sines",
+      "source": "https://github.com/baconpaul/six-sines",
+      "github": {
+        "owner": "baconpaul",
+        "repo": "six-sines",
+        "snapshot": {
+          "stars": null,
+          "pushed_at": null,
+          "latest_release": "1.2.1",
+          "at": "2026-10-09"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "CLAP-native FM matrix synth.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "six-sines_assets/Six Sines.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [],
+          "bundles": [
+            "six-sines_assets/Six Sines.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.2.1",
+          "url": "https://github.com/baconpaul/six-sines/releases/download/v1.2.1/six-sines-Linux-2026-07-20-18ecb36.zip",
+          "sha256": "9b5353eebfec3e462c80ed8c0f53c965e6262bb38537518159cce71de7eace41",
+          "size_bytes": 28862299,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "vital",
+      "name": "Vital",
+      "vendor": "Matt Tytel",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/mtytel/vital"
+      },
+      "description": "A spectral warping wavetable synthesizer with a visual, drag-and-drop interface, three oscillators, a flexible modulation system and built-in effects. The download is free but needs an account at vital.audio, so it is a link here; once you install it, Slimphonic finds it.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/tytel/vital/vital.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://vital.audio",
+      "source": "https://github.com/mtytel/vital",
+      "github": null,
+      "score": {
+        "editors_pick": true,
+        "note": "Free with an account; the binary cannot be redistributed.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": []
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "manual-link",
+          "version": null,
+          "url": null,
+          "sha256": null,
+          "size_bytes": null,
+          "archive": "none",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Download needs a free account at vital.audio. After installing, the plugin appears in the Instruments tab.",
+          "link_url": "https://vital.audio",
+          "link_label": "Open vital.audio"
+        }
+      }
+    }
+  ]
+}
