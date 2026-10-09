@@ -38,7 +38,10 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "org.surge-synth-team.surge-xt",
+            "org.surge-synth-team.surge-xt-fx"
+          ],
           "features": [
             "instrument",
             "synthesizer",
@@ -50,7 +53,10 @@
           ]
         },
         "vst3": {
-          "class_ids": [],
+          "class_ids": [
+            "abcdef019182faeb566d624153675854",
+            "abcdef019182faeb566d624153465854"
+          ],
           "bundles": [
             "*/Surge XT.vst3",
             "*/Surge XT Effects.vst3"
@@ -787,7 +793,9 @@
       },
       "formats": {
         "clap": {
-          "plugin_ids": [],
+          "plugin_ids": [
+            "audio.vital.synth"
+          ],
           "features": [
             "instrument",
             "synthesizer"
