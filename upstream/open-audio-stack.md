@@ -199,6 +199,59 @@ OAS lists 0.12.0; upstream v0.13.0 (2026-09-20) is a larger archive (27 MB).
 }
 ```
 
+### `ardura/actuate` to 1.4.5
+
+OAS lists 1.4.3; upstream tag v1.4.5 (2026-04) ships Actuate_v145_linux_build.zip with CLAP and VST3. Slimphonic's pin is not in OAS (the refresh script reports it).
+
+`plugins/ardura/actuate/1.4.5.yaml`, `files` entry:
+
+```json
+{
+  "systems": [
+    {
+      "type": "linux"
+    }
+  ],
+  "architectures": [
+    "x64"
+  ],
+  "contains": [
+    "clap",
+    "vst3"
+  ],
+  "type": "archive",
+  "size": 9391468,
+  "sha256": "00fbd335884bad1b83189fb3b04c65c25ebd0736bff881d2914249f10863901a",
+  "url": "https://github.com/ardura/Actuate/releases/download/v1.4.5/Actuate_v145_linux_build.zip"
+}
+```
+
+### `floe-audio/floe` to 2.0.3
+
+OAS lists 2.0.1; upstream tag v2.0.3 ships Floe-CLAP-v2.0.3-Linux.tar.gz (CLAP) and Floe-VST3-v2.0.3-Linux.tar.gz (VST3, separate asset). Slimphonic's pin is not in OAS.
+
+`plugins/floe-audio/floe/2.0.3.yaml`, `files` entry for the CLAP asset:
+
+```json
+{
+  "systems": [
+    {
+      "type": "linux"
+    }
+  ],
+  "architectures": [
+    "x64"
+  ],
+  "contains": [
+    "clap"
+  ],
+  "type": "archive",
+  "size": 30021745,
+  "sha256": "9126c13cb268bd9e939f7a18f663f5c853c5a8a7ca0f77635e4a8574887176fd",
+  "url": "https://github.com/floe-audio/Floe/releases/download/v2.0.3/Floe-CLAP-v2.0.3-Linux.tar.gz"
+}
+```
+
 ## B. Packages OAS does not have
 
 Each is open source with a GitHub Linux release asset that loads in Slimphonic. Proposed
@@ -354,6 +407,59 @@ baconpaul, MIT, type `effect`. About 400 Airwindows effects in one plugin; rolli
   "size": 32477404,
   "sha256": "1b0ecf04c418087f84849d85e5c67e8703642d99a423429fce5a11b929f66780",
   "url": "https://github.com/baconpaul/airwin2rack/releases/download/DAWPlugin/AirwindowsConsolidated-2026-10-04-9b87116-Linux.zip"
+}
+```
+
+### `swesterfeld/spectmorph` (new): SpectMorph
+
+Stefan Westerfeld, LGPL-2.1, type `instrument`. 1.0.0-beta3; the tarball also holds the instruments and `install.sh` that put them in `~/.local/share/spectmorph`.
+
+```json
+{
+  "systems": [
+    {
+      "type": "linux"
+    }
+  ],
+  "architectures": [
+    "x64"
+  ],
+  "contains": [
+    "clap",
+    "vst2",
+    "lv2"
+  ],
+  "type": "archive",
+  "size": 70682216,
+  "sha256": "5c8ca188c3a254ee65651b047049fb1eec81d1456b58659416ab92fbd75b626d",
+  "url": "https://github.com/swesterfeld/spectmorph/releases/download/1.0.0-beta3/spectmorph-1.0.0-beta3-x86_64.tar.xz"
+}
+```
+
+### `aidadsp/aida-x` (new): AIDA-X
+
+AIDA DSP, GPL-3.0, type `effect`. 1.1.0; the tarball holds CLAP, VST3, VST2, LV2 and a standalone.
+
+```json
+{
+  "systems": [
+    {
+      "type": "linux"
+    }
+  ],
+  "architectures": [
+    "x64"
+  ],
+  "contains": [
+    "clap",
+    "vst3",
+    "vst2",
+    "lv2"
+  ],
+  "type": "archive",
+  "size": 1966228,
+  "sha256": "292b94f635e8adec95f23280fc94f1b6dd954b8a9440f3e51b7e9faa8bdbe543",
+  "url": "https://github.com/AidaDSP/AIDA-X/releases/download/1.1.0/AIDA-X-1.1.0-linux-x86_64.tar.xz"
 }
 ```
 

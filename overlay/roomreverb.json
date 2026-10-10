@@ -1,0 +1,61 @@
+{
+  "catalog_id": "roomreverb",
+  "order": 34,
+  "oas_id": "cvde/roomreverb",
+  "editors_pick": false,
+  "score_note": "Algorithmic reverb with many presets.",
+  "tested_with": null,
+  "description": "A mono or stereo to stereo algorithmic reverb with a large set of room presets: add space to recordings with early reflections, a tail and a few simple controls.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "RoomReverb",
+  "vendor": "Christian Voigt",
+  "kind": "effect",
+  "homepage": "https://github.com/cvde/RoomReverb",
+  "source": "https://github.com/cvde/RoomReverb",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "cvde",
+    "repo": "RoomReverb",
+    "snapshot": {
+      "stars": 148,
+      "pushed_at": "2025-09-15T17:11:38Z",
+      "latest_release": "1.4.1",
+      "at": "2026-10-10"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.elephantdsp.roomreverb"
+      ],
+      "features": [
+        "audio-effect",
+        "reverb"
+      ],
+      "paths": [
+        "CLAP/RoomReverb.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.4.1",
+      "url": "https://github.com/cvde/RoomReverb/releases/download/v1.4.1/RoomReverb-1.4.1-Linux-Plugin-Files.zip",
+      "sha256": "7824c06f9b7e98c8dcd0b94ec8972b10fc19d79a81bb64793ea326f0786c7e9a",
+      "size_bytes": 6828455,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

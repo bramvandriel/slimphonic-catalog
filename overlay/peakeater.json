@@ -1,0 +1,60 @@
+{
+  "catalog_id": "peakeater",
+  "order": 33,
+  "oas_id": "vvvar/peakeater",
+  "editors_pick": false,
+  "score_note": "Simple waveshaper and clipper.",
+  "tested_with": null,
+  "description": "A wave shaper and clipper: it eats the peaks of a signal with an adjustable curve, for loudness, drive and distortion. Small and quick to use. The latest release dates from 2023.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "PeakEater",
+  "vendor": "vvvar",
+  "kind": "effect",
+  "homepage": "https://github.com/vvvar/PeakEater",
+  "source": "https://github.com/vvvar/PeakEater",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "vvvar",
+    "repo": "PeakEater",
+    "snapshot": {
+      "stars": 463,
+      "pushed_at": "2023-08-20T23:56:47Z",
+      "latest_release": "0.8.2",
+      "at": "2026-10-10"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.T-Audio.peakeater"
+      ],
+      "features": [
+        "audio-effect"
+      ],
+      "paths": [
+        "peakeater_artefacts/Release/CLAP/peakeater.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "0.8.2",
+      "url": "https://github.com/vvvar/PeakEater/releases/download/v0.8.2/peakeater-v0.8.2-Linux-x86_64.zip",
+      "sha256": "0ddf7d839fa436e62c2e9d5b1f188d695424d5aba2f242ad0a89bb8634f299b9",
+      "size_bytes": 4586800,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

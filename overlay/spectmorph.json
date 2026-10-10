@@ -1,0 +1,62 @@
+{
+  "catalog_id": "spectmorph",
+  "order": 37,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Spectral morphing between instruments. Beta.",
+  "tested_with": null,
+  "description": "A spectral synthesizer that morphs between analysed instrument sounds (winds, strings, voices) to make hybrid timbres that still sound natural. Controlled by a morph plan you edit in its own window. This is a beta release.",
+  "experimental": true,
+  "rolling_tag": false,
+  "name": "SpectMorph",
+  "vendor": "Stefan Westerfeld",
+  "kind": "instrument",
+  "homepage": "https://www.spectmorph.org/",
+  "source": "https://github.com/swesterfeld/spectmorph",
+  "image": null,
+  "license": {
+    "spdx": "LGPL-2.1"
+  },
+  "github": {
+    "owner": "swesterfeld",
+    "repo": "spectmorph",
+    "snapshot": {
+      "stars": 121,
+      "pushed_at": "2026-10-04T17:10:04Z",
+      "latest_release": "1.0.0-beta3",
+      "at": "2026-10-10"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.spectmorph.clap.SpectMorph"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer"
+      ],
+      "paths": [
+        "spectmorph-1.0.0-beta3-x86_64/clap/SpectMorph.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.0.0-beta3",
+      "url": "https://github.com/swesterfeld/spectmorph/releases/download/1.0.0-beta3/spectmorph-1.0.0-beta3-x86_64.tar.xz",
+      "sha256": "5c8ca188c3a254ee65651b047049fb1eec81d1456b58659416ab92fbd75b626d",
+      "size_bytes": 70682216,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Beta release. SpectMorph also needs its instruments and fonts in ~/.local/share/spectmorph, which this install does not place: download the same release tarball from the project page, unpack it and run its install.sh, or install the distribution package.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

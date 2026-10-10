@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-09",
+  "generated_at": "2026-10-10",
   "min_app_version": "0.7.0",
   "plugins": [
     {
@@ -2515,6 +2515,731 @@
           "post_install_notes": "No binary release exists. Install the distribution package, then Slimphonic finds it. It starts without Vital's factory presets.",
           "link_url": "https://github.com/DISTRHO/DISTRHO-Ports",
           "link_label": "Open the project page"
+        }
+      }
+    },
+    {
+      "catalog_id": "aeolus",
+      "name": "Aeolus",
+      "vendor": "Archie3d",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/Archie3d/aeolus_plugin"
+      },
+      "description": "A pipe organ emulator built on additive synthesis, a plugin version of the Aeolus organ: a church-organ sound for playing or writing organ parts. Needs no sample libraries.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/archie3d/aeolus/aeolus.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/Archie3d/aeolus_plugin",
+      "source": "https://github.com/Archie3d/aeolus_plugin",
+      "github": {
+        "owner": "Archie3d",
+        "repo": "aeolus_plugin",
+        "snapshot": {
+          "stars": 169,
+          "pushed_at": "2026-01-11T00:21:37Z",
+          "latest_release": "0.3.0",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "A pipe organ, nothing else like it here.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.ArthurBenilov.Aeolus"
+          ],
+          "features": [
+            "instrument",
+            "virtual analog"
+          ],
+          "paths": [
+            "Aeolus.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "0.3.0",
+          "url": "https://github.com/Archie3d/aeolus_plugin/releases/download/v0.3.0/Aeolus-clap-linux-0.3.0.zip",
+          "sha256": "498170149337c7d2ce19783156522d3bf489f811c2a61b7323b64071882cc370",
+          "size_bytes": 8378137,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "peakeater",
+      "name": "PeakEater",
+      "vendor": "vvvar",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/vvvar/PeakEater"
+      },
+      "description": "A wave shaper and clipper: it eats the peaks of a signal with an adjustable curve, for loudness, drive and distortion. Small and quick to use. The latest release dates from 2023.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/vvvar/peakeater/peakeater.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/vvvar/PeakEater",
+      "source": "https://github.com/vvvar/PeakEater",
+      "github": {
+        "owner": "vvvar",
+        "repo": "PeakEater",
+        "snapshot": {
+          "stars": 463,
+          "pushed_at": "2023-08-20T23:56:47Z",
+          "latest_release": "0.8.2",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Simple waveshaper and clipper.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.T-Audio.peakeater"
+          ],
+          "features": [
+            "audio-effect"
+          ],
+          "paths": [
+            "peakeater_artefacts/Release/CLAP/peakeater.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "0.8.2",
+          "url": "https://github.com/vvvar/PeakEater/releases/download/v0.8.2/peakeater-v0.8.2-Linux-x86_64.zip",
+          "sha256": "0ddf7d839fa436e62c2e9d5b1f188d695424d5aba2f242ad0a89bb8634f299b9",
+          "size_bytes": 4586800,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "roomreverb",
+      "name": "RoomReverb",
+      "vendor": "Christian Voigt",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/cvde/RoomReverb"
+      },
+      "description": "A mono or stereo to stereo algorithmic reverb with a large set of room presets: add space to recordings with early reflections, a tail and a few simple controls.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/cvde/roomreverb/roomreverb.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/cvde/RoomReverb",
+      "source": "https://github.com/cvde/RoomReverb",
+      "github": {
+        "owner": "cvde",
+        "repo": "RoomReverb",
+        "snapshot": {
+          "stars": 148,
+          "pushed_at": "2025-09-15T17:11:38Z",
+          "latest_release": "1.4.1",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Algorithmic reverb with many presets.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.elephantdsp.roomreverb"
+          ],
+          "features": [
+            "audio-effect",
+            "reverb"
+          ],
+          "paths": [
+            "CLAP/RoomReverb.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.4.1",
+          "url": "https://github.com/cvde/RoomReverb/releases/download/v1.4.1/RoomReverb-1.4.1-Linux-Plugin-Files.zip",
+          "sha256": "7824c06f9b7e98c8dcd0b94ec8972b10fc19d79a81bb64793ea326f0786c7e9a",
+          "size_bytes": 6828455,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "terrain",
+      "name": "Terrain",
+      "vendor": "Aaron Anderson",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/aaronaanderson/Terrain"
+      },
+      "description": "A wave terrain synthesizer: the oscillator reads a two-dimensional surface along a path you shape, which gives evolving timbres that ordinary wavetables do not.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/aaronaanderson/terrain/terrain.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/aaronaanderson/Terrain",
+      "source": "https://github.com/aaronaanderson/Terrain",
+      "github": {
+        "owner": "aaronaanderson",
+        "repo": "Terrain",
+        "snapshot": {
+          "stars": 235,
+          "pushed_at": "2025-10-04T21:19:30Z",
+          "latest_release": "1.2.2",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Wave terrain synthesis, an unusual oscillator.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.AaronAnderson.WaveTerrainSynth"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "Terrain_1.2.2_Linux/Terrain.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.2.2",
+          "url": "https://github.com/aaronaanderson/Terrain/releases/download/1.2.2/Terrain_1.2.2_Linux.tar.gz",
+          "sha256": "0039004fc91161ac1b7a5429b2aaebffc8cb41b9106b2c076e5cee5dad6922c6",
+          "size_bytes": 6792615,
+          "archive": "tar.gz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "actuate",
+      "name": "Actuate",
+      "vendor": "Ardura",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/ardura/Actuate"
+      },
+      "description": "A subtractive and additive synthesizer combined with a sampler and a granulizer. Written in Rust.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/ardura/actuate/actuate.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/ardura/Actuate",
+      "source": "https://github.com/ardura/Actuate",
+      "github": {
+        "owner": "ardura",
+        "repo": "Actuate",
+        "snapshot": {
+          "stars": 151,
+          "pushed_at": "2026-06-04T16:05:07Z",
+          "latest_release": "1.4.5",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Synth, sampler and granulizer in one.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.ardura.actuate"
+          ],
+          "features": [
+            "instrument",
+            "sampler"
+          ],
+          "paths": [
+            "Actuate.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.4.5",
+          "url": "https://github.com/ardura/Actuate/releases/download/v1.4.5/Actuate_v145_linux_build.zip",
+          "sha256": "00fbd335884bad1b83189fb3b04c65c25ebd0736bff881d2914249f10863901a",
+          "size_bytes": 9391468,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "spectmorph",
+      "name": "SpectMorph",
+      "vendor": "Stefan Westerfeld",
+      "kind": "instrument",
+      "experimental": true,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "LGPL-2.1",
+        "url": "https://github.com/swesterfeld/spectmorph"
+      },
+      "description": "A spectral synthesizer that morphs between analysed instrument sounds (winds, strings, voices) to make hybrid timbres that still sound natural. Controlled by a morph plan you edit in its own window. This is a beta release.",
+      "image": null,
+      "homepage": "https://www.spectmorph.org/",
+      "source": "https://github.com/swesterfeld/spectmorph",
+      "github": {
+        "owner": "swesterfeld",
+        "repo": "spectmorph",
+        "snapshot": {
+          "stars": 121,
+          "pushed_at": "2026-10-04T17:10:04Z",
+          "latest_release": "1.0.0-beta3",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Spectral morphing between instruments. Beta.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.spectmorph.clap.SpectMorph"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "spectmorph-1.0.0-beta3-x86_64/clap/SpectMorph.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.0.0-beta3",
+          "url": "https://github.com/swesterfeld/spectmorph/releases/download/1.0.0-beta3/spectmorph-1.0.0-beta3-x86_64.tar.xz",
+          "sha256": "5c8ca188c3a254ee65651b047049fb1eec81d1456b58659416ab92fbd75b626d",
+          "size_bytes": 70682216,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Beta release. SpectMorph also needs its instruments and fonts in ~/.local/share/spectmorph, which this install does not place: download the same release tarball from the project page, unpack it and run its install.sh, or install the distribution package.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "vitalium-verb",
+      "name": "Vitalium Verb",
+      "vendor": "Billy Messenger",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/BillyDM/vitalium-verb"
+      },
+      "description": "The reverb module from the Vital synthesizer as a stand-alone effect: a lush algorithmic reverb with size, decay, pre-delay and filtering controls, ported to Rust. Built on Ubuntu 22.04.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/billydm/vitalium-verb/vitalium-verb.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/BillyDM/vitalium-verb",
+      "source": "https://github.com/BillyDM/vitalium-verb",
+      "github": {
+        "owner": "BillyDM",
+        "repo": "vitalium-verb",
+        "snapshot": {
+          "stars": 62,
+          "pushed_at": "2026-06-29T20:00:09Z",
+          "latest_release": "1.3.0",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "The Vital synth reverb as a plugin.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.github.billydm.vitalium-verb"
+          ],
+          "features": [
+            "audio-effect",
+            "stereo",
+            "reverb"
+          ],
+          "paths": [
+            "vitaliumverb-2025-10-03-191034-ubuntu-22.04/VitaliumVerb.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.3.0",
+          "url": "https://github.com/BillyDM/vitalium-verb/releases/download/v1.3.0/vitaliumverb-1.3.0-ubuntu-22.04.zip",
+          "sha256": "4bb235588bea15af8756f11f35e05285b499a32390c57e21d5cbde932bc31792",
+          "size_bytes": 7784042,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": "2.35",
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "sfzq",
+      "name": "sfzq",
+      "vendor": "Steve Folta",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "MIT",
+        "url": "https://github.com/stevefolta/sfzq"
+      },
+      "description": "A small sampler that plays SFZ instruments and SF2 soundfonts, written for Linux. It is the player only: bring your own instrument files.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/stevefolta/sfzq/sfzq.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://github.com/stevefolta/sfzq",
+      "source": "https://github.com/stevefolta/sfzq",
+      "github": {
+        "owner": "stevefolta",
+        "repo": "sfzq",
+        "snapshot": {
+          "stars": 31,
+          "pushed_at": "2025-07-16T01:14:08Z",
+          "latest_release": "1.0.0",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Plays SFZ and SF2 soundfonts.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "net.stevefolta.sfzq"
+          ],
+          "features": [
+            "instrument",
+            "sampler",
+            "stereo"
+          ],
+          "paths": [
+            "sfzq.2024.12.3.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.0.0",
+          "url": "https://github.com/stevefolta/sfzq/releases/download/v1.0.0/sfzq.2024.12.3.clap.tgz",
+          "sha256": "51e907f77e122098e45e1248857be88b61e9b4cdf5e60c114a308350c292aa70",
+          "size_bytes": 535718,
+          "archive": "tar.gz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "No sounds are included: it needs .sfz or .sf2 files, which you load from its own window.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "floe",
+      "name": "Floe",
+      "vendor": "Floe Audio",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/floe-audio/Floe"
+      },
+      "description": "A streamlined sample-based instrument platform: it loads and plays sample libraries in the Floe format, with layers, a filter and effects. The libraries themselves are separate downloads.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/floe-audio/floe/floe.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://floe.audio/",
+      "source": "https://github.com/floe-audio/Floe",
+      "github": {
+        "owner": "floe-audio",
+        "repo": "Floe",
+        "snapshot": {
+          "stars": 93,
+          "pushed_at": "2026-10-01T11:10:01Z",
+          "latest_release": "2.0.3",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Sample library player; libraries are separate.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.floe-audio.floe"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer",
+            "stereo"
+          ],
+          "paths": [
+            "Floe.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2.0.3",
+          "url": "https://github.com/floe-audio/Floe/releases/download/v2.0.3/Floe-CLAP-v2.0.3-Linux.tar.gz",
+          "sha256": "9126c13cb268bd9e939f7a18f663f5c853c5a8a7ca0f77635e4a8574887176fd",
+          "size_bytes": 30021745,
+          "archive": "tar.gz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Plays Floe libraries, which are downloaded separately from floe.audio (often several GB each). Without one it makes no sound.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "plugdata",
+      "name": "plugdata",
+      "vendor": "plugdata",
+      "kind": "both",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/plugdata-team/plugdata"
+      },
+      "description": "Pure Data as a plugin: visual patching to build synths, effects and generative tools inside your DAW, with the ELSE collection of externals included. Ships as an instrument and an effect plugin. A large download.",
+      "image": {
+        "url": "https://open-audio-stack.github.io/open-audio-stack-registry/plugins/plugdata-team/plugdata/plugdata.jpg",
+        "sha256": ""
+      },
+      "homepage": "https://plugdata.org/",
+      "source": "https://github.com/plugdata-team/plugdata",
+      "github": {
+        "owner": "plugdata-team",
+        "repo": "plugdata",
+        "snapshot": {
+          "stars": 2362,
+          "pushed_at": "2026-10-08T18:18:34Z",
+          "latest_release": "0.9.3-2",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Pure Data as a plugin. Large: 290 MB.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.timothyschoen.plugdata",
+            "com.timothyschoen.plugdata-fx"
+          ],
+          "features": [
+            "instrument",
+            "audio-effect"
+          ],
+          "paths": [
+            "plugdata/CLAP/plugdata.clap",
+            "plugdata/CLAP/plugdata-fx.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "0.9.3-2",
+          "url": "https://github.com/plugdata-team/plugdata/releases/download/v0.9.3-2/plugdata-Debian-x64.tar.xz",
+          "sha256": "6ef4a01625540692593e68506c1c2c18eeeeb7923b16463ac1569725d2f1cad0",
+          "size_bytes": 291225692,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Large download: about 290 MB, and about 150 MB on disk once installed (two plugin files). A whole patching environment: the first start indexes its objects and can take a moment.",
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "aida-x",
+      "name": "AIDA-X",
+      "vendor": "AIDA DSP",
+      "kind": "effect",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/AidaDSP/AIDA-X"
+      },
+      "description": "A neural amp and pedal modeller: it runs trained models of guitar amps and effects in real time, with an EQ, a gate and a cabinet impulse response around the model. Bring your own model files.",
+      "image": null,
+      "homepage": "https://github.com/AidaDSP/AIDA-X",
+      "source": "https://github.com/AidaDSP/AIDA-X",
+      "github": {
+        "owner": "AidaDSP",
+        "repo": "AIDA-X",
+        "snapshot": {
+          "stars": 276,
+          "pushed_at": "2024-12-13T23:46:41Z",
+          "latest_release": "1.1.0",
+          "at": "2026-10-10"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Neural amp and pedal modeller.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "cc.aidadsp.rt-neural-loader"
+          ],
+          "features": [
+            "audio-effect",
+            "multi-effects",
+            "mono"
+          ],
+          "paths": [
+            "AIDA-X-1.1.0/AIDA-X.clap"
+          ]
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.1.0",
+          "url": "https://github.com/AidaDSP/AIDA-X/releases/download/1.1.0/AIDA-X-1.1.0-linux-x86_64.tar.xz",
+          "sha256": "292b94f635e8adec95f23280fc94f1b6dd954b8a9440f3e51b7e9faa8bdbe543",
+          "size_bytes": 1966228,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Loads AIDA-X and NAM-style model files; none are included. Download models from the AIDA DSP model zoo.",
+          "link_url": null,
+          "link_label": null
         }
       }
     }

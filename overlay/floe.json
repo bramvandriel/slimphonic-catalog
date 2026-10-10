@@ -1,0 +1,62 @@
+{
+  "catalog_id": "floe",
+  "order": 40,
+  "oas_id": "floe-audio/floe",
+  "editors_pick": false,
+  "score_note": "Sample library player; libraries are separate.",
+  "tested_with": null,
+  "description": "A streamlined sample-based instrument platform: it loads and plays sample libraries in the Floe format, with layers, a filter and effects. The libraries themselves are separate downloads.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Floe",
+  "vendor": "Floe Audio",
+  "kind": "instrument",
+  "homepage": "https://floe.audio/",
+  "source": "https://github.com/floe-audio/Floe",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "floe-audio",
+    "repo": "Floe",
+    "snapshot": {
+      "stars": 93,
+      "pushed_at": "2026-10-01T11:10:01Z",
+      "latest_release": "2.0.3",
+      "at": "2026-10-10"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.floe-audio.floe"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer",
+        "stereo"
+      ],
+      "paths": [
+        "Floe.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2.0.3",
+      "url": "https://github.com/floe-audio/Floe/releases/download/v2.0.3/Floe-CLAP-v2.0.3-Linux.tar.gz",
+      "sha256": "9126c13cb268bd9e939f7a18f663f5c853c5a8a7ca0f77635e4a8574887176fd",
+      "size_bytes": 30021745,
+      "archive": "tar.gz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Plays Floe libraries, which are downloaded separately from floe.audio (often several GB each). Without one it makes no sound.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "catalog_id": "sfzq",
+  "order": 39,
+  "oas_id": "stevefolta/sfzq",
+  "editors_pick": false,
+  "score_note": "Plays SFZ and SF2 soundfonts.",
+  "tested_with": null,
+  "description": "A small sampler that plays SFZ instruments and SF2 soundfonts, written for Linux. It is the player only: bring your own instrument files.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "sfzq",
+  "vendor": "Steve Folta",
+  "kind": "instrument",
+  "homepage": "https://github.com/stevefolta/sfzq",
+  "source": "https://github.com/stevefolta/sfzq",
+  "license": {
+    "spdx": "MIT"
+  },
+  "github": {
+    "owner": "stevefolta",
+    "repo": "sfzq",
+    "snapshot": {
+      "stars": 31,
+      "pushed_at": "2025-07-16T01:14:08Z",
+      "latest_release": "1.0.0",
+      "at": "2026-10-10"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "net.stevefolta.sfzq"
+      ],
+      "features": [
+        "instrument",
+        "sampler",
+        "stereo"
+      ],
+      "paths": [
+        "sfzq.2024.12.3.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.0.0",
+      "url": "https://github.com/stevefolta/sfzq/releases/download/v1.0.0/sfzq.2024.12.3.clap.tgz",
+      "sha256": "51e907f77e122098e45e1248857be88b61e9b4cdf5e60c114a308350c292aa70",
+      "size_bytes": 535718,
+      "archive": "tar.gz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "No sounds are included: it needs .sfz or .sf2 files, which you load from its own window.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

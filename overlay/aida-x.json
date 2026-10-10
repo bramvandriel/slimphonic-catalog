@@ -1,0 +1,63 @@
+{
+  "catalog_id": "aida-x",
+  "order": 42,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Neural amp and pedal modeller.",
+  "tested_with": null,
+  "description": "A neural amp and pedal modeller: it runs trained models of guitar amps and effects in real time, with an EQ, a gate and a cabinet impulse response around the model. Bring your own model files.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "AIDA-X",
+  "vendor": "AIDA DSP",
+  "kind": "effect",
+  "homepage": "https://github.com/AidaDSP/AIDA-X",
+  "source": "https://github.com/AidaDSP/AIDA-X",
+  "image": null,
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "AidaDSP",
+    "repo": "AIDA-X",
+    "snapshot": {
+      "stars": 276,
+      "pushed_at": "2024-12-13T23:46:41Z",
+      "latest_release": "1.1.0",
+      "at": "2026-10-10"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "cc.aidadsp.rt-neural-loader"
+      ],
+      "features": [
+        "audio-effect",
+        "multi-effects",
+        "mono"
+      ],
+      "paths": [
+        "AIDA-X-1.1.0/AIDA-X.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.1.0",
+      "url": "https://github.com/AidaDSP/AIDA-X/releases/download/1.1.0/AIDA-X-1.1.0-linux-x86_64.tar.xz",
+      "sha256": "292b94f635e8adec95f23280fc94f1b6dd954b8a9440f3e51b7e9faa8bdbe543",
+      "size_bytes": 1966228,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Loads AIDA-X and NAM-style model files; none are included. Download models from the AIDA DSP model zoo.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "catalog_id": "plugdata",
+  "order": 41,
+  "oas_id": "plugdata-team/plugdata",
+  "editors_pick": false,
+  "score_note": "Pure Data as a plugin. Large: 290 MB.",
+  "tested_with": null,
+  "description": "Pure Data as a plugin: visual patching to build synths, effects and generative tools inside your DAW, with the ELSE collection of externals included. Ships as an instrument and an effect plugin. A large download.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "plugdata",
+  "vendor": "plugdata",
+  "kind": "both",
+  "homepage": "https://plugdata.org/",
+  "source": "https://github.com/plugdata-team/plugdata",
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "plugdata-team",
+    "repo": "plugdata",
+    "snapshot": {
+      "stars": 2362,
+      "pushed_at": "2026-10-08T18:18:34Z",
+      "latest_release": "0.9.3-2",
+      "at": "2026-10-10"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.timothyschoen.plugdata",
+        "com.timothyschoen.plugdata-fx"
+      ],
+      "features": [
+        "instrument",
+        "audio-effect"
+      ],
+      "paths": [
+        "plugdata/CLAP/plugdata.clap",
+        "plugdata/CLAP/plugdata-fx.clap"
+      ]
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "0.9.3-2",
+      "url": "https://github.com/plugdata-team/plugdata/releases/download/v0.9.3-2/plugdata-Debian-x64.tar.xz",
+      "sha256": "6ef4a01625540692593e68506c1c2c18eeeeb7923b16463ac1569725d2f1cad0",
+      "size_bytes": 291225692,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Large download: about 290 MB, and about 150 MB on disk once installed (two plugin files). A whole patching environment: the first start indexes its objects and can take a moment.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}
