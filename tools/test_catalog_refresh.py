@@ -15,6 +15,7 @@ spec.loader.exec_module(cr)
 
 OAS = json.loads((ROOT / "oas" / "index.json").read_text("utf-8"))
 OVERLAYS = cr.load_overlays(ROOT / "overlay")
+HIDDEN = cr.load_hidden(ROOT / "hidden.json")
 
 
 def file(url, system="linux", arch="x64", sha="a" * 64):
@@ -119,7 +120,7 @@ class ReproductionTests(unittest.TestCase):
     def test_linux_json_is_reproduced_byte_for_byte(self):
         committed = (ROOT / "linux.json").read_text("utf-8")
         date = json.loads(committed)["generated_at"]
-        out = cr.render(cr.build(OAS, OVERLAYS, "linux-x86_64", date))
+        out = cr.render(cr.build(OAS, OVERLAYS, "linux-x86_64", date, HIDDEN))
         self.assertEqual(out, committed)
 
     def test_entries_are_in_overlay_order(self):
@@ -131,7 +132,7 @@ class ReproductionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             out = Path(d) / "out.json"
             rc = cr.main(["--oas", str(ROOT / "oas/index.json"), "--overlay", str(ROOT / "overlay"),
-                          "--out", str(out), "--date", "2026-01-02"])
+                          "--hidden", str(ROOT / "hidden.json"), "--out", str(out), "--date", "2026-01-02"])
             self.assertEqual(rc, 0)
             self.assertEqual(cr.validate(out.read_text("utf-8")), [])
             self.assertEqual(json.loads(out.read_text("utf-8"))["generated_at"], "2026-01-02")
@@ -186,6 +187,19 @@ class ValidatorTests(unittest.TestCase):
         def extra(m): m["plugins"][0]["surprise"] = 1
         self.assertTrue(any("twice" in e for e in self.errors(dup)))
         self.assertTrue(any("unknown field" in e for e in self.errors(extra)))
+
+    def test_rejects_a_malformed_or_repeated_hidden_key(self):
+        def junk(m): m["hidden"][0]["key"] = "ladspa:abc"
+        def short(m): m["hidden"][0]["key"] = "vst3:ABCD"
+        def dup(m): m["hidden"][1]["key"] = m["hidden"][0]["key"]
+        def extra(m): m["hidden"][0]["why"] = "x"
+        self.assertTrue(any("is not clap" in e for e in self.errors(junk)))
+        self.assertTrue(any("is not clap" in e for e in self.errors(short)))
+        self.assertTrue(any("twice" in e for e in self.errors(dup)))
+        self.assertTrue(any("unknown field" in e for e in self.errors(extra)))
+
+    def test_the_hidden_list_has_the_thirty_editor_plugins(self):
+        self.assertEqual(len(self.manifest()["hidden"]), 30)
 
     def test_manual_link_rules(self):
         def with_url(m):

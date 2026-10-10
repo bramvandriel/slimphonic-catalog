@@ -24,7 +24,7 @@ are contributed back upstream.
 `linux.json` is generated; edit `overlay/<catalog_id>.json`, not the manifest.
 
 ```
-python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --out linux.json
+python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --hidden hidden.json --out linux.json
 python3 -I -m unittest discover -s tools
 git diff linux.json
 ```
@@ -50,6 +50,17 @@ An overlay file holds what OAS cannot provide, and wins over OAS wherever it set
 the given directories (tar, unzip, 7z, ar; nothing is extracted) and checks that every plugin
 glob and companion matches a member and that size and sha256 equal the pin.
 `upstream/open-audio-stack.md` lists the corrections to send to the Open Audio Stack registry.
+
+## The Editor-hidden list
+
+`hidden.json` (repository root) is the list of plugins the app puts under the Browser's
+**Hidden** header for everyone, "hidden by the Editor": `[{"key": "ladspa:2601", "name":
+"C* CabinetIII"}, ...]`. `key` is the app's plugin key: `clap:<plugin id>`, `vst3:<32
+lowercase hex class id>` or `ladspa:<UniqueID>`; `name` is for the human reading this file.
+The script copies it into `linux.json` as the top-level `hidden` list (it is not an overlay:
+one overlay per catalogue entry). A user can still unhide any of them. To change the list,
+edit `hidden.json`, regenerate, run the tests and copy `linux.json` into the app's
+`catalog/`.
 
 ## Contributing
 

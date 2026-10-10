@@ -3243,5 +3243,127 @@
         }
       }
     }
+  ],
+  "hidden": [
+    {
+      "key": "ladspa:2601",
+      "name": "C* CabinetIII"
+    },
+    {
+      "key": "ladspa:1770",
+      "name": "C* CEO"
+    },
+    {
+      "key": "ladspa:1769",
+      "name": "C* Click (Metronome)"
+    },
+    {
+      "key": "ladspa:1773",
+      "name": "C* Eq10"
+    },
+    {
+      "key": "ladspa:2594",
+      "name": "C* Eq10X2"
+    },
+    {
+      "key": "ladspa:2608",
+      "name": "C* Eq4p"
+    },
+    {
+      "key": "ladspa:2609",
+      "name": "C* EqFA4p"
+    },
+    {
+      "key": "ladspa:1774",
+      "name": "C* Fractal"
+    },
+    {
+      "key": "ladspa:1779",
+      "name": "C* Plate"
+    },
+    {
+      "key": "ladspa:1771",
+      "name": "C* Saturate"
+    },
+    {
+      "key": "ladspa:2588",
+      "name": "C* Scape"
+    },
+    {
+      "key": "ladspa:1781",
+      "name": "C* Sin"
+    },
+    {
+      "key": "ladspa:2603",
+      "name": "C* Spice"
+    },
+    {
+      "key": "ladspa:2589",
+      "name": "C* ToneStack"
+    },
+    {
+      "key": "ladspa:1785",
+      "name": "C* White"
+    },
+    {
+      "key": "ladspa:1788",
+      "name": "C* Wider"
+    },
+    {
+      "key": "ladspa:2146",
+      "name": "TAP AutoPanner"
+    },
+    {
+      "key": "ladspa:2159",
+      "name": "TAP Chorus/Flanger"
+    },
+    {
+      "key": "ladspa:2152",
+      "name": "TAP Dynamics (M)"
+    },
+    {
+      "key": "ladspa:2153",
+      "name": "TAP Dynamics (St)"
+    },
+    {
+      "key": "ladspa:2141",
+      "name": "TAP Equalizer"
+    },
+    {
+      "key": "ladspa:2151",
+      "name": "TAP Equalizer/BW"
+    },
+    {
+      "key": "ladspa:2156",
+      "name": "TAP Fractal Doubler"
+    },
+    {
+      "key": "ladspa:2155",
+      "name": "TAP Pink/Fractal Noise"
+    },
+    {
+      "key": "ladspa:2154",
+      "name": "TAP Reflector"
+    },
+    {
+      "key": "ladspa:2142",
+      "name": "TAP Reverberator"
+    },
+    {
+      "key": "ladspa:2145",
+      "name": "TAP Scaling Limiter"
+    },
+    {
+      "key": "ladspa:2157",
+      "name": "TAP Sigmoid Booster"
+    },
+    {
+      "key": "ladspa:2144",
+      "name": "TAP Tremolo"
+    },
+    {
+      "key": "ladspa:2158",
+      "name": "TAP TubeWarmth"
+    }
   ]
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds linux.json from the vendored Open Audio Stack snapshot plus the overlay.
 
-    python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --out linux.json
+    python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --hidden hidden.json --out linux.json
 
 Open Audio Stack (CC0) supplies what it knows (name, author, type, licence, homepage, image);
 the overlay (overlay/<catalog_id>.json) supplies what it cannot (archive paths, pinned
@@ -51,6 +51,7 @@ INSTALL_KEYS = [
     "kind", "version", "url", "sha256", "size_bytes", "archive", "companions", "min_glibc",
     "distro_hint", "post_install_notes", "link_url", "link_label",
 ]
+HIDDEN_KEYS = ["key", "name"]
 ROLLING_TAGS = ("nightly", "latest", "dawplugin")
 
 
@@ -193,13 +194,18 @@ def load_overlays(directory):
     return overlays
 
 
-def build(oas, overlays, platform, date):
+def load_hidden(path):
+    return json.loads(Path(path).read_text("utf-8"))
+
+
+def build(oas, overlays, platform, date, hidden):
     plugins = [build_entry(o, oas, platform) for o in overlays if platform in o["install"]]
     return {
         "schema_version": SCHEMA_VERSION,
         "generated_at": date,
         "min_app_version": MIN_APP_VERSION,
         "plugins": plugins,
+        "hidden": [{k: h[k] for k in HIDDEN_KEYS} for h in hidden],
     }
 
 
@@ -215,6 +221,7 @@ MAX_ARCHIVE_BYTES = 4 * 1024**3
 ASSET_HOSTS = ("github.com", "objects.githubusercontent.com", "release-assets.githubusercontent.com")
 ARCHIVES = ("tar.gz", "tar.xz", "tgz", "zip", "7z", "deb", "none")
 INSTALL_KINDS = ("github-release-asset", "deb-asset", "manual-link")
+PLUGIN_KEY = re.compile(r"clap:[^\x00-\x1f\x7f]{1,256}|vst3:[0-9a-f]{32}|ladspa:[0-9]{1,20}")
 INSTALL_TO = ("ClapDir", "Vst3Dir", "SurgeData")
 
 
@@ -327,7 +334,8 @@ def validate(text):
         return ["not a catalogue manifest: no schema_version"]
     if data["schema_version"] > SCHEMA_VERSION:
         return [f"schema_version {data['schema_version']} is newer than this app understands"]
-    if not c.keys("catalogue", data, ["schema_version", "generated_at", "min_app_version", "plugins"]):
+    if not c.keys("catalogue", data, ["schema_version", "generated_at", "min_app_version", "plugins",
+                          "hidden"]):
         return c.errors
     c.date("generated_at", data["generated_at"])
     if not re.fullmatch(r"\d+\.\d+\.\d+", str(data["min_app_version"])):
@@ -337,6 +345,8 @@ def validate(text):
         return c.errors + ["plugins: must be a list"]
     if len(plugins) > MAX_ENTRIES:
         return c.errors + [f"plugins: more than {MAX_ENTRIES} entries"]
+    _hidden(c, data["hidden"])
+    c.context = ""
     seen = set()
     for e in plugins:
         c.context = ""
@@ -350,6 +360,26 @@ def validate(text):
         c.context = str(cid)
         _entry(c, e)
     return c.errors
+
+
+def _hidden(c, hidden):
+    """The Editor-hidden list: PluginKey syntax (see src/plugin_key.rs), unique keys."""
+    c.context = "hidden"
+    if not isinstance(hidden, list):
+        return c.fail("hidden", "must be a list")
+    if len(hidden) > MAX_ENTRIES:
+        return c.fail("hidden", f"more than {MAX_ENTRIES} entries")
+    seen = set()
+    for h in hidden:
+        if not c.keys("hidden entry", h, HIDDEN_KEYS):
+            continue
+        key = h["key"]
+        if not (isinstance(key, str) and PLUGIN_KEY.fullmatch(key)):
+            c.fail("key", f"{key!r} is not clap:<id>, vst3:<32 hex> or ladspa:<number>")
+        elif key in seen:
+            c.fail("key", f"{key!r} appears twice")
+        seen.add(key)
+        c.text("name", h["name"], MAX_NAME)
 
 
 def _entry(c, e):
@@ -496,6 +526,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--oas", required=True, help="OAS index.json snapshot")
     ap.add_argument("--overlay", required=True, help="directory of overlay/<catalog_id>.json")
+    ap.add_argument("--hidden", required=True, help="hidden.json, the Editor-hidden plugin keys")
     ap.add_argument("--out", required=True, help="manifest to write")
     ap.add_argument("--platform", default=DEFAULT_PLATFORM, choices=sorted(PLATFORMS))
     ap.add_argument("--date", default=None, help="generated_at (default: today)")
@@ -508,7 +539,7 @@ def main(argv=None):
         if package is not None:
             for line in drift(o, latest_version(package)[1], args.platform):
                 print("note:", line, file=sys.stderr)
-    text = render(build(oas, overlays, args.platform, date))
+    text = render(build(oas, overlays, args.platform, date, load_hidden(args.hidden)))
     errors = validate(text)
     if errors:
         print("the generated manifest is invalid:", *errors, sep="\n  ", file=sys.stderr)
