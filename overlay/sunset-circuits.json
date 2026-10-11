@@ -2,7 +2,7 @@
   "catalog_id": "sunset-circuits",
   "order": 43,
   "oas_id": null,
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "Six vintage-style synth engines in one plugin.",
   "tested_with": null,
   "description": "A polyphonic synthesizer with six engines modelled on classic hardware: a Juno-style DCO synth with BBD chorus, a Prophet-style poly-mod synth, a mono lead, a semi-modular voice with spring reverb, a four-operator FM synth and an acid box with a 16-step sequencer. Heavier on the CPU than most synths here.",

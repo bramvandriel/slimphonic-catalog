@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-11",
+  "generated_at": "2026-10-12",
   "min_app_version": "0.7.0",
   "plugins": [
     {
@@ -3269,7 +3269,7 @@
         }
       },
       "score": {
-        "editors_pick": false,
+        "editors_pick": true,
         "note": "Six vintage-style synth engines in one plugin.",
         "tested_with": null
       },
