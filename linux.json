@@ -2744,7 +2744,7 @@
         }
       },
       "score": {
-        "editors_pick": false,
+        "editors_pick": true,
         "note": "Wave terrain synthesis, an unusual oscillator.",
         "tested_with": null
       },
@@ -3364,6 +3364,14 @@
     {
       "key": "ladspa:2158",
       "name": "TAP TubeWarmth"
+    },
+    {
+      "key": "clap:net.stevefolta.sfzq",
+      "name": "sfzq"
+    },
+    {
+      "key": "clap:org.surge-synth-team.shortcircuit-xt",
+      "name": "Shortcircuit XT"
     }
   ]
 }

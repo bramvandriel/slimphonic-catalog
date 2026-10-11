@@ -2,7 +2,7 @@
   "catalog_id": "terrain",
   "order": 35,
   "oas_id": "aaronaanderson/terrain",
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "Wave terrain synthesis, an unusual oscillator.",
   "tested_with": null,
   "description": "A wave terrain synthesizer: the oscillator reads a two-dimensional surface along a path you shape, which gives evolving timbres that ordinary wavetables do not.",

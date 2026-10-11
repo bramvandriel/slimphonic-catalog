@@ -118,5 +118,13 @@
   {
     "key": "ladspa:2158",
     "name": "TAP TubeWarmth"
+  },
+  {
+    "key": "clap:net.stevefolta.sfzq",
+    "name": "sfzq"
+  },
+  {
+    "key": "clap:org.surge-synth-team.shortcircuit-xt",
+    "name": "Shortcircuit XT"
   }
 ]
