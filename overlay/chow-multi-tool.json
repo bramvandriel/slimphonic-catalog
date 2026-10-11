@@ -2,7 +2,7 @@
   "catalog_id": "chow-multi-tool",
   "order": 25,
   "oas_id": "chowdhury-dsp/chowmultitool",
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "Several processors in one plugin.",
   "tested_with": null,
   "description": "A multi-purpose audio effect: pick a processor (EQ, filters, waveshaper, mid/side and more) and shape it on screen. A compact toolbox for quick mixing jobs.",

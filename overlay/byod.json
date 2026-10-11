@@ -2,7 +2,7 @@
   "catalog_id": "byod",
   "order": 23,
   "oas_id": "chowdhury-dsp/byod",
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "Modular guitar pedalboard.",
   "tested_with": null,
   "description": "Build-your-own guitar distortion: wire up a chain of distortion, amp, filter and modulation modules in any order, with models of classic pedals and circuits. A guitar effects pedalboard in one plugin.",

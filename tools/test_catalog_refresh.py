@@ -198,8 +198,8 @@ class ValidatorTests(unittest.TestCase):
         self.assertTrue(any("twice" in e for e in self.errors(dup)))
         self.assertTrue(any("unknown field" in e for e in self.errors(extra)))
 
-    def test_the_hidden_list_has_the_thirty_editor_plugins(self):
-        self.assertEqual(len(self.manifest()["hidden"]), 30)
+    def test_the_hidden_list_has_the_editor_plugins(self):
+        self.assertEqual(len(self.manifest()["hidden"]), 32)
 
     def test_manual_link_rules(self):
         def with_url(m):

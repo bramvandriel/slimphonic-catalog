@@ -2,7 +2,7 @@
   "catalog_id": "chow-tape-model",
   "order": 24,
   "oas_id": "chowdhury-dsp/chowtapemodel",
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "Reel-to-reel tape emulation.",
   "tested_with": null,
   "description": "A physical model of a reel-to-reel tape machine: hysteresis, wow and flutter, tape loss and degradation. Adds the warmth and wobble of tape. Started as a Sony TC-260 emulation.",
