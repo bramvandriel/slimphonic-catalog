@@ -1,0 +1,65 @@
+{
+  "catalog_id": "the-usual-suspects",
+  "order": 44,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Hardware emulations; needs ROMs from your own synth.",
+  "tested_with": null,
+  "description": "Cycle-accurate emulations of the DSP inside classic hardware synthesizers: Access Virus A/B/C (Osirus) and TI (OsTIrus), Waldorf microQ (Vavra) and Microwave II (Xenia), Clavia Nord Lead 2x (Nodal Red 2x) and Roland JP-8000 (JE-8086), each its own CLAP plugin for Linux. They need ROM images dumped from your own hardware and make no sound without them; the project's download page explains which ROM each one wants.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "The Usual Suspects",
+  "vendor": "The Usual Suspects (dsp56300)",
+  "kind": "instrument",
+  "homepage": "https://theusualsuspects.io",
+  "source": "https://github.com/dsp56300/gearmulator",
+  "image": null,
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "dsp56300",
+    "repo": "gearmulator",
+    "snapshot": {
+      "stars": 1503,
+      "pushed_at": "2026-10-11T20:46:21Z",
+      "latest_release": "2.2.25",
+      "at": "2026-10-11"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.theusualsuspects.TusV",
+        "com.theusualsuspects.Ttip",
+        "com.theusualsuspects.Tmqs",
+        "com.theusualsuspects.Txts",
+        "com.theusualsuspects.Tn2x",
+        "com.theusualsuspects.Tjpv"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer"
+      ],
+      "paths": []
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "manual-link",
+      "version": null,
+      "url": null,
+      "sha256": null,
+      "size_bytes": null,
+      "archive": "none",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Download the CLAP for the synth you own from the project's page, install it in ~/.clap and add the ROM it asks for. After installing, the plugin appears in the Instruments tab.",
+      "link_url": "https://theusualsuspects.io/downloads/",
+      "link_label": "Open theusualsuspects.io"
+    }
+  }
+}

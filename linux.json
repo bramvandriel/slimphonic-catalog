@@ -3242,6 +3242,143 @@
           "link_label": null
         }
       }
+    },
+    {
+      "catalog_id": "sunset-circuits",
+      "name": "Sunset Circuits",
+      "vendor": "Dusk Audio",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/dusk-audio/dusk-audio-plugins"
+      },
+      "description": "A polyphonic synthesizer with six engines modelled on classic hardware: a Juno-style DCO synth with BBD chorus, a Prophet-style poly-mod synth, a mono lead, a semi-modular voice with spring reverb, a four-operator FM synth and an acid box with a 16-step sequencer. Heavier on the CPU than most synths here.",
+      "image": null,
+      "homepage": "https://github.com/dusk-audio/dusk-audio-plugins",
+      "source": "https://github.com/dusk-audio/dusk-audio-plugins",
+      "github": {
+        "owner": "dusk-audio",
+        "repo": "dusk-audio-plugins",
+        "snapshot": {
+          "stars": 249,
+          "pushed_at": "2026-10-07T23:45:51Z",
+          "latest_release": "sunset-circuits-v1.0.7",
+          "at": "2026-10-11"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Six vintage-style synth engines in one plugin.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.duskaudio.sunset-circuits"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer",
+            "stereo"
+          ],
+          "paths": [
+            "CLAP/sunset-circuits.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "2046504473616c63435373446b737544"
+          ],
+          "bundles": [
+            "VST3/sunset-circuits.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.0.7",
+          "url": "https://github.com/dusk-audio/dusk-audio-plugins/releases/download/sunset-circuits-v1.0.7/sunset-circuits-linux.zip",
+          "sha256": "2602cb2e6a069ef6c1a2977897e976c3ba23d880ad8816fa36a033752602f21c",
+          "size_bytes": 4396358,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "the-usual-suspects",
+      "name": "The Usual Suspects",
+      "vendor": "The Usual Suspects (dsp56300)",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/dsp56300/gearmulator"
+      },
+      "description": "Cycle-accurate emulations of the DSP inside classic hardware synthesizers: Access Virus A/B/C (Osirus) and TI (OsTIrus), Waldorf microQ (Vavra) and Microwave II (Xenia), Clavia Nord Lead 2x (Nodal Red 2x) and Roland JP-8000 (JE-8086), each its own CLAP plugin for Linux. They need ROM images dumped from your own hardware and make no sound without them; the project's download page explains which ROM each one wants.",
+      "image": null,
+      "homepage": "https://theusualsuspects.io",
+      "source": "https://github.com/dsp56300/gearmulator",
+      "github": {
+        "owner": "dsp56300",
+        "repo": "gearmulator",
+        "snapshot": {
+          "stars": 1503,
+          "pushed_at": "2026-10-11T20:46:21Z",
+          "latest_release": "2.2.25",
+          "at": "2026-10-11"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "Hardware emulations; needs ROMs from your own synth.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.theusualsuspects.TusV",
+            "com.theusualsuspects.Ttip",
+            "com.theusualsuspects.Tmqs",
+            "com.theusualsuspects.Txts",
+            "com.theusualsuspects.Tn2x",
+            "com.theusualsuspects.Tjpv"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": []
+        },
+        "vst3": null
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "manual-link",
+          "version": null,
+          "url": null,
+          "sha256": null,
+          "size_bytes": null,
+          "archive": "none",
+          "companions": [],
+          "min_glibc": null,
+          "distro_hint": null,
+          "post_install_notes": "Download the CLAP for the synth you own from the project's page, install it in ~/.clap and add the ROM it asks for. After installing, the plugin appears in the Instruments tab.",
+          "link_url": "https://theusualsuspects.io/downloads/",
+          "link_label": "Open theusualsuspects.io"
+        }
+      }
     }
   ],
   "hidden": [

@@ -1,0 +1,70 @@
+{
+  "catalog_id": "sunset-circuits",
+  "order": 43,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Six vintage-style synth engines in one plugin.",
+  "tested_with": null,
+  "description": "A polyphonic synthesizer with six engines modelled on classic hardware: a Juno-style DCO synth with BBD chorus, a Prophet-style poly-mod synth, a mono lead, a semi-modular voice with spring reverb, a four-operator FM synth and an acid box with a 16-step sequencer. Heavier on the CPU than most synths here.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Sunset Circuits",
+  "vendor": "Dusk Audio",
+  "kind": "instrument",
+  "homepage": "https://github.com/dusk-audio/dusk-audio-plugins",
+  "source": "https://github.com/dusk-audio/dusk-audio-plugins",
+  "image": null,
+  "license": {
+    "spdx": "GPL-3.0"
+  },
+  "github": {
+    "owner": "dusk-audio",
+    "repo": "dusk-audio-plugins",
+    "snapshot": {
+      "stars": 249,
+      "pushed_at": "2026-10-07T23:45:51Z",
+      "latest_release": "sunset-circuits-v1.0.7",
+      "at": "2026-10-11"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.duskaudio.sunset-circuits"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer",
+        "stereo"
+      ],
+      "paths": [
+        "CLAP/sunset-circuits.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "2046504473616c63435373446b737544"
+      ],
+      "bundles": [
+        "VST3/sunset-circuits.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "1.0.7",
+      "url": "https://github.com/dusk-audio/dusk-audio-plugins/releases/download/sunset-circuits-v1.0.7/sunset-circuits-linux.zip",
+      "sha256": "2602cb2e6a069ef6c1a2977897e976c3ba23d880ad8816fa36a033752602f21c",
+      "size_bytes": 4396358,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}
