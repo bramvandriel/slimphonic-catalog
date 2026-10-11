@@ -38,7 +38,10 @@
       ],
       "paths": [
         "Floe.clap"
-      ]
+      ],
+      "categories": {
+        "com.floe-audio.floe": "sampler"
+      }
     },
     "vst3": null
   },

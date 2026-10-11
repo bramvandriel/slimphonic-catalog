@@ -37,7 +37,10 @@
       ],
       "paths": [
         "Terrain_1.2.2_Linux/Terrain.clap"
-      ]
+      ],
+      "categories": {
+        "com.AaronAnderson.WaveTerrainSynth": "wavetable"
+      }
     },
     "vst3": null
   },

@@ -42,7 +42,10 @@
       ],
       "paths": [
         "Ildaeil.clap"
-      ]
+      ],
+      "categories": {
+        "studio.kx.distrho.ildaeil#synth": "modular"
+      }
     },
     "vst3": {
       "class_ids": [],

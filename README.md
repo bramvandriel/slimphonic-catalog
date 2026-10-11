@@ -24,7 +24,8 @@ are contributed back upstream.
 `linux.json` is generated; edit `overlay/<catalog_id>.json`, not the manifest.
 
 ```
-python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --hidden hidden.json --out linux.json
+python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --hidden hidden.json \
+    --categories categories.json --out linux.json
 python3 -I -m unittest discover -s tools
 git diff linux.json
 ```
@@ -61,6 +62,39 @@ The script copies it into `linux.json` as the top-level `hidden` list (it is not
 one overlay per catalogue entry). A user can still unhide any of them. To change the list,
 edit `hidden.json`, regenerate, run the tests and copy `linux.json` into the app's
 `catalog/`.
+
+## Instrument categories
+
+The app's Instruments tab groups plugins by their primary sound source. The manifest's
+top-level `categories` list (`[{"key", "name", "category"}]`, sorted by key) is generated from
+two sources:
+
+- each overlay's `formats.clap.categories` map, `{"<clap plugin id>": "<category>"}`, next to
+  the ids it describes; for a VST3-only entry `formats.vst3.categories`, keyed by class id. A
+  dual-format entry is categorised under its CLAP ids only (the app finds the VST3 face through
+  its alias). The maps are not copied into the entries of `linux.json`.
+- `categories.json` (repository root, hand-edited, sorted by key) for plugins outside the
+  catalogue: the bundled Slim instruments and known system packages.
+
+Categories, in Browser order: `subtractive` (Subtractive and Virtual Analog), `wavetable`,
+`fm`, `additive` (Additive and spectral), `physical` (Physical modelling), `keys` (Keys and
+organs), `sampler`, `drums`, `modular` (Modular, plugin hosts included), `other`. They are
+mutually exclusive; the first rule that fits wins:
+
+1. dedicated to one instrument family (a drum synth, a piano, an organ): `drums` or `keys`,
+   whatever the engine;
+2. recordings are the main sound source: `sampler`;
+3. a patchable environment or a plugin host: `modular`;
+4. otherwise a synth by its primary synthesis method (`subtractive`, `wavetable`, `fm`,
+   `additive`, `physical`); `other` when no single method dominates;
+5. not an instrument, or nothing known: `other`.
+
+The script refuses to write a manifest when a category is unknown, a key has two rows, a map key
+is not one of its format's ids, or an instrument id has no row: every id of an `instrument`
+entry, and for an entry of kind `both` the ids marked `is_instrument` in its committed probe
+output, `probes/<catalog_id>.json` (what the app prints for `SLIMPHONIC_PROBE=<file>
+slimphonic`, the `plugins` of every file of the entry merged into one document; `--probes DIR`
+overrides the directory). Vitalium is exempt until its ids are known.
 
 ## Contributing
 

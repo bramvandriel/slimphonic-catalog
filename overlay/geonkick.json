@@ -34,7 +34,10 @@
       ],
       "bundles": [
         "*/lib/vst3/Geonkick.vst3"
-      ]
+      ],
+      "categories": {
+        "e2cc953290e863f06405e13924e34b24": "drums"
+      }
     }
   },
   "content": null,

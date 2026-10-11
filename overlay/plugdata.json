@@ -39,7 +39,10 @@
       "paths": [
         "plugdata/CLAP/plugdata.clap",
         "plugdata/CLAP/plugdata-fx.clap"
-      ]
+      ],
+      "categories": {
+        "com.timothyschoen.plugdata": "modular"
+      }
     },
     "vst3": null
   },

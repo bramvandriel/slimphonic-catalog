@@ -34,7 +34,10 @@
       ],
       "bundles": [
         "*/VST3/RipplerX.vst3"
-      ]
+      ],
+      "categories": {
+        "abcdef019182faeb54696c7252697078": "physical"
+      }
     }
   },
   "content": null,

@@ -39,7 +39,11 @@
       ],
       "paths": [
         "Cardinal.clap"
-      ]
+      ],
+      "categories": {
+        "studio.kx.distrho.cardinal": "modular",
+        "studio.kx.distrho.cardinal#synth": "modular"
+      }
     },
     "vst3": {
       "class_ids": [

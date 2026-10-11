@@ -41,7 +41,15 @@
         "instrument",
         "synthesizer"
       ],
-      "paths": []
+      "paths": [],
+      "categories": {
+        "com.theusualsuspects.Tjpv": "subtractive",
+        "com.theusualsuspects.Tmqs": "wavetable",
+        "com.theusualsuspects.Tn2x": "subtractive",
+        "com.theusualsuspects.Ttip": "subtractive",
+        "com.theusualsuspects.TusV": "subtractive",
+        "com.theusualsuspects.Txts": "wavetable"
+      }
     },
     "vst3": null
   },

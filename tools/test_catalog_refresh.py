@@ -16,6 +16,8 @@ spec.loader.exec_module(cr)
 OAS = json.loads((ROOT / "oas" / "index.json").read_text("utf-8"))
 OVERLAYS = cr.load_overlays(ROOT / "overlay")
 HIDDEN = cr.load_hidden(ROOT / "hidden.json")
+CATEGORIES = cr.load_categories(ROOT / "categories.json")
+PROBES = cr.load_probes(ROOT / "probes")
 
 
 def file(url, system="linux", arch="x64", sha="a" * 64):
@@ -120,7 +122,7 @@ class ReproductionTests(unittest.TestCase):
     def test_linux_json_is_reproduced_byte_for_byte(self):
         committed = (ROOT / "linux.json").read_text("utf-8")
         date = json.loads(committed)["generated_at"]
-        out = cr.render(cr.build(OAS, OVERLAYS, "linux-x86_64", date, HIDDEN))
+        out = cr.render(cr.build(OAS, OVERLAYS, "linux-x86_64", date, HIDDEN, CATEGORIES, PROBES))
         self.assertEqual(out, committed)
 
     def test_entries_are_in_overlay_order(self):
@@ -132,7 +134,8 @@ class ReproductionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             out = Path(d) / "out.json"
             rc = cr.main(["--oas", str(ROOT / "oas/index.json"), "--overlay", str(ROOT / "overlay"),
-                          "--hidden", str(ROOT / "hidden.json"), "--out", str(out), "--date", "2026-01-02"])
+                          "--hidden", str(ROOT / "hidden.json"), "--categories",
+                          str(ROOT / "categories.json"), "--out", str(out), "--date", "2026-01-02"])
             self.assertEqual(rc, 0)
             self.assertEqual(cr.validate(out.read_text("utf-8")), [])
             self.assertEqual(json.loads(out.read_text("utf-8"))["generated_at"], "2026-01-02")
@@ -206,6 +209,98 @@ class ValidatorTests(unittest.TestCase):
             vital = next(p for p in m["plugins"] if p["catalog_id"] == "vital")
             vital["install"]["linux-x86_64"]["url"] = "https://github.com/a/b.zip"
         self.assertTrue(self.errors(with_url))
+
+
+class CategoryTests(unittest.TestCase):
+    def built(self, overlays=None, extra=None, probes=None):
+        overlays = OVERLAYS if overlays is None else overlays
+        entries = [cr.build_entry(o, OAS, "linux-x86_64") for o in overlays]
+        return cr.category_rows(overlays, entries, CATEGORIES if extra is None else extra,
+                                PROBES if probes is None else probes)
+
+    def overlay(self, catalog_id):
+        return copy.deepcopy(next(o for o in OVERLAYS if o["catalog_id"] == catalog_id))
+
+    def errors(self, overlays=None, extra=None, probes=None):
+        with self.assertRaises(cr.CategoryError) as caught:
+            self.built(overlays, extra, probes)
+        return caught.exception.errors
+
+    def replaced(self, overlay):
+        return [overlay if o["catalog_id"] == overlay["catalog_id"] else o for o in OVERLAYS]
+
+    def test_the_committed_data_is_consistent_and_sorted(self):
+        rows = self.built()
+        self.assertEqual([r["key"] for r in rows], sorted(r["key"] for r in rows))
+        self.assertTrue(all(r["category"] in cr.CATEGORY_IDS for r in rows))
+
+    def test_every_bundled_instrument_has_a_row(self):
+        keys = {r["key"] for r in self.built()}
+        for pid in ("triwave_synth", "luthier", "sampler", "drumkit"):
+            self.assertIn(f"clap:com.slimphonic.{pid}", keys)
+
+    def test_maps_are_stripped_from_the_emitted_entries(self):
+        for e in json.loads((ROOT / "linux.json").read_text("utf-8"))["plugins"]:
+            for block in e["formats"].values():
+                self.assertNotIn("categories", block or {}, e["catalog_id"])
+
+    def test_vst3_only_entries_use_class_ids(self):
+        rows = {r["key"]: r["category"] for r in self.built()}
+        self.assertEqual(rows["vst3:e2cc953290e863f06405e13924e34b24"], "drums")
+
+    def test_rejects_an_unknown_category(self):
+        o = self.overlay("dexed")
+        o["formats"]["clap"]["categories"]["com.digital-suburban.dexed"] = "chiptune"
+        self.assertTrue(any("unknown category" in e for e in self.errors(self.replaced(o))))
+        bad = CATEGORIES + [{"key": "clap:x.y", "name": "X", "category": "nope"}]
+        self.assertTrue(any("unknown category" in e for e in self.errors(extra=bad)))
+
+    def test_rejects_an_uncovered_instrument_id(self):
+        o = self.overlay("dexed")
+        del o["formats"]["clap"]["categories"]
+        self.assertTrue(any("has no category" in e for e in self.errors(self.replaced(o))))
+
+    def test_rejects_an_uncovered_probed_instrument_of_a_both_entry(self):
+        o = self.overlay("dpf-plugins")
+        del o["formats"]["clap"]["categories"]["studio.kx.distrho.Nekobi"]
+        errors = self.errors(self.replaced(o))
+        self.assertTrue(any("Nekobi" in e and "has no category" in e for e in errors))
+
+    def test_a_both_entry_needs_its_probe(self):
+        probes = {k: v for k, v in PROBES.items() if k != "plugdata"}
+        self.assertTrue(any("probes/plugdata.json" in e for e in self.errors(probes=probes)))
+
+    def test_rejects_a_map_key_not_among_the_formats_ids(self):
+        o = self.overlay("dexed")
+        o["formats"]["clap"]["categories"]["com.example.other"] = "fm"
+        self.assertTrue(any("is not one of its plugin_ids" in e
+                            for e in self.errors(self.replaced(o))))
+
+    def test_rejects_a_duplicate_key(self):
+        dup = CATEGORIES + [{"key": "clap:com.digital-suburban.dexed", "name": "D",
+                             "category": "fm"}]
+        self.assertTrue(any("two category rows" in e for e in self.errors(extra=dup)))
+
+    def test_vitalium_is_exempt_until_it_has_ids(self):
+        self.assertIn("vitalium", cr.COVERAGE_EXEMPT)
+        self.built()  # no row, no error
+
+    def test_validator_rejects_bad_category_rows(self):
+        m = json.loads((ROOT / "linux.json").read_text("utf-8"))
+
+        def errors(mutate):
+            mm = copy.deepcopy(m)
+            mutate(mm)
+            return cr.validate(json.dumps(mm))
+
+        def key(mm): mm["categories"][0]["key"] = "vst3:XYZ"
+        def cat(mm): mm["categories"][0]["category"] = "chiptune"
+        def dup(mm): mm["categories"][1]["key"] = mm["categories"][0]["key"]
+        def extra(mm): mm["categories"][0]["why"] = "x"
+        self.assertTrue(any("is not clap" in e for e in errors(key)))
+        self.assertTrue(any("not a known category" in e for e in errors(cat)))
+        self.assertTrue(any("twice" in e for e in errors(dup)))
+        self.assertTrue(any("unknown field" in e for e in errors(extra)))
 
 
 if __name__ == "__main__":

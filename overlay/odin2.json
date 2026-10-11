@@ -30,7 +30,10 @@
       ],
       "paths": [
         "Odin2.clap"
-      ]
+      ],
+      "categories": {
+        "com.thewavewarden.odin2": "subtractive"
+      }
     },
     "vst3": {
       "class_ids": [

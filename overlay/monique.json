@@ -40,7 +40,10 @@
       ],
       "paths": [
         "monique_products/MoniqueMonosynth.clap"
-      ]
+      ],
+      "categories": {
+        "org.surge-synth-team.monique-monosynth": "subtractive"
+      }
     },
     "vst3": {
       "class_ids": [

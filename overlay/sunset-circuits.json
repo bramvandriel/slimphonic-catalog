@@ -39,7 +39,10 @@
       ],
       "paths": [
         "CLAP/sunset-circuits.clap"
-      ]
+      ],
+      "categories": {
+        "com.duskaudio.sunset-circuits": "subtractive"
+      }
     },
     "vst3": {
       "class_ids": [

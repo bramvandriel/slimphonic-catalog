@@ -38,7 +38,10 @@
       ],
       "paths": [
         "OctaSine/CLAP/*.clap"
-      ]
+      ],
+      "categories": {
+        "OctaSine": "fm"
+      }
     },
     "vst3": null
   },

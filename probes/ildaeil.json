@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "plugins": [
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.ildaeil#fx",
+      "is_instrument": false,
+      "name": "Ildaeil-FX",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "note-effect"
+      ],
+      "id": "studio.kx.distrho.ildaeil#midi",
+      "is_instrument": false,
+      "name": "Ildaeil-MIDI",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "instrument",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.ildaeil#synth",
+      "is_instrument": true,
+      "name": "Ildaeil-Synth",
+      "vendor": "DISTRHO"
+    }
+  ]
+}

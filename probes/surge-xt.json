@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "plugins": [
+    {
+      "features": [
+        "instrument",
+        "synthesizer",
+        "stereo",
+        "free and open source"
+      ],
+      "id": "org.surge-synth-team.surge-xt",
+      "is_instrument": true,
+      "name": "Surge XT",
+      "vendor": "Surge Synth Team"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "filter",
+        "phaser",
+        "rotary speaker",
+        "equalizer",
+        "granular",
+        "frequency-shifter",
+        "distortion",
+        "flanger",
+        "chorus",
+        "delay",
+        "reverb",
+        "multi-effects",
+        "stereo",
+        "free and open source"
+      ],
+      "id": "org.surge-synth-team.surge-xt-fx",
+      "is_instrument": false,
+      "name": "Surge XT Effects",
+      "vendor": "Surge Synth Team"
+    }
+  ]
+}

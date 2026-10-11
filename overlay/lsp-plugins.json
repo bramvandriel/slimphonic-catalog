@@ -251,7 +251,17 @@
       ],
       "paths": [
         "*/CLAP/lsp-plugins.clap"
-      ]
+      ],
+      "categories": {
+        "in.lsp-plug.multisampler_x12": "sampler",
+        "in.lsp-plug.multisampler_x12_do": "sampler",
+        "in.lsp-plug.multisampler_x24": "sampler",
+        "in.lsp-plug.multisampler_x24_do": "sampler",
+        "in.lsp-plug.multisampler_x48": "sampler",
+        "in.lsp-plug.multisampler_x48_do": "sampler",
+        "in.lsp-plug.sampler_mono": "sampler",
+        "in.lsp-plug.sampler_stereo": "sampler"
+      }
     },
     "vst3": null
   },

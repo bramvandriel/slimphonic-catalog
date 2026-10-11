@@ -27,7 +27,10 @@
         "instrument",
         "synthesizer"
       ],
-      "paths": []
+      "paths": [],
+      "categories": {
+        "audio.vital.synth": "wavetable"
+      }
     },
     "vst3": null
   },

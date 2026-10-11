@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "plugins": [
+    {
+      "features": [
+        "instrument"
+      ],
+      "id": "studio.kx.distrho.cardinal",
+      "is_instrument": true,
+      "name": "Cardinal",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect"
+      ],
+      "id": "studio.kx.distrho.cardinal#fx",
+      "is_instrument": false,
+      "name": "Cardinal FX",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "instrument"
+      ],
+      "id": "studio.kx.distrho.cardinal#synth",
+      "is_instrument": true,
+      "name": "Cardinal Synth",
+      "vendor": "DISTRHO"
+    }
+  ]
+}

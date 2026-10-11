@@ -38,7 +38,10 @@
       ],
       "paths": [
         "sfzq.2024.12.3.clap"
-      ]
+      ],
+      "categories": {
+        "net.stevefolta.sfzq": "sampler"
+      }
     },
     "vst3": null
   },

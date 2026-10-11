@@ -37,7 +37,10 @@
       ],
       "paths": [
         "Aeolus.clap"
-      ]
+      ],
+      "categories": {
+        "com.ArthurBenilov.Aeolus": "keys"
+      }
     },
     "vst3": null
   },

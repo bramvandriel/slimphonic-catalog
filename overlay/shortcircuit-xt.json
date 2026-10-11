@@ -40,7 +40,10 @@
       ],
       "paths": [
         "shortcircuit-products/Shortcircuit XT.clap"
-      ]
+      ],
+      "categories": {
+        "org.surge-synth-team.shortcircuit-xt": "sampler"
+      }
     },
     "vst3": null
   },

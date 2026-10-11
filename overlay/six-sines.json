@@ -33,7 +33,11 @@
       ],
       "paths": [
         "six-sines_assets/Six Sines.clap"
-      ]
+      ],
+      "categories": {
+        "org.baconpaul.six-sines": "fm",
+        "org.baconpaul.six-sines.seven-outs": "fm"
+      }
     },
     "vst3": {
       "class_ids": [],

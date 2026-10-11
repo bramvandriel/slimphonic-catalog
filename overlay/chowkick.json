@@ -37,7 +37,10 @@
       ],
       "paths": [
         "usr/lib/clap/ChowKick.clap"
-      ]
+      ],
+      "categories": {
+        "org.chowdsp.ChowKick": "drums"
+      }
     },
     "vst3": {
       "class_ids": [

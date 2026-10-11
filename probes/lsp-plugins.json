@@ -1,0 +1,2125 @@
+{
+  "ok": true,
+  "plugins": [
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.ab_tester_x2_mono",
+      "is_instrument": false,
+      "name": "A/B Tester x2 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.ab_tester_x2_stereo",
+      "is_instrument": false,
+      "name": "A/B Tester x2 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.ab_tester_x4_mono",
+      "is_instrument": false,
+      "name": "A/B Tester x4 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.ab_tester_x4_stereo",
+      "is_instrument": false,
+      "name": "A/B Tester x4 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.ab_tester_x8_mono",
+      "is_instrument": false,
+      "name": "A/B Tester x8 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.ab_tester_x8_stereo",
+      "is_instrument": false,
+      "name": "A/B Tester x8 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "delay",
+        "mono"
+      ],
+      "id": "in.lsp-plug.art_delay_mono",
+      "is_instrument": false,
+      "name": "Artistic Delay Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "delay",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.art_delay_stereo",
+      "is_instrument": false,
+      "name": "Artistic Delay Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.autogain_mono",
+      "is_instrument": false,
+      "name": "Autogain Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.autogain_stereo",
+      "is_instrument": false,
+      "name": "Autogain Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.beat_breather_mono",
+      "is_instrument": false,
+      "name": "Beat Breather Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.beat_breather_stereo",
+      "is_instrument": false,
+      "name": "Beat Breather Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "chorus",
+        "mono"
+      ],
+      "id": "in.lsp-plug.chorus_mono",
+      "is_instrument": false,
+      "name": "Chorus Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "chorus",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.chorus_stereo",
+      "is_instrument": false,
+      "name": "Chorus Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mastering",
+        "mono"
+      ],
+      "id": "in.lsp-plug.clipper_mono",
+      "is_instrument": false,
+      "name": "Clipper Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mastering",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.clipper_stereo",
+      "is_instrument": false,
+      "name": "Clipper Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "delay",
+        "mono"
+      ],
+      "id": "in.lsp-plug.comp_delay_mono",
+      "is_instrument": false,
+      "name": "Delay Compensator Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "delay",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.comp_delay_stereo",
+      "is_instrument": false,
+      "name": "Delay Compensator Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "delay",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.comp_delay_x2_stereo",
+      "is_instrument": false,
+      "name": "Delay Compensator x2 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.compressor_lr",
+      "is_instrument": false,
+      "name": "Compressor LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "mono"
+      ],
+      "id": "in.lsp-plug.compressor_mono",
+      "is_instrument": false,
+      "name": "Compressor Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.compressor_ms",
+      "is_instrument": false,
+      "name": "Compressor MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.compressor_stereo",
+      "is_instrument": false,
+      "name": "Compressor Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.crossover_lr",
+      "is_instrument": false,
+      "name": "Crossover LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.crossover_mono",
+      "is_instrument": false,
+      "name": "Crossover Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.crossover_ms",
+      "is_instrument": false,
+      "name": "Crossover MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.crossover_stereo",
+      "is_instrument": false,
+      "name": "Crossover Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "de-esser",
+        "mono"
+      ],
+      "id": "in.lsp-plug.deesser_mono",
+      "is_instrument": false,
+      "name": "Deesser Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "de-esser",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.deesser_stereo",
+      "is_instrument": false,
+      "name": "Deesser Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.dyna_processor_lr",
+      "is_instrument": false,
+      "name": "Dynamics Processor LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.dyna_processor_mono",
+      "is_instrument": false,
+      "name": "Dynamics Processor Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.dyna_processor_ms",
+      "is_instrument": false,
+      "name": "Dynamics Processor MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.dyna_processor_stereo",
+      "is_instrument": false,
+      "name": "Dynamics Processor Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.expander_lr",
+      "is_instrument": false,
+      "name": "Expander LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.expander_mono",
+      "is_instrument": false,
+      "name": "Expander Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.expander_ms",
+      "is_instrument": false,
+      "name": "Expander MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.expander_stereo",
+      "is_instrument": false,
+      "name": "Expander Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.filter_mono",
+      "is_instrument": false,
+      "name": "Filter Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.filter_stereo",
+      "is_instrument": false,
+      "name": "Filter Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "flanger",
+        "mono"
+      ],
+      "id": "in.lsp-plug.flanger_mono",
+      "is_instrument": false,
+      "name": "Flanger Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "flanger",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.flanger_stereo",
+      "is_instrument": false,
+      "name": "Flanger Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.gate_lr",
+      "is_instrument": false,
+      "name": "Gate LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.gate_mono",
+      "is_instrument": false,
+      "name": "Gate Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.gate_ms",
+      "is_instrument": false,
+      "name": "Gate MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.gate_stereo",
+      "is_instrument": false,
+      "name": "Gate Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.gott_compressor_lr",
+      "is_instrument": false,
+      "name": "GOTT Compressor LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "mono"
+      ],
+      "id": "in.lsp-plug.gott_compressor_mono",
+      "is_instrument": false,
+      "name": "GOTT Compressor Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.gott_compressor_ms",
+      "is_instrument": false,
+      "name": "GOTT Compressor MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.gott_compressor_stereo",
+      "is_instrument": false,
+      "name": "GOTT Compressor Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x16_lr",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x16 LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x16_mono",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x16 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x16_ms",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x16 MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x16_stereo",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x16 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x32_lr",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x32 LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x32_mono",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x32 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x32_ms",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x32 MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.graph_equalizer_x32_stereo",
+      "is_instrument": false,
+      "name": "Graphic Equalizer x32 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "mono"
+      ],
+      "id": "in.lsp-plug.impulse_responses_mono",
+      "is_instrument": false,
+      "name": "Impulse Responses Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.impulse_responses_stereo",
+      "is_instrument": false,
+      "name": "Impulse Responses Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "mono"
+      ],
+      "id": "in.lsp-plug.impulse_reverb_mono",
+      "is_instrument": false,
+      "name": "Impulse Reverb Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.impulse_reverb_stereo",
+      "is_instrument": false,
+      "name": "Impulse Reverb Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.latency_meter",
+      "is_instrument": false,
+      "name": "Latency Meter",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "mono"
+      ],
+      "id": "in.lsp-plug.limiter_mono",
+      "is_instrument": false,
+      "name": "Limiter Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.limiter_stereo",
+      "is_instrument": false,
+      "name": "Limiter Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.loud_comp_mono",
+      "is_instrument": false,
+      "name": "Loudness Compensator Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.loud_comp_stereo",
+      "is_instrument": false,
+      "name": "Loudness Compensator Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.matcher_mono",
+      "is_instrument": false,
+      "name": "Matcher Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.matcher_stereo",
+      "is_instrument": false,
+      "name": "Matcher Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mastering",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mb_clipper_mono",
+      "is_instrument": false,
+      "name": "Multiband Clipper Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mastering",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_clipper_stereo",
+      "is_instrument": false,
+      "name": "Multiband Clipper Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_compressor_lr",
+      "is_instrument": false,
+      "name": "Multiband Compressor LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mb_compressor_mono",
+      "is_instrument": false,
+      "name": "Multiband Compressor Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_compressor_ms",
+      "is_instrument": false,
+      "name": "Multiband Compressor MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_compressor_stereo",
+      "is_instrument": false,
+      "name": "Multiband Compressor Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_dyna_processor_lr",
+      "is_instrument": false,
+      "name": "Multiband Dynamics Processor LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mb_dyna_processor_mono",
+      "is_instrument": false,
+      "name": "Multiband Dynamics Processor Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_dyna_processor_ms",
+      "is_instrument": false,
+      "name": "Multiband Dynamics Processor MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_dyna_processor_stereo",
+      "is_instrument": false,
+      "name": "Multiband Dynamics Processor Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_expander_lr",
+      "is_instrument": false,
+      "name": "Multiband Expander LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mb_expander_mono",
+      "is_instrument": false,
+      "name": "Multiband Expander Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_expander_ms",
+      "is_instrument": false,
+      "name": "Multiband Expander MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_expander_stereo",
+      "is_instrument": false,
+      "name": "Multiband Expander Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_gate_lr",
+      "is_instrument": false,
+      "name": "Multiband Gate LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mb_gate_mono",
+      "is_instrument": false,
+      "name": "Multiband Gate Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_gate_ms",
+      "is_instrument": false,
+      "name": "Multiband Gate MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_gate_stereo",
+      "is_instrument": false,
+      "name": "Multiband Gate Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mb_limiter_mono",
+      "is_instrument": false,
+      "name": "Multiband Limiter Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_limiter_stereo",
+      "is_instrument": false,
+      "name": "Multiband Limiter Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mb_ringmod_sc_mono",
+      "is_instrument": false,
+      "name": "Multiband Ring Modulated Sidechain Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mb_ringmod_sc_stereo",
+      "is_instrument": false,
+      "name": "Multiband Ring Modulated Sidechain Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mixing",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mixer_x16_mono",
+      "is_instrument": false,
+      "name": "Mixer x16 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mixing",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mixer_x16_stereo",
+      "is_instrument": false,
+      "name": "Mixer x16 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mixing",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mixer_x4_mono",
+      "is_instrument": false,
+      "name": "Mixer x4 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mixing",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mixer_x4_stereo",
+      "is_instrument": false,
+      "name": "Mixer x4 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mixing",
+        "mono"
+      ],
+      "id": "in.lsp-plug.mixer_x8_mono",
+      "is_instrument": false,
+      "name": "Mixer x8 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mixing",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.mixer_x8_stereo",
+      "is_instrument": false,
+      "name": "Mixer x8 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.multisampler_x12",
+      "is_instrument": true,
+      "name": "Multi-Sampler x12 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.multisampler_x12_do",
+      "is_instrument": true,
+      "name": "Multi-Sampler x12 DirectOut",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.multisampler_x24",
+      "is_instrument": true,
+      "name": "Multi-Sampler x24 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.multisampler_x24_do",
+      "is_instrument": true,
+      "name": "Multi-Sampler x24 DirectOut",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.multisampler_x48",
+      "is_instrument": true,
+      "name": "Multi-Sampler x48 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.multisampler_x48_do",
+      "is_instrument": true,
+      "name": "Multi-Sampler x48 DirectOut",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect"
+      ],
+      "id": "in.lsp-plug.noise_generator_x1",
+      "is_instrument": false,
+      "name": "Noise Generator x1",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect"
+      ],
+      "id": "in.lsp-plug.noise_generator_x2",
+      "is_instrument": false,
+      "name": "Noise Generator x2",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect"
+      ],
+      "id": "in.lsp-plug.noise_generator_x4",
+      "is_instrument": false,
+      "name": "Noise Generator x4",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect"
+      ],
+      "id": "in.lsp-plug.oscillator_mono",
+      "is_instrument": false,
+      "name": "Oscillator Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.oscilloscope_x1",
+      "is_instrument": false,
+      "name": "Oscilloscope x1",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.oscilloscope_x2",
+      "is_instrument": false,
+      "name": "Oscilloscope x2",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.oscilloscope_x4",
+      "is_instrument": false,
+      "name": "Oscilloscope x4",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x16_lr",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x16 LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x16_mono",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x16 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x16_ms",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x16 MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x16_stereo",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x16 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x32_lr",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x32 LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x32_mono",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x32 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x32_ms",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x32 MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x32_stereo",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x32 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x8_lr",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x8 LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x8_mono",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x8 Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x8_ms",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x8 MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.para_equalizer_x8_stereo",
+      "is_instrument": false,
+      "name": "Parametric Equalizer x8 Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.phase_detector",
+      "is_instrument": false,
+      "name": "Phase Detector",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "phaser",
+        "mono"
+      ],
+      "id": "in.lsp-plug.phaser_mono",
+      "is_instrument": false,
+      "name": "Phaser Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "phaser",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.phaser_stereo",
+      "is_instrument": false,
+      "name": "Phaser Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.profiler_mono",
+      "is_instrument": false,
+      "name": "Profiler Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.profiler_stereo",
+      "is_instrument": false,
+      "name": "Profiler Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.referencer_mono",
+      "is_instrument": false,
+      "name": "Referencer Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.referencer_stereo",
+      "is_instrument": false,
+      "name": "Referencer Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.return_mono",
+      "is_instrument": false,
+      "name": "Return Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.return_stereo",
+      "is_instrument": false,
+      "name": "Return Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.ringmod_sc_mono",
+      "is_instrument": false,
+      "name": "Ring Modulated Sidechain Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.ringmod_sc_stereo",
+      "is_instrument": false,
+      "name": "Ring Modulated Sidechain Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "mono"
+      ],
+      "id": "in.lsp-plug.room_builder_mono",
+      "is_instrument": false,
+      "name": "Room Builder Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.room_builder_stereo",
+      "is_instrument": false,
+      "name": "Room Builder Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sampler_mono",
+      "is_instrument": true,
+      "name": "Sampler Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "instrument",
+        "sampler",
+        "drum-machine",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sampler_stereo",
+      "is_instrument": true,
+      "name": "Sampler Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_autogain_mono",
+      "is_instrument": false,
+      "name": "Sidechain Autogain Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_autogain_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Autogain Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_compressor_lr",
+      "is_instrument": false,
+      "name": "Sidechain Compressor LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_compressor_mono",
+      "is_instrument": false,
+      "name": "Sidechain Compressor Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_compressor_ms",
+      "is_instrument": false,
+      "name": "Sidechain Compressor MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_compressor_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Compressor Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "de-esser",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_deesser_mono",
+      "is_instrument": false,
+      "name": "Sidechain Deesser Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "de-esser",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_deesser_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Deesser Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_dyna_processor_lr",
+      "is_instrument": false,
+      "name": "Sidechain Dynamics Processor LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_dyna_processor_mono",
+      "is_instrument": false,
+      "name": "Sidechain Dynamics Processor Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_dyna_processor_ms",
+      "is_instrument": false,
+      "name": "Sidechain Dynamics Processor MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_dyna_processor_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Dynamics Processor Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_expander_lr",
+      "is_instrument": false,
+      "name": "Sidechain Expander LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_expander_mono",
+      "is_instrument": false,
+      "name": "Sidechain Expander Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_expander_ms",
+      "is_instrument": false,
+      "name": "Sidechain Expander MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_expander_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Expander Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_gate_lr",
+      "is_instrument": false,
+      "name": "Sidechain Gate LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_gate_mono",
+      "is_instrument": false,
+      "name": "Sidechain Gate Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_gate_ms",
+      "is_instrument": false,
+      "name": "Sidechain Gate MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_gate_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Gate Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_gott_compressor_lr",
+      "is_instrument": false,
+      "name": "Sidechain GOTT Compressor LeftRight",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_gott_compressor_mono",
+      "is_instrument": false,
+      "name": "Sidechain GOTT Compressor Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_gott_compressor_ms",
+      "is_instrument": false,
+      "name": "Sidechain GOTT Compressor MidSide",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_gott_compressor_stereo",
+      "is_instrument": false,
+      "name": "Sidechain GOTT Compressor Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_limiter_mono",
+      "is_instrument": false,
+      "name": "Sidechain Limiter Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_limiter_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Limiter Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_matcher_mono",
+      "is_instrument": false,
+      "name": "Sidechain Matcher Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_matcher_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Matcher Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_compressor_lr",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Compressor LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_mb_compressor_mono",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Compressor Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_compressor_ms",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Compressor MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "compressor",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_compressor_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Compressor Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_dyna_processor_lr",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Dynamics Processor LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_mb_dyna_processor_mono",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Dynamics Processor Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_dyna_processor_ms",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Dynamics Processor MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_dyna_processor_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Dynamics Processor Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_expander_lr",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Expander LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_mb_expander_mono",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Expander Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_expander_ms",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Expander MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_expander_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Expander Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_gate_lr",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Gate LeftRight x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_mb_gate_mono",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Gate Mono x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_gate_ms",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Gate MidSide x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_gate_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Gate Stereo x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "mono"
+      ],
+      "id": "in.lsp-plug.sc_mb_limiter_mono",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Limiter Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "limiter",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.sc_mb_limiter_stereo",
+      "is_instrument": false,
+      "name": "Sidechain Multiband Limiter Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.send_mono",
+      "is_instrument": false,
+      "name": "Send Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.send_stereo",
+      "is_instrument": false,
+      "name": "Send Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "delay",
+        "mono"
+      ],
+      "id": "in.lsp-plug.slap_delay_mono",
+      "is_instrument": false,
+      "name": "Slapback Delay Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "delay",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.slap_delay_stereo",
+      "is_instrument": false,
+      "name": "Slapback Delay Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.spectrum_analyzer_x1",
+      "is_instrument": false,
+      "name": "Spectrum Analyzer x1",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.spectrum_analyzer_x12",
+      "is_instrument": false,
+      "name": "Spectrum Analyzer x12",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.spectrum_analyzer_x16",
+      "is_instrument": false,
+      "name": "Spectrum Analyzer x16",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.spectrum_analyzer_x2",
+      "is_instrument": false,
+      "name": "Spectrum Analyzer x2",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.spectrum_analyzer_x4",
+      "is_instrument": false,
+      "name": "Spectrum Analyzer x4",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "analyzer",
+        "utility"
+      ],
+      "id": "in.lsp-plug.spectrum_analyzer_x8",
+      "is_instrument": false,
+      "name": "Spectrum Analyzer x8",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.surge_filter_mono",
+      "is_instrument": false,
+      "name": "Surge Filter Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.surge_filter_stereo",
+      "is_instrument": false,
+      "name": "Surge Filter Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.trigger_midi_mono",
+      "is_instrument": false,
+      "name": "Trigger MIDI Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.trigger_midi_stereo",
+      "is_instrument": false,
+      "name": "Trigger MIDI Stereo",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "mono"
+      ],
+      "id": "in.lsp-plug.trigger_mono",
+      "is_instrument": false,
+      "name": "Trigger Mono",
+      "vendor": "LSP CLAP"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "in.lsp-plug.trigger_stereo",
+      "is_instrument": false,
+      "name": "Trigger Stereo",
+      "vendor": "LSP CLAP"
+    }
+  ]
+}

@@ -37,7 +37,10 @@
       ],
       "paths": [
         "Actuate.clap"
-      ]
+      ],
+      "categories": {
+        "com.ardura.actuate": "sampler"
+      }
     },
     "vst3": null
   },

@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "plugins": [
+    {
+      "features": [
+        "instrument"
+      ],
+      "id": "com.timothyschoen.plugdata",
+      "is_instrument": true,
+      "name": "plugdata",
+      "vendor": "plugdata"
+    },
+    {
+      "features": [
+        "audio-effect"
+      ],
+      "id": "com.timothyschoen.plugdata-fx",
+      "is_instrument": false,
+      "name": "plugdata-fx",
+      "vendor": "plugdata"
+    }
+  ]
+}

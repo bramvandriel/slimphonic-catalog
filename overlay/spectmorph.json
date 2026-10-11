@@ -38,7 +38,10 @@
       ],
       "paths": [
         "spectmorph-1.0.0-beta3-x86_64/clap/SpectMorph.clap"
-      ]
+      ],
+      "categories": {
+        "org.spectmorph.clap.SpectMorph": "additive"
+      }
     },
     "vst3": null
   },

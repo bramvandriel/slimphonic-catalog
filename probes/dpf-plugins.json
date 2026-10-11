@@ -1,0 +1,162 @@
+{
+  "ok": true,
+  "plugins": [
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MVerb",
+      "is_instrument": false,
+      "name": "3 Band EQ",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "equalizer",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MVerb",
+      "is_instrument": false,
+      "name": "3 Band Splitter",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "utility",
+        "stereo"
+      ],
+      "id": "niallmoody.ndcplugs.ampimposer",
+      "is_instrument": false,
+      "name": "Amplitude Imposer",
+      "vendor": "ndc Plugs"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "niallmoody.ndcplugs.cycleshifter",
+      "is_instrument": false,
+      "name": "Cycle Shifter",
+      "vendor": "ndc Plugs"
+    },
+    {
+      "features": [
+        "analyzer",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.glBars",
+      "is_instrument": false,
+      "name": "glBars",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "instrument"
+      ],
+      "id": "studio.kx.distrho.Kars",
+      "is_instrument": true,
+      "name": "Kars",
+      "vendor": "falkTX"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "distortion",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MaBitcrush",
+      "is_instrument": false,
+      "name": "MaBitcrush",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MaFreeverb",
+      "is_instrument": false,
+      "name": "MaFreeverb",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MaGigaverb",
+      "is_instrument": false,
+      "name": "MaGigaverb",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "pitch-shifter",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MaPitchshift",
+      "is_instrument": false,
+      "name": "MaPitchshift",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "reverb",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MVerb",
+      "is_instrument": false,
+      "name": "MVerb",
+      "vendor": "Martin Eastwood, falkTX"
+    },
+    {
+      "features": [
+        "instrument"
+      ],
+      "id": "studio.kx.distrho.Nekobi",
+      "is_instrument": true,
+      "name": "Nekobi",
+      "vendor": "Sean Bolton, falkTX"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.MVerb",
+      "is_instrument": false,
+      "name": "Ping Pong Pan",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "analyzer",
+        "stereo"
+      ],
+      "id": "studio.kx.distrho.ProM",
+      "is_instrument": false,
+      "name": "ProM",
+      "vendor": "DISTRHO"
+    },
+    {
+      "features": [
+        "audio-effect",
+        "distortion",
+        "stereo"
+      ],
+      "id": "niallmoody.ndcplugs.soulforce",
+      "is_instrument": false,
+      "name": "Soul Force",
+      "vendor": "ndc Plugs"
+    }
+  ]
+}

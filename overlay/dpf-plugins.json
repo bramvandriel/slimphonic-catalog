@@ -56,7 +56,11 @@
       ],
       "paths": [
         "DPF-Plugins-v1.7/*.clap"
-      ]
+      ],
+      "categories": {
+        "studio.kx.distrho.Kars": "physical",
+        "studio.kx.distrho.Nekobi": "subtractive"
+      }
     },
     "vst3": {
       "class_ids": [

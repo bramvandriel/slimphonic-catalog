@@ -3510,5 +3510,232 @@
       "key": "clap:org.surge-synth-team.shortcircuit-xt",
       "name": "Shortcircuit XT"
     }
+  ],
+  "categories": [
+    {
+      "key": "clap:OctaSine",
+      "name": "OctaSine",
+      "category": "fm"
+    },
+    {
+      "key": "clap:audio.vital.synth",
+      "name": "Vital",
+      "category": "wavetable"
+    },
+    {
+      "key": "clap:co.midilab.JC303",
+      "name": "JC303",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.AaronAnderson.WaveTerrainSynth",
+      "name": "Terrain",
+      "category": "wavetable"
+    },
+    {
+      "key": "clap:com.ArthurBenilov.Aeolus",
+      "name": "Aeolus",
+      "category": "keys"
+    },
+    {
+      "key": "clap:com.ardura.actuate",
+      "name": "Actuate",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:com.digital-suburban.dexed",
+      "name": "Dexed",
+      "category": "fm"
+    },
+    {
+      "key": "clap:com.duskaudio.sunset-circuits",
+      "name": "Sunset Circuits",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.floe-audio.floe",
+      "name": "Floe",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:com.slimphonic.drumkit",
+      "name": "Slim Drum Kit",
+      "category": "drums"
+    },
+    {
+      "key": "clap:com.slimphonic.luthier",
+      "name": "Slim Luthier",
+      "category": "physical"
+    },
+    {
+      "key": "clap:com.slimphonic.sampler",
+      "name": "Slim Sampler",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:com.slimphonic.triwave_synth",
+      "name": "Slim Triadic Synth",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.theusualsuspects.Tjpv",
+      "name": "The Usual Suspects",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.theusualsuspects.Tmqs",
+      "name": "The Usual Suspects",
+      "category": "wavetable"
+    },
+    {
+      "key": "clap:com.theusualsuspects.Tn2x",
+      "name": "The Usual Suspects",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.theusualsuspects.Ttip",
+      "name": "The Usual Suspects",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.theusualsuspects.TusV",
+      "name": "The Usual Suspects",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.theusualsuspects.Txts",
+      "name": "The Usual Suspects",
+      "category": "wavetable"
+    },
+    {
+      "key": "clap:com.thewavewarden.odin2",
+      "name": "Odin 2",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.timothyschoen.plugdata",
+      "name": "plugdata",
+      "category": "modular"
+    },
+    {
+      "key": "clap:in.lsp-plug.multisampler_x12",
+      "name": "Multi-Sampler x12 Stereo",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:in.lsp-plug.multisampler_x12_do",
+      "name": "Multi-Sampler x12 DirectOut",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:in.lsp-plug.multisampler_x24",
+      "name": "Multi-Sampler x24 Stereo",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:in.lsp-plug.multisampler_x24_do",
+      "name": "Multi-Sampler x24 DirectOut",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:in.lsp-plug.multisampler_x48",
+      "name": "Multi-Sampler x48 Stereo",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:in.lsp-plug.multisampler_x48_do",
+      "name": "Multi-Sampler x48 DirectOut",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:in.lsp-plug.sampler_mono",
+      "name": "Sampler Mono",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:in.lsp-plug.sampler_stereo",
+      "name": "Sampler Stereo",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:net.stevefolta.sfzq",
+      "name": "sfzq",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:org.baconpaul.six-sines",
+      "name": "Six Sines",
+      "category": "fm"
+    },
+    {
+      "key": "clap:org.baconpaul.six-sines.seven-outs",
+      "name": "Six Sines",
+      "category": "fm"
+    },
+    {
+      "key": "clap:org.chowdsp.ChowKick",
+      "name": "ChowKick",
+      "category": "drums"
+    },
+    {
+      "key": "clap:org.spectmorph.clap.SpectMorph",
+      "name": "SpectMorph",
+      "category": "additive"
+    },
+    {
+      "key": "clap:org.surge-synth-team.OB-Xf",
+      "name": "OB-Xf",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:org.surge-synth-team.monique-monosynth",
+      "name": "Monique",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:org.surge-synth-team.shortcircuit-xt",
+      "name": "Shortcircuit XT",
+      "category": "sampler"
+    },
+    {
+      "key": "clap:org.surge-synth-team.surge-xt",
+      "name": "Surge XT",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:studio.kx.distrho.Kars",
+      "name": "Kars",
+      "category": "physical"
+    },
+    {
+      "key": "clap:studio.kx.distrho.Nekobi",
+      "name": "Nekobi",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:studio.kx.distrho.cardinal",
+      "name": "Cardinal",
+      "category": "modular"
+    },
+    {
+      "key": "clap:studio.kx.distrho.cardinal#synth",
+      "name": "Cardinal Synth",
+      "category": "modular"
+    },
+    {
+      "key": "clap:studio.kx.distrho.ildaeil#synth",
+      "name": "Ildaeil-Synth",
+      "category": "modular"
+    },
+    {
+      "key": "vst3:abcdef019182faeb54696c7252697078",
+      "name": "RipplerX",
+      "category": "physical"
+    },
+    {
+      "key": "vst3:e2cc953290e863f06405e13924e34b24",
+      "name": "Geonkick",
+      "category": "drums"
+    }
   ]
 }

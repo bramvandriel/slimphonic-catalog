@@ -1,13 +1,22 @@
 #!/usr/bin/env python3
 """Builds linux.json from the vendored Open Audio Stack snapshot plus the overlay.
 
-    python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --hidden hidden.json --out linux.json
+    python3 -I tools/catalog_refresh.py --oas oas/index.json --overlay overlay/ --hidden hidden.json \
+        --categories categories.json --out linux.json
 
 Open Audio Stack (CC0) supplies what it knows (name, author, type, licence, homepage, image);
 the overlay (overlay/<catalog_id>.json) supplies what it cannot (archive paths, pinned
 sha256/size, companions, our description, editor's pick, ...) and always wins. This script
 never touches the network: the snapshot is refreshed by hand (see oas/SNAPSHOT.md). The last
 step is a validator that mirrors the app's `manifest::validate`.
+
+Instrument categories come from two places: a per-entry map in the overlay next to the ids it
+describes (`formats.clap.categories`, or `formats.vst3.categories` for a VST3-only entry) and
+`categories.json` for plugins outside the catalogue (the bundled Slim instruments). Both are
+merged into the manifest's top-level `categories` list; the per-format maps are not emitted.
+Every instrument id must have a row: all ids of an `instrument` entry, and for a `both` entry
+the ids its committed probe output (`probes/<catalog_id>.json`, the `SLIMPHONIC_PROBE` JSON)
+marks `is_instrument`.
 """
 
 import argparse
@@ -52,6 +61,14 @@ INSTALL_KEYS = [
     "distro_hint", "post_install_notes", "link_url", "link_label",
 ]
 HIDDEN_KEYS = ["key", "name"]
+CATEGORY_KEYS = ["key", "name", "category"]
+# The app's `PluginCategory` ids (src/plugin_category.rs), in Browser order.
+CATEGORY_IDS = (
+    "subtractive", "wavetable", "fm", "additive", "physical", "keys", "sampler", "drums",
+    "modular", "other",
+)
+# Instrument entries whose ids are not known yet (no binary release to probe).
+COVERAGE_EXEMPT = {"vitalium": "no ids until probed from the distro package"}
 ROLLING_TAGS = ("nightly", "latest", "dawplugin")
 
 
@@ -180,12 +197,21 @@ def build_entry(overlay, oas, platform):
         "note": overlay["score_note"],
         "tested_with": overlay.get("tested_with"),
     }
-    e["formats"] = overlay["formats"]
+    e["formats"] = _formats_without_categories(overlay["formats"])
     e["content"] = overlay.get("content")
     pin = overlay["install"][platform]
     e["install"] = {platform: {k: pin.get(k) for k in INSTALL_KEYS}}
     e["install"][platform]["companions"] = list(pin.get("companions") or [])
     return {k: e[k] for k in ENTRY_KEYS}
+
+
+def _formats_without_categories(formats):
+    """The overlay's formats as the manifest carries them: the category maps live only in the
+    top-level `categories` list."""
+    if formats is None:
+        return None
+    return {fmt: None if block is None else {k: v for k, v in block.items() if k != "categories"}
+            for fmt, block in formats.items()}
 
 
 def load_overlays(directory):
@@ -198,7 +224,100 @@ def load_hidden(path):
     return json.loads(Path(path).read_text("utf-8"))
 
 
-def build(oas, overlays, platform, date, hidden):
+def load_categories(path):
+    return json.loads(Path(path).read_text("utf-8"))
+
+
+def load_probes(directory):
+    """`probes/<catalog_id>.json` by catalog id (an absent directory is no probes)."""
+    d = Path(directory)
+    if not d.is_dir():
+        return {}
+    return {p.stem: json.loads(p.read_text("utf-8")) for p in sorted(d.glob("*.json"))}
+
+
+class CategoryError(Exception):
+    """The curated categories are inconsistent: one message per problem."""
+
+    def __init__(self, errors):
+        super().__init__("\n".join(errors))
+        self.errors = errors
+
+
+def _instrument_ids(entry, probes):
+    """(format, ids) that need a category row; None when the entry is exempt. A dual-format
+    entry is categorised under its CLAP ids, a VST3-only one under its class ids."""
+    clap, vst3 = entry["formats"]["clap"], entry["formats"]["vst3"]
+    if clap is not None and clap["plugin_ids"]:
+        fmt, ids = "clap", clap["plugin_ids"]
+    else:
+        fmt, ids = "vst3", (vst3 or {}).get("class_ids") or []
+    if entry["kind"] == "effect":
+        return fmt, set()
+    if entry["catalog_id"] in COVERAGE_EXEMPT:
+        return None
+    if entry["kind"] == "instrument":
+        return fmt, set(ids)
+    probe = probes.get(entry["catalog_id"])
+    if probe is None:
+        raise CategoryError([f"{entry['catalog_id']}: an entry of kind both needs "
+                             f"probes/{entry['catalog_id']}.json"])
+    return fmt, {p["id"] for p in probe["plugins"] if p["is_instrument"]}
+
+
+def category_rows(overlays, entries, extra, probes):
+    """The manifest's `categories` list: the overlay maps plus `extra` (categories.json), sorted
+    by key. Raises `CategoryError` for an unknown category, a map key its format does not list,
+    a key with two rows, an entry of kind both without a probe or an instrument id without a
+    row."""
+    errors, rows = [], {}
+    by_id = {e["catalog_id"]: e for e in entries}
+
+    def add(key, name, category, where):
+        if category not in CATEGORY_IDS:
+            errors.append(f"{where}: {key}: unknown category {category!r}")
+        if key in rows:
+            errors.append(f"{where}: {key}: has two category rows")
+        rows[key] = {"key": key, "name": name, "category": category}
+
+    for o in overlays:
+        entry = by_id.get(o["catalog_id"])
+        if entry is None:
+            continue
+        probe = probes.get(o["catalog_id"]) or {"plugins": []}
+        probed_names = {p["id"]: p["name"] for p in probe["plugins"]}
+        covered = set()
+        for fmt, ids_field, prefix in (("clap", "plugin_ids", "clap:"),
+                                       ("vst3", "class_ids", "vst3:")):
+            block = (o.get("formats") or {}).get(fmt)
+            if not block or "categories" not in block:
+                continue
+            for pid, category in block["categories"].items():
+                if pid not in block[ids_field]:
+                    errors.append(f"{o['catalog_id']}: formats.{fmt}.categories: {pid!r} is not "
+                                  f"one of its {ids_field}")
+                key = prefix + (pid.lower() if fmt == "vst3" else pid)
+                add(key, probed_names.get(pid, entry["name"]), category, o["catalog_id"])
+                covered.add((fmt, pid))
+        try:
+            needed = _instrument_ids(entry, probes)
+        except CategoryError as e:
+            errors.extend(e.errors)
+            continue
+        if needed is None:
+            continue
+        fmt, ids = needed
+        for pid in sorted(ids - {p for f, p in covered if f == fmt}):
+            errors.append(f"{o['catalog_id']}: instrument {pid!r} has no category "
+                          f"(formats.{fmt}.categories)")
+    for row in extra:
+        add(row["key"], row["name"], row["category"], "categories.json")
+    if errors:
+        raise CategoryError(errors)
+    return [rows[k] for k in sorted(rows)]
+
+
+def build(oas, overlays, platform, date, hidden, categories, probes):
     plugins = [build_entry(o, oas, platform) for o in overlays if platform in o["install"]]
     return {
         "schema_version": SCHEMA_VERSION,
@@ -206,6 +325,7 @@ def build(oas, overlays, platform, date, hidden):
         "min_app_version": MIN_APP_VERSION,
         "plugins": plugins,
         "hidden": [{k: h[k] for k in HIDDEN_KEYS} for h in hidden],
+        "categories": category_rows(overlays, plugins, categories, probes),
     }
 
 
@@ -335,7 +455,7 @@ def validate(text):
     if data["schema_version"] > SCHEMA_VERSION:
         return [f"schema_version {data['schema_version']} is newer than this app understands"]
     if not c.keys("catalogue", data, ["schema_version", "generated_at", "min_app_version", "plugins",
-                          "hidden"]):
+                          "hidden", "categories"]):
         return c.errors
     c.date("generated_at", data["generated_at"])
     if not re.fullmatch(r"\d+\.\d+\.\d+", str(data["min_app_version"])):
@@ -346,6 +466,7 @@ def validate(text):
     if len(plugins) > MAX_ENTRIES:
         return c.errors + [f"plugins: more than {MAX_ENTRIES} entries"]
     _hidden(c, data["hidden"])
+    _categories(c, data["categories"])
     c.context = ""
     seen = set()
     for e in plugins:
@@ -380,6 +501,28 @@ def _hidden(c, hidden):
             c.fail("key", f"{key!r} appears twice")
         seen.add(key)
         c.text("name", h["name"], MAX_NAME)
+
+
+def _categories(c, rows):
+    """The curated plugin categories: PluginKey syntax, a known category, unique keys."""
+    c.context = "categories"
+    if not isinstance(rows, list):
+        return c.fail("categories", "must be a list")
+    if len(rows) > MAX_ENTRIES:
+        return c.fail("categories", f"more than {MAX_ENTRIES} entries")
+    seen = set()
+    for r in rows:
+        if not c.keys("category entry", r, CATEGORY_KEYS):
+            continue
+        key = r["key"]
+        if not (isinstance(key, str) and PLUGIN_KEY.fullmatch(key)):
+            c.fail("key", f"{key!r} is not clap:<id>, vst3:<32 hex> or ladspa:<number>")
+        elif key in seen:
+            c.fail("key", f"{key!r} appears twice")
+        seen.add(key)
+        c.text("name", r["name"], MAX_NAME)
+        if r["category"] not in CATEGORY_IDS:
+            c.fail("category", f"{r['category']!r} is not a known category")
 
 
 def _entry(c, e):
@@ -527,6 +670,11 @@ def main(argv=None):
     ap.add_argument("--oas", required=True, help="OAS index.json snapshot")
     ap.add_argument("--overlay", required=True, help="directory of overlay/<catalog_id>.json")
     ap.add_argument("--hidden", required=True, help="hidden.json, the Editor-hidden plugin keys")
+    ap.add_argument("--categories", required=True,
+                    help="categories.json, instrument categories of plugins outside the catalogue")
+    ap.add_argument("--probes", default=None,
+                    help="directory of <catalog_id>.json probe outputs (default: probes/ beside "
+                         "--overlay)")
     ap.add_argument("--out", required=True, help="manifest to write")
     ap.add_argument("--platform", default=DEFAULT_PLATFORM, choices=sorted(PLATFORMS))
     ap.add_argument("--date", default=None, help="generated_at (default: today)")
@@ -539,7 +687,15 @@ def main(argv=None):
         if package is not None:
             for line in drift(o, latest_version(package)[1], args.platform):
                 print("note:", line, file=sys.stderr)
-    text = render(build(oas, overlays, args.platform, date, load_hidden(args.hidden)))
+    probes_dir = args.probes or Path(args.overlay).resolve().parent / "probes"
+    try:
+        manifest = build(oas, overlays, args.platform, date, load_hidden(args.hidden),
+                         load_categories(args.categories), load_probes(probes_dir))
+    except CategoryError as e:
+        print("the instrument categories are inconsistent:", *e.errors, sep="\n  ",
+              file=sys.stderr)
+        return 1
+    text = render(manifest)
     errors = validate(text)
     if errors:
         print("the generated manifest is invalid:", *errors, sep="\n  ", file=sys.stderr)

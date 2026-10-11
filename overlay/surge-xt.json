@@ -48,7 +48,10 @@
       "paths": [
         "Surge XT.clap",
         "Surge XT Effects.clap"
-      ]
+      ],
+      "categories": {
+        "org.surge-synth-team.surge-xt": "subtractive"
+      }
     },
     "vst3": {
       "class_ids": [

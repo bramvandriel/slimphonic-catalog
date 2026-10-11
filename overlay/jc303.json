@@ -37,7 +37,10 @@
       ],
       "paths": [
         "*/CLAP/JC303.clap"
-      ]
+      ],
+      "categories": {
+        "co.midilab.JC303": "subtractive"
+      }
     },
     "vst3": {
       "class_ids": [

@@ -1,0 +1,22 @@
+[
+  {
+    "key": "clap:com.slimphonic.drumkit",
+    "name": "Slim Drum Kit",
+    "category": "drums"
+  },
+  {
+    "key": "clap:com.slimphonic.luthier",
+    "name": "Slim Luthier",
+    "category": "physical"
+  },
+  {
+    "key": "clap:com.slimphonic.sampler",
+    "name": "Slim Sampler",
+    "category": "sampler"
+  },
+  {
+    "key": "clap:com.slimphonic.triwave_synth",
+    "name": "Slim Triadic Synth",
+    "category": "subtractive"
+  }
+]
