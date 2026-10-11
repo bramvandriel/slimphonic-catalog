@@ -2,7 +2,7 @@
   "catalog_id": "chowkick",
   "order": 26,
   "oas_id": "chowdhury-dsp/chowkick",
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "Analog-style kick drum.",
   "tested_with": null,
   "description": "A kick drum synthesizer based on old-school drum machine circuits: a resonant filter excited by a pulse, with a few controls for tone, decay and punch.",

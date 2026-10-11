@@ -689,7 +689,7 @@
         }
       },
       "score": {
-        "editors_pick": true,
+        "editors_pick": false,
         "note": "Hands-off mastering chain.",
         "tested_with": null
       },
@@ -2171,7 +2171,7 @@
         }
       },
       "score": {
-        "editors_pick": false,
+        "editors_pick": true,
         "note": "Analog-style kick drum.",
         "tested_with": null
       },

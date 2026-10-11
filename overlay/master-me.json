@@ -2,7 +2,7 @@
   "catalog_id": "master-me",
   "order": 8,
   "oas_id": null,
-  "editors_pick": true,
+  "editors_pick": false,
   "score_note": "Hands-off mastering chain.",
   "tested_with": null,
   "description": "An automatic mastering plugin for live streaming, podcasts and music: levelling, compression, EQ and limiting in one small chain that adapts to the incoming signal.",
