@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-10",
+  "generated_at": "2026-10-11",
   "min_app_version": "0.7.0",
   "plugins": [
     {
@@ -2306,7 +2306,7 @@
         }
       },
       "score": {
-        "editors_pick": false,
+        "editors_pick": true,
         "note": "Physical-modelling synth; VST3 only.",
         "tested_with": null
       },
@@ -2547,7 +2547,7 @@
         }
       },
       "score": {
-        "editors_pick": false,
+        "editors_pick": true,
         "note": "A pipe organ, nothing else like it here.",
         "tested_with": null
       },

@@ -2,7 +2,7 @@
   "catalog_id": "ripplerx",
   "order": 28,
   "oas_id": "tiagolr/ripplerx",
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "Physical-modelling synth; VST3 only.",
   "tested_with": null,
   "description": "A physically modelled synthesizer: a resonator excited by a mallet or noise, with two resonators, partial control and many material models, in the spirit of AAS Chromaphone. Good for bells, marimbas and strange plucked sounds.",

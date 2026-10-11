@@ -2,7 +2,7 @@
   "catalog_id": "aeolus",
   "order": 32,
   "oas_id": "archie3d/aeolus",
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "A pipe organ, nothing else like it here.",
   "tested_with": null,
   "description": "A pipe organ emulator built on additive synthesis, a plugin version of the Aeolus organ: a church-organ sound for playing or writing organ parts. Needs no sample libraries.",
