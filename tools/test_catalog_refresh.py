@@ -211,7 +211,7 @@ class ValidatorTests(unittest.TestCase):
         m = self.manifest()
         closed = [p["catalog_id"] for p in m["plugins"]
                   if p["license"]["kind"] == "free-closed-source"]
-        self.assertEqual(len(closed), 10)
+        self.assertEqual(len(closed), 11)
         self.assertTrue(all(self.entry(m, c)["source"] is None for c in closed))
         def with_source(m): self.entry(m, "tal-noisemaker")["source"] = "https://github.com/a/b"
         def without(m): self.entry(m, "surge-xt")["source"] = None
@@ -227,6 +227,10 @@ class ValidatorTests(unittest.TestCase):
             self.entry(m, "tal-noisemaker")["install"]["linux-x86_64"]["url"] = \
                 "https://evil.tal-software.com/x.zip"
         self.assertTrue(any("allowed download host" in e for e in self.errors(sub)))
+        def bare(m):
+            self.entry(m, "graillon")["install"]["linux-x86_64"]["url"] = \
+                "https://auburnsounds.com/downloads/x.zip"
+        self.assertTrue(any("allowed download host" in e for e in self.errors(bare)))
 
     def test_data_folder_rules(self):
         def outside(m):

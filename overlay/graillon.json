@@ -1,0 +1,64 @@
+{
+  "catalog_id": "graillon",
+  "order": 57,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Free edition of a paid plugin; the download link names the version, so a new release replaces it.",
+  "tested_with": null,
+  "description": "A vocal pitch shifter and corrector: pitch correction to a scale, pitch and formant shifting, a bitcrusher, and a preamp with compression; no added latency. The free edition lacks the full edition's microtuning, vocal doubler and pitch-tracking modulation. Its correction can follow notes sent over MIDI, but Slimphonic does not route MIDI to effects yet. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Graillon 3",
+  "vendor": "Auburn Sounds",
+  "kind": "effect",
+  "homepage": "https://www.auburnsounds.com/products/Graillon.html",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware (free edition)",
+    "url": "https://www.auburnsounds.com/terms.html",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.auburnsounds.Graillon--"
+      ],
+      "features": [
+        "audio-effect",
+        "mono",
+        "stereo",
+        "pitch-correction"
+      ],
+      "paths": [
+        "Graillon-FREE-3.2/Linux/Linux-64b-CLAP-FREE/Auburn Sounds Graillon 3.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "0b20ba920ce0b1456e62754133317340"
+      ],
+      "bundles": [
+        "Graillon-FREE-3.2/Linux/Linux-64b-VST3-FREE/Auburn Sounds Graillon 3.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "3.2.0",
+      "url": "https://www.auburnsounds.com/downloads/Graillon-FREE-3.2.zip",
+      "sha256": "d9ed254bd6ac89d5c5e670383dec2cb1acf43a72c62ebf2e4401d039ff6bda18",
+      "size_bytes": 54447698,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.34",
+      "distro_hint": null,
+      "post_install_notes": "The archive also holds the user's guide and an LV2 build, which are not installed.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

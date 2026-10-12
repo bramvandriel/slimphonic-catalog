@@ -349,7 +349,7 @@ MAX_ARCHIVE_BYTES = 4 * 1024**3
 # Also the hosts a download may be redirected to (u-he's CDN and its own site).
 ASSET_HOSTS = ("github.com", "objects.githubusercontent.com", "release-assets.githubusercontent.com",
                "tal-software.com", "cdn1.resources.manda-audio.com", "dl.u-he.com",
-               "uhe-dl.b-cdn.net", "u-he.com")
+               "uhe-dl.b-cdn.net", "u-he.com", "www.auburnsounds.com")
 ARCHIVES = ("tar.gz", "tar.xz", "tgz", "zip", "7z", "deb", "none")
 INSTALL_KINDS = ("github-release-asset", "deb-asset", "vendor-download", "manual-link")
 PLUGIN_KEY = re.compile(r"clap:[^\x00-\x1f\x7f]{1,256}|vst3:[0-9a-f]{32}|ladspa:[0-9]{1,20}")
