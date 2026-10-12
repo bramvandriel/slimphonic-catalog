@@ -1,0 +1,58 @@
+{
+  "catalog_id": "podolski",
+  "order": 55,
+  "oas_id": null,
+  "editors_pick": true,
+  "score_note": "A classic one-oscillator analogue voice with a big factory library.",
+  "tested_with": null,
+  "description": "A virtual analogue synthesizer: one oscillator whose shape morphs from sawtooth through triangle to pulse, with glide, a multimode filter with drive and filter FM, chorus and delay, and hundreds of factory presets. VST3 only on Linux. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Podolski",
+  "vendor": "u-he",
+  "kind": "instrument",
+  "homepage": "https://u-he.com/products/podolski/",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware (u-he EULA)",
+    "url": "https://u-he.com/about/eula.html",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": null,
+    "vst3": {
+      "class_ids": [
+        "d39d5b69d6af42fa12345678506f646f"
+      ],
+      "bundles": [
+        "*/Podolski/Podolski.64.so"
+      ],
+      "categories": {
+        "d39d5b69d6af42fa12345678506f646f": "subtractive"
+      }
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "1.2.3 (rev. 12092)",
+      "url": "https://dl.u-he.com/releases/Podolski_123_12092_Linux.tar.xz",
+      "sha256": "7dde7e9b77980b2785d0f317e5150d90f3e7947441955b751a7f8d027a33f126",
+      "size_bytes": 15095724,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": "2.28",
+      "distro_hint": null,
+      "post_install_notes": "Its presets and skins go to ~/.u-he/Podolski, where it also keeps your own presets; Uninstall removes that folder too. u-he calls its Linux builds beta.",
+      "link_url": null,
+      "link_label": null,
+      "data": {
+        "install_to": "UHeData",
+        "path": "*/Podolski"
+      }
+    }
+  }
+}

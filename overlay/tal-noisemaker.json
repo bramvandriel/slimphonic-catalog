@@ -1,0 +1,65 @@
+{
+  "catalog_id": "tal-noisemaker",
+  "order": 46,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Free from TAL Software; the download link has no version, so it can change under the pinned checksum.",
+  "tested_with": null,
+  "description": "A virtual analogue synthesizer: two oscillators plus a sub oscillator and noise, a self-oscillating filter, filter and amplitude envelopes, two LFOs, a free-drawn envelope editor, ring modulation and a built-in bitcrusher, chorus, delay and reverb, with 256 factory presets. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": true,
+  "name": "TAL-NoiseMaker",
+  "vendor": "TAL Software",
+  "kind": "instrument",
+  "homepage": "https://tal-software.com/products/tal-noisemaker",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware",
+    "url": "https://tal-software.com/products/tal-noisemaker",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "ch.toguaudioline.talnoisemaker"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer"
+      ],
+      "paths": [
+        "TAL-NoiseMaker/TAL-NoiseMaker.clap"
+      ],
+      "categories": {
+        "ch.toguaudioline.talnoisemaker": "subtractive"
+      }
+    },
+    "vst3": {
+      "class_ids": [
+        "5653546e63757474616c2d6e6f697365"
+      ],
+      "bundles": [
+        "TAL-NoiseMaker/TAL-NoiseMaker.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "5.0.6",
+      "url": "https://tal-software.com/downloads/plugins/TAL-NoiseMaker_64_linux.zip",
+      "sha256": "328565e646f98f14dd931a33fa438a4c9eddc451e759b92d1005f4336fa3fd20",
+      "size_bytes": 7144872,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.29",
+      "distro_hint": null,
+      "post_install_notes": "TAL's plugins keep their presets and settings in ~/.toguaudioline; Uninstall leaves that folder.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

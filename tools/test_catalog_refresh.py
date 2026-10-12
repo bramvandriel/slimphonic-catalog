@@ -204,6 +204,51 @@ class ValidatorTests(unittest.TestCase):
     def test_the_hidden_list_has_the_editor_plugins(self):
         self.assertEqual(len(self.manifest()["hidden"]), 32)
 
+    def entry(self, m, catalog_id):
+        return next(p for p in m["plugins"] if p["catalog_id"] == catalog_id)
+
+    def test_closed_source_has_no_source_and_open_source_needs_one(self):
+        m = self.manifest()
+        closed = [p["catalog_id"] for p in m["plugins"]
+                  if p["license"]["kind"] == "free-closed-source"]
+        self.assertEqual(len(closed), 10)
+        self.assertTrue(all(self.entry(m, c)["source"] is None for c in closed))
+        def with_source(m): self.entry(m, "tal-noisemaker")["source"] = "https://github.com/a/b"
+        def without(m): self.entry(m, "surge-xt")["source"] = None
+        def bad_kind(m): self.entry(m, "surge-xt")["license"]["kind"] = "shareware"
+        def no_kind(m): del self.entry(m, "surge-xt")["license"]["kind"]
+        self.assertTrue(any("has none" in e for e in self.errors(with_source)))
+        self.assertTrue(any("needs one" in e for e in self.errors(without)))
+        self.assertTrue(any("shareware" in e for e in self.errors(bad_kind)))
+        self.assertTrue(any("missing field 'kind'" in e for e in self.errors(no_kind)))
+
+    def test_vendor_hosts_are_exact(self):
+        def sub(m):
+            self.entry(m, "tal-noisemaker")["install"]["linux-x86_64"]["url"] = \
+                "https://evil.tal-software.com/x.zip"
+        self.assertTrue(any("allowed download host" in e for e in self.errors(sub)))
+
+    def test_data_folder_rules(self):
+        def outside(m):
+            self.entry(m, "podolski")["formats"]["vst3"]["bundles"] = ["*/Other/Podolski.64.so"]
+        def clap_ext(m):
+            self.entry(m, "zebralette3")["formats"]["clap"]["paths"] = ["*/Zebralette3/Z.clap"]
+        def target(m):
+            self.entry(m, "podolski")["install"]["linux-x86_64"]["data"]["install_to"] = "ClapDir"
+        def name(m):
+            self.entry(m, "podolski")["install"]["linux-x86_64"]["data"]["path"] = "*/.hidden"
+        def content(m):
+            self.entry(m, "podolski")["content"] = {
+                "note": "n", "url": "https://dl.u-he.com/x.tar.xz", "sha256": "a" * 64,
+                "size_bytes": 1, "install_to": "UHeData"}
+        self.assertTrue(any("not inside the data folder" in e for e in self.errors(outside)))
+        self.assertTrue(any("must end with .so" in e for e in self.errors(clap_ext)))
+        self.assertTrue(any("only UHeData" in e for e in self.errors(target)))
+        self.assertTrue(any("plain folder name" in e for e in self.errors(name)))
+        self.assertTrue(any("only for install.data" in e for e in self.errors(content)))
+        # An entry without a data folder carries no `data` key.
+        self.assertNotIn("data", self.entry(self.manifest(), "surge-xt")["install"]["linux-x86_64"])
+
     def test_manual_link_rules(self):
         def with_url(m):
             vital = next(p for p in m["plugins"] if p["catalog_id"] == "vital")

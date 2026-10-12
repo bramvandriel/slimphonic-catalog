@@ -1,8 +1,10 @@
 # Slimphonic plugin catalogue
 
-The curated list of free, open-source audio plugins that the
+The curated list of free audio plugins that the
 [Slimphonic](https://github.com/bramvandriel/slimphonic) DAW's Browser offers
-to install, one manifest per platform:
+to install, one manifest per platform. Most are open source; free closed-source plugins
+(freeware, donationware) are listed too, marked as such (`license.kind`) and shown apart in
+the app. Every entry links to its upstream download: nothing is redistributed here.
 
 - `linux.json` — Linux x86_64 (CLAP preferred; VST3 only where no CLAP exists)
 - `windows.json`, `macos.json` — later
@@ -45,7 +47,18 @@ An overlay file holds what OAS cannot provide, and wins over OAS wherever it set
   `content`, `install` (per platform: the pinned url, version, sha256, size, archive kind,
   paths' companions, link-only fields)
 - only where OAS's value is wrong or missing: `name`, `vendor`, `kind`, `homepage`,
-  `source`, `image`, `license` (`spdx`, `url`)
+  `source`, `image`, `license` (`spdx`, `url`, `kind`)
+
+`license.kind` is `open-source` (the default) or `free-closed-source`; a closed-source entry
+has `"source": null` and an open-source one must name its source. A closed-source plugin is
+installed with one click only when its vendor offers a direct download (`install.kind`
+`vendor-download`, from a host on the app's allow-list); otherwise it is a `manual-link`.
+
+`install.data` (optional) is for a plugin that needs its vendor's data folder beside it, today
+only u-he's: `{"install_to": "UHeData", "path": "*/<Name>"}`. The folder at `path` in the
+archive goes to `~/.u-he/<Name>`, and the entry's one library path per format, a `.so` inside
+that folder, is copied to `~/.clap/<Name>.clap` or into the bundle `~/.vst3/<Name>.vst3`. The
+vendor's `install.sh` is never run and nothing is symlinked.
 
 `tools/check_globs.py --overlay overlay/ --archives DIR...` lists each pinned archive found in
 the given directories (tar, unzip, 7z, ar; nothing is extracted) and checks that every plugin
@@ -98,9 +111,10 @@ overrides the directory). Vitalium is exempt until its ids are known.
 
 ## Contributing
 
-An entry is accepted when the plugin is open source, has a Linux release asset
-on GitHub, and loads in Slimphonic. Open an issue or a pull request against the
-JSON; the app's own validation rules (https-only URLs, GitHub-hosted assets,
+An entry is accepted when the plugin is free (open source, or free closed source with the
+licence saying so), has a Linux build, and loads in Slimphonic. One-click installs need a
+release asset on GitHub or a direct download from the vendor's own site. Open an issue or a pull request against the
+JSON; the app's own validation rules (https-only URLs, assets from the allowed hosts only,
 relative plugin paths, bounded sizes) apply.
 
 ## Licence

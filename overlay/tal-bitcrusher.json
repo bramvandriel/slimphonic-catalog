@@ -1,0 +1,62 @@
+{
+  "catalog_id": "tal-bitcrusher",
+  "order": 51,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Free from TAL Software; the download link has no version, so it can change under the pinned checksum.",
+  "tested_with": null,
+  "description": "A bit and sample-rate crusher, a remake of TAL's classic with its original algorithms, plus a Companding control that lifts quiet passages for more noise and sparkle, a resizable interface and a preset browser. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": true,
+  "name": "TAL-Bitcrusher",
+  "vendor": "TAL Software",
+  "kind": "effect",
+  "homepage": "https://tal-software.com/products/tal-bitcrusher",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware",
+    "url": "https://tal-software.com/products/tal-bitcrusher",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "ch.toguaudioline.talbitcrusher"
+      ],
+      "features": [
+        "audio-effect",
+        "bitcrusher"
+      ],
+      "paths": [
+        "TAL-Bitcrusher/TAL-Bitcrusher.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "5653544243723174616c2d6269746372"
+      ],
+      "bundles": [
+        "TAL-Bitcrusher/TAL-Bitcrusher.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "0.9.9",
+      "url": "https://tal-software.com/downloads/plugins/TAL-Bitcrusher_64_linux.zip",
+      "sha256": "a7cf244a873d626a9bfbaca92825203d93ce75f896912512ea0fd58f7ebd0734",
+      "size_bytes": 8285728,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.29",
+      "distro_hint": null,
+      "post_install_notes": "TAL's plugins keep their presets and settings in ~/.toguaudioline; Uninstall leaves that folder.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

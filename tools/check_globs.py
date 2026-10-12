@@ -122,6 +122,13 @@ def check_entry(entry, pin, archive_path):
     for g in pin.get("companions") or []:
         if not any(glob_match(g, m) for m in members):
             problems.append(f"companion glob {g!r} matches nothing")
+    data = pin.get("data")
+    if data:
+        # The data folder: exactly one folder, a strict parent of the members under it.
+        roots = {r for m in members for r in prefixes(m)
+                 if r != m.strip("/") and glob_match(data["path"], r)}
+        if len(roots) != 1:
+            problems.append(f"data path {data['path']!r} matches {len(roots)} folders")
     return problems
 
 

@@ -58,8 +58,12 @@ ENTRY_KEYS = [
 ]
 INSTALL_KEYS = [
     "kind", "version", "url", "sha256", "size_bytes", "archive", "companions", "min_glibc",
-    "distro_hint", "post_install_notes", "link_url", "link_label",
+    "distro_hint", "post_install_notes", "link_url", "link_label", "data",
 ]
+# Install keys written only when the overlay sets them (the app reads them as absent = none).
+OPTIONAL_INSTALL_KEYS = ("data",)
+LICENSE_KEYS = ["spdx", "url", "kind"]
+LICENSE_KINDS = ("open-source", "free-closed-source")
 HIDDEN_KEYS = ["key", "name"]
 CATEGORY_KEYS = ["key", "name", "category"]
 # The app's `PluginCategory` ids (src/plugin_category.rs), in Browser order.
@@ -186,7 +190,10 @@ def build_entry(overlay, oas, platform):
     lic.update(overlay.get("license") or {})
     if "spdx" in lic and "url" not in (overlay.get("license") or {}):
         lic["url"] = e.get("source")
-    e["license"] = lic
+    # Open source unless the overlay says free closed source (and then names no source).
+    lic.setdefault("kind", "open-source")
+    e["license"] = {k: lic.get(k) for k in LICENSE_KEYS}
+    e.setdefault("source", None)
     e.setdefault("image", None)
     e["catalog_id"] = overlay["catalog_id"]
     e["experimental"] = overlay["experimental"]
@@ -200,7 +207,8 @@ def build_entry(overlay, oas, platform):
     e["formats"] = _formats_without_categories(overlay["formats"])
     e["content"] = overlay.get("content")
     pin = overlay["install"][platform]
-    e["install"] = {platform: {k: pin.get(k) for k in INSTALL_KEYS}}
+    e["install"] = {platform: {k: pin.get(k) for k in INSTALL_KEYS
+                               if k not in OPTIONAL_INSTALL_KEYS or pin.get(k) is not None}}
     e["install"][platform]["companions"] = list(pin.get("companions") or [])
     return {k: e[k] for k in ENTRY_KEYS}
 
@@ -338,11 +346,15 @@ def render(manifest):
 MAX_ENTRIES, MAX_PATHS, MAX_NAME, MAX_DESCRIPTION, MAX_URL, MAX_PATH, MAX_TEXT = (
     500, 16, 80, 600, 512, 256, 300)
 MAX_ARCHIVE_BYTES = 4 * 1024**3
-ASSET_HOSTS = ("github.com", "objects.githubusercontent.com", "release-assets.githubusercontent.com")
+# Also the hosts a download may be redirected to (u-he's CDN and its own site).
+ASSET_HOSTS = ("github.com", "objects.githubusercontent.com", "release-assets.githubusercontent.com",
+               "tal-software.com", "cdn1.resources.manda-audio.com", "dl.u-he.com",
+               "uhe-dl.b-cdn.net", "u-he.com")
 ARCHIVES = ("tar.gz", "tar.xz", "tgz", "zip", "7z", "deb", "none")
-INSTALL_KINDS = ("github-release-asset", "deb-asset", "manual-link")
+INSTALL_KINDS = ("github-release-asset", "deb-asset", "vendor-download", "manual-link")
 PLUGIN_KEY = re.compile(r"clap:[^\x00-\x1f\x7f]{1,256}|vst3:[0-9a-f]{32}|ladspa:[0-9]{1,20}")
-INSTALL_TO = ("ClapDir", "Vst3Dir", "SurgeData")
+INSTALL_TO = ("ClapDir", "Vst3Dir", "SurgeData", "UHeData")
+PRODUCT_NAME = re.compile(r"[A-Za-z0-9 ._-]{1,64}")
 
 
 class _Checker:
@@ -438,7 +450,7 @@ class _Checker:
             if k not in allowed:
                 self.fail(what, f"unknown field {k!r}")
         for k in allowed:
-            if k not in obj and k not in ("rolling_tag", "companions"):
+            if k not in obj and k not in ("rolling_tag", "companions") + OPTIONAL_INSTALL_KEYS:
                 self.fail(what, f"missing field {k!r}")
         return True
 
@@ -539,11 +551,19 @@ def _entry(c, e):
         if flag in e and not isinstance(e[flag], bool):
             c.fail(flag, "must be a bool")
     c.text("description", e["description"], MAX_DESCRIPTION)
-    if c.keys("license", e["license"], ["spdx", "url"]):
+    if c.keys("license", e["license"], LICENSE_KEYS):
         c.text("license.spdx", e["license"]["spdx"], MAX_TEXT)
         c.https_url("license.url", e["license"]["url"])
+        kind = e["license"].get("kind")
+        if kind not in LICENSE_KINDS:
+            c.fail("license.kind", f"{kind!r} is not open-source or free-closed-source")
+        elif kind == "open-source" and e["source"] is None:
+            c.fail("source", "open source needs one")
+        elif kind == "free-closed-source" and e["source"] is not None:
+            c.fail("source", "a closed-source entry has none")
     c.https_url("homepage", e["homepage"])
-    c.https_url("source", e["source"])
+    if e["source"] is not None:
+        c.https_url("source", e["source"])
     if c.keys("score", e["score"], ["editors_pick", "note", "tested_with"]):
         if not isinstance(e["score"]["editors_pick"], bool):
             c.fail("score.editors_pick", "must be a bool")
@@ -571,6 +591,8 @@ def _entry(c, e):
         c.size("content.size_bytes", content["size_bytes"])
         if content["install_to"] not in INSTALL_TO:
             c.fail("content.install_to", "unknown location")
+        elif content["install_to"] == "UHeData":
+            c.fail("content.install_to", "UHeData is only for install.data")
     installs = e["install"]
     if not isinstance(installs, dict) or not installs:
         c.fail("install", "needs at least one platform")
@@ -582,24 +604,28 @@ def _entry(c, e):
         if isinstance(i, dict):
             installable |= i.get("kind") != "manual-link"
         _install(c, platform, i)
-    _formats(c, e["formats"], installable)
+    data = next((i["data"] for i in installs.values()
+                 if isinstance(i, dict) and isinstance(i.get("data"), dict)), None)
+    _formats(c, e["formats"], installable, data)
 
 
-def _formats(c, f, installable):
+def _formats(c, f, installable, data=None):
+    """`data`: the entry's data folder; its library paths are then `.so` files inside it."""
     if not c.keys("formats", f, ["clap", "vst3"]):
         return
     clap, vst3 = f["clap"], f["vst3"]
+    clap_ext, vst3_ext = (".so", ".so") if data else (".clap", ".vst3")
     if clap is not None and c.keys("formats.clap", clap, ["plugin_ids", "features", "paths"]):
         for i in clap["plugin_ids"][:MAX_ENTRIES]:
             c.text("formats.clap.plugin_ids", i, MAX_TEXT)
         for i in clap["features"][:MAX_ENTRIES]:
             c.text("formats.clap.features", i, MAX_NAME)
-        c.paths("formats.clap.paths", clap["paths"], ".clap")
+        c.paths("formats.clap.paths", clap["paths"], clap_ext)
     if vst3 is not None and c.keys("formats.vst3", vst3, ["class_ids", "bundles"]):
         for i in vst3["class_ids"][:MAX_ENTRIES]:
             if not (isinstance(i, str) and re.fullmatch(r"[0-9a-fA-F]{32}", i)):
                 c.fail("formats.vst3.class_ids", f"{i!r} is not 32 hex digits")
-        c.paths("formats.vst3.bundles", vst3["bundles"], ".vst3")
+        c.paths("formats.vst3.bundles", vst3["bundles"], vst3_ext)
     if clap and vst3:
         a, b = len(clap["plugin_ids"]), len(vst3["class_ids"])
         if a and b and a != b:
@@ -611,6 +637,15 @@ def _formats(c, f, installable):
             c.fail("formats", "an installable entry needs at least one path")
         if n_clap == 0 or n_vst3 == 0:
             c.fail("formats", "a listed format needs at least one path")
+    if data and isinstance(data.get("path"), str):
+        for block, field in ((clap, "paths"), (vst3, "bundles")):
+            if block is None:
+                continue
+            if len(block[field]) != 1:
+                c.fail("formats", "a data-folder entry has one library path per format")
+            for path in block[field]:
+                if not path.startswith(data["path"] + "/"):
+                    c.fail("formats", f"{path!r} is not inside the data folder {data['path']!r}")
 
 
 def _install(c, platform, i):
@@ -640,7 +675,7 @@ def _install(c, platform, i):
             c.fail(what, "a manual-link has no url, sha256 or size_bytes")
         if i["archive"] != "none":
             c.fail(w("archive"), 'a manual-link has archive "none"')
-    elif i["kind"] in ("github-release-asset", "deb-asset"):
+    elif i["kind"] in ("github-release-asset", "deb-asset", "vendor-download"):
         if i["link_url"] is not None or i["link_label"] is not None:
             c.fail(what, "only a manual-link has link_url or link_label")
         if i["url"] is None:
@@ -660,6 +695,16 @@ def _install(c, platform, i):
         ok = i["archive"] == "deb" if i["kind"] == "deb-asset" else i["archive"] not in ("deb", "none")
         if not ok:
             c.fail(w("archive"), "does not fit the install kind")
+    data = i.get("data")
+    if data is not None and c.keys(w("data"), data, ["install_to", "path"]):
+        if i["kind"] == "manual-link":
+            c.fail(w("data"), "a manual-link installs nothing")
+        if data["install_to"] != "UHeData":
+            c.fail(w("data.install_to"), "only UHeData takes a data folder")
+        c.glob(w("data.path"), data["path"], None)
+        name = str(data["path"]).rsplit("/", 1)[-1]
+        if not PRODUCT_NAME.fullmatch(name) or name.startswith("."):
+            c.fail(w("data.path"), "must end in a plain folder name (letters, digits, space . _ -)")
 
 
 # ---- command line -------------------------------------------------------------------------

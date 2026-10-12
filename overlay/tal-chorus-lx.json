@@ -1,0 +1,62 @@
+{
+  "catalog_id": "tal-chorus-lx",
+  "order": 49,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Free from TAL Software; the download link has no version, so it can change under the pinned checksum.",
+  "tested_with": null,
+  "description": "A vintage chorus that recreates the one built into the Roland Juno-60, with its two classic modes, alone or together. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": true,
+  "name": "TAL-Chorus-LX",
+  "vendor": "TAL Software",
+  "kind": "effect",
+  "homepage": "https://tal-software.com/products/tal-chorus-lx",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware",
+    "url": "https://tal-software.com/products/tal-chorus-lx",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "ch.toguaudioline.talchoruslx"
+      ],
+      "features": [
+        "audio-effect",
+        "chorus"
+      ],
+      "paths": [
+        "TAL-Chorus-LX/TAL-Chorus-LX.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "56535463484c3174616c2d63686f7275"
+      ],
+      "bundles": [
+        "TAL-Chorus-LX/TAL-Chorus-LX.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "1.6.3",
+      "url": "https://tal-software.com/downloads/plugins/TAL-Chorus-LX_64_linux.zip",
+      "sha256": "176396c83a3f43d3ec0ae0b1483c2ef7b9480952699cc999f393993fba786a0e",
+      "size_bytes": 3518839,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.29",
+      "distro_hint": null,
+      "post_install_notes": "TAL's plugins keep their presets and settings in ~/.toguaudioline; Uninstall leaves that folder.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

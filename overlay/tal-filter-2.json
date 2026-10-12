@@ -1,0 +1,62 @@
+{
+  "catalog_id": "tal-filter-2",
+  "order": 47,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Free from TAL Software; the download link has no version, so it can change under the pinned checksum.",
+  "tested_with": null,
+  "description": "A host-synced filter module: drawn curves move the cutoff of several filter types, the panorama and the volume in time with the song, for tremolo and trance-gate effects or to move hi-hats and percussion across the stereo field. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": true,
+  "name": "TAL-Filter-2",
+  "vendor": "TAL Software",
+  "kind": "effect",
+  "homepage": "https://tal-software.com/products/tal-filter",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware",
+    "url": "https://tal-software.com/products/tal-filter",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "ch.toguaudioline.talfilter2"
+      ],
+      "features": [
+        "audio-effect",
+        "filter"
+      ],
+      "paths": [
+        "TAL-Filter-2/TAL-Filter-2.clap"
+      ]
+    },
+    "vst3": {
+      "class_ids": [
+        "5653543032356574616c2d66696c7465"
+      ],
+      "bundles": [
+        "TAL-Filter-2/TAL-Filter-2.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "3.1.2",
+      "url": "https://tal-software.com/downloads/plugins/TAL-Filter-2_64_linux.zip",
+      "sha256": "ca6c2f2b6d68dfe160a8a723549e51d2a74505b3cf8c462580bf5001f3847be9",
+      "size_bytes": 6583243,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.29",
+      "distro_hint": null,
+      "post_install_notes": "TAL's plugins keep their presets and settings in ~/.toguaudioline; Uninstall leaves that folder.",
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

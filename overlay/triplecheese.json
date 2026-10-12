@@ -1,0 +1,58 @@
+{
+  "catalog_id": "triplecheese",
+  "order": 53,
+  "oas_id": null,
+  "editors_pick": true,
+  "score_note": "Physical-modelling flavour from comb filters; u-he's free synth with the most character.",
+  "tested_with": null,
+  "description": "A synthesizer that makes its sound with comb filters instead of oscillators: very short, chromatically tuned delays, often chained in series, give plucked, metallic and string-like tones, shaped by envelopes, LFOs and effects. VST3 only on Linux. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Triple Cheese",
+  "vendor": "u-he",
+  "kind": "instrument",
+  "homepage": "https://u-he.com/products/triplecheese/",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware (u-he EULA)",
+    "url": "https://u-he.com/about/eula.html",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": null,
+    "vst3": {
+      "class_ids": [
+        "d39d5b69d6af42fa1234567863625379"
+      ],
+      "bundles": [
+        "*/TripleCheese/TripleCheese.64.so"
+      ],
+      "categories": {
+        "d39d5b69d6af42fa1234567863625379": "physical"
+      }
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "1.3 (rev. 12092)",
+      "url": "https://dl.u-he.com/releases/TripleCheese_13_12092_Linux.tar.xz",
+      "sha256": "04ea1233fd64173746480c85e662f3e81d3e48c1149ca419f89a216e850fb3c4",
+      "size_bytes": 8594840,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": "2.28",
+      "distro_hint": null,
+      "post_install_notes": "Its presets and skins go to ~/.u-he/TripleCheese, where it also keeps your own presets; Uninstall removes that folder too. u-he calls its Linux builds beta.",
+      "link_url": null,
+      "link_label": null,
+      "data": {
+        "install_to": "UHeData",
+        "path": "*/TripleCheese"
+      }
+    }
+  }
+}
