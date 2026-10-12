@@ -3379,6 +3379,76 @@
           "link_label": "Open theusualsuspects.io"
         }
       }
+    },
+    {
+      "catalog_id": "galdr",
+      "name": "Galdr",
+      "vendor": "Sognevo",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/andreademurtas/galdr"
+      },
+      "description": "A polyphonic synthesizer made with black metal and other dark music in mind: two band-limited oscillators with unison, a sub oscillator and noise, FM and hard sync, a morphing wavetable mode, a multimode filter with drive, an eight-slot modulation matrix, an arpeggiator and a built-in chain of distortion, bitcrusher, chorus, delay and a shimmer reverb. 27 factory presets.",
+      "image": null,
+      "homepage": "https://github.com/andreademurtas/galdr",
+      "source": "https://github.com/andreademurtas/galdr",
+      "github": {
+        "owner": "andreademurtas",
+        "repo": "galdr",
+        "snapshot": {
+          "stars": 70,
+          "pushed_at": "2026-08-18T21:26:52Z",
+          "latest_release": "v1.1.0",
+          "at": "2026-10-12"
+        }
+      },
+      "score": {
+        "editors_pick": false,
+        "note": "A dark-voiced two-oscillator synth with its own effects chain.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.sognevo.galdr"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer"
+          ],
+          "paths": [
+            "CLAP/Galdr.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb53676e76476c6472"
+          ],
+          "bundles": [
+            "VST3/Galdr.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "1.1.0",
+          "url": "https://github.com/andreademurtas/galdr/releases/download/v1.1.0/Galdr-Linux.tar.gz",
+          "sha256": "d885a75bdd3905774ab657dd8b549e56c6a2ad8401869d078dd3c230fce1863e",
+          "size_bytes": 8107214,
+          "archive": "tar.gz",
+          "companions": [],
+          "min_glibc": "2.38",
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
     }
   ],
   "hidden": [
@@ -3575,6 +3645,11 @@
     {
       "key": "clap:com.slimphonic.triwave_synth",
       "name": "Slim Triadic Synth",
+      "category": "subtractive"
+    },
+    {
+      "key": "clap:com.sognevo.galdr",
+      "name": "Galdr",
       "category": "subtractive"
     },
     {
