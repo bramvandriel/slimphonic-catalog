@@ -1,0 +1,65 @@
+{
+  "catalog_id": "firefly-synth-2",
+  "order": 56,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "Four oscillators per voice, MSEG envelopes and a deep modulation matrix.",
+  "tested_with": null,
+  "description": "A semi-modular polyphonic synthesizer: four oscillators per voice (classic waveforms, DSF additive, FM, hard sync and a string/noise model), per-voice and global effect slots with state-variable and comb filters, waveshapers and a compressor, reverb and delays, six LFOs and seven 16-stage MSEG envelopes per voice, a large modulation matrix and a sidechain input.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Firefly Synth 2",
+  "vendor": "Sjoerd van Kreel",
+  "kind": "instrument",
+  "homepage": "https://firefly-synth.com/",
+  "source": "https://github.com/sjoerdvankreel/firefly-synth-2",
+  "image": null,
+  "license": {
+    "spdx": "MIT"
+  },
+  "github": {
+    "owner": "sjoerdvankreel",
+    "repo": "firefly-synth-2",
+    "snapshot": {
+      "stars": 44,
+      "pushed_at": "2026-10-11T20:05:41Z",
+      "latest_release": "v2.1.6",
+      "at": "2026-10-12"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "754068B351A04DB4813B58D562BDFC1F"
+      ],
+      "features": [
+        "instrument",
+        "stereo"
+      ],
+      "paths": [
+        "FireflySynth2.clap"
+      ],
+      "categories": {
+        "754068B351A04DB4813B58D562BDFC1F": "subtractive"
+      }
+    },
+    "vst3": null
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2.1.6",
+      "url": "https://github.com/sjoerdvankreel/firefly-synth-2/releases/download/v2.1.6/FireflySynth2-linux-clap-Release.zip",
+      "sha256": "fd67547b3f37d3fcf5295b52c37b55b5fb7dd52d2b0a8f7c2ce35546bce76c1b",
+      "size_bytes": 9984845,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.35",
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}
