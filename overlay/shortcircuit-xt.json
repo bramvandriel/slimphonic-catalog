@@ -23,7 +23,7 @@
     "snapshot": {
       "stars": 561,
       "pushed_at": "2026-10-08T22:41:26Z",
-      "latest_release": "Nightly 2026-10-08",
+      "latest_release": "Nightly 2026-10-15",
       "at": "2026-10-09"
     }
   },
@@ -51,10 +51,10 @@
   "install": {
     "linux-x86_64": {
       "kind": "github-release-asset",
-      "version": "2026-10-08",
-      "url": "https://github.com/surge-synthesizer/shortcircuit-xt/releases/download/Nightly/shortcircuit-xt-linux-2026-10-08-24e4feb.zip",
-      "sha256": "dca5cf40b9c3c91d96f7f406656eff7eafdedca46a7d57e017113e93b32ec963",
-      "size_bytes": 39432421,
+      "version": "2026-10-15",
+      "url": "https://github.com/surge-synthesizer/shortcircuit-xt/releases/download/Nightly/shortcircuit-xt-linux-2026-10-15-3ed15fd.zip",
+      "sha256": "97d2755d66397090124391ccb0dfe43a7f0e320956812d06683db0b740419cd5",
+      "size_bytes": 39611472,
       "archive": "zip",
       "companions": [],
       "min_glibc": null,
