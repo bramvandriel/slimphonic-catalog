@@ -2,7 +2,7 @@
   "catalog_id": "jc303",
   "order": 12,
   "oas_id": "midilab/jc303",
-  "editors_pick": true,
+  "editors_pick": false,
   "score_note": "The acid bass line.",
   "tested_with": null,
   "description": "A bass synthesizer modelled on the Roland TB-303 Bass Line: a sawtooth or square oscillator through a resonant diode-ladder filter, with accent, slide and an envelope that gives the classic acid squelch.",

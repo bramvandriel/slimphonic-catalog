@@ -974,7 +974,7 @@
         }
       },
       "score": {
-        "editors_pick": true,
+        "editors_pick": false,
         "note": "The acid bass line.",
         "tested_with": null
       },
