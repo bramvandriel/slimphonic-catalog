@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-16",
+  "generated_at": "2026-10-23",
   "min_app_version": "0.7.0",
   "plugins": [
     {
@@ -4379,7 +4379,7 @@
       "category": "sampler"
     },
     {
-      "key": "clap:com.slimphonic.triwave_synth",
+      "key": "clap:com.slimphonic.triadic_synth",
       "name": "Slim Triadic Synth",
       "category": "subtractive"
     },

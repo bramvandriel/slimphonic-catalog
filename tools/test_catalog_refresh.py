@@ -285,7 +285,7 @@ class CategoryTests(unittest.TestCase):
 
     def test_every_bundled_instrument_has_a_row(self):
         keys = {r["key"] for r in self.built()}
-        for pid in ("triwave_synth", "luthier", "sampler", "drumkit"):
+        for pid in ("triadic_synth", "luthier", "sampler", "drumkit"):
             self.assertIn(f"clap:com.slimphonic.{pid}", keys)
 
     def test_maps_are_stripped_from_the_emitted_entries(self):

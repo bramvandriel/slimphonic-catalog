@@ -15,7 +15,7 @@
     "category": "sampler"
   },
   {
-    "key": "clap:com.slimphonic.triwave_synth",
+    "key": "clap:com.slimphonic.triadic_synth",
     "name": "Slim Triadic Synth",
     "category": "subtractive"
   }
