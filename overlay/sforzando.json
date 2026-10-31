@@ -1,0 +1,64 @@
+{
+  "catalog_id": "sforzando",
+  "order": 58,
+  "oas_id": null,
+  "editors_pick": true,
+  "score_note": "The reference SFZ player: plays the whole SFZ format, the route for full SFZ support.",
+  "tested_with": null,
+  "description": "Plogue's free SFZ player: loads an .sfz instrument and plays it with the complete SFZ opcode set (the format's reference implementation), so any SFZ library sounds as its author made it. The Linux version is a beta whose installer needs administrator rights (it installs system-wide with sudo), so it is a link here; once installed, Slimphonic finds it. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "sforzando",
+  "vendor": "Plogue",
+  "kind": "instrument",
+  "homepage": "https://www.plogue.com/products/sforzando.html",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware (Plogue EULA)",
+    "url": "https://www.plogue.com/products/sforzando.html",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.Plogue Art et Technologie, Inc.sforzando"
+      ],
+      "features": [
+        "instrument",
+        "sampler"
+      ],
+      "paths": [],
+      "categories": {
+        "com.Plogue Art et Technologie, Inc.sforzando": "sampler"
+      }
+    },
+    "vst3": {
+      "class_ids": [
+        "5c5ca79682fc437ab6539ba204bab349"
+      ],
+      "bundles": [],
+      "categories": {
+        "5c5ca79682fc437ab6539ba204bab349": "sampler"
+      }
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "manual-link",
+      "version": null,
+      "url": null,
+      "sha256": null,
+      "size_bytes": null,
+      "archive": "none",
+      "companions": [],
+      "min_glibc": null,
+      "distro_hint": null,
+      "post_install_notes": "Download the Linux x86_64 zip, unpack it and run install_sforzando.sh (it asks for your password: it installs the CLAP to /usr/lib/clap and the VST3 to /usr/lib/vst3). Then restart Slimphonic; sforzando appears in the Instruments tab.",
+      "link_url": "https://plogue.com/downloads.html#sforzando",
+      "link_label": null
+    }
+  }
+}
