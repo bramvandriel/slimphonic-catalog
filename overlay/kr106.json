@@ -1,0 +1,75 @@
+{
+  "catalog_id": "kr106",
+  "order": 59,
+  "oas_id": null,
+  "editors_pick": true,
+  "score_note": "The Juno sound: the classic polysynth pad, chorus and all.",
+  "tested_with": null,
+  "description": "Ultramaster KR-106, an emulation of the Roland Juno-6, Juno-60 and Juno-106: one oscillator with saw, pulse and sub, the famous high-pass and resonant low-pass, the stereo chorus, and a Juno-60 analog or Juno-106 firmware mode. 240 factory presets from both machines.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "KR-106",
+  "vendor": "Kayrock",
+  "kind": "instrument",
+  "homepage": "https://kayrock.org/kr106/",
+  "source": "https://github.com/kayrockscreenprinting/ultramaster_kr106",
+  "image": null,
+  "license": {
+    "spdx": "GPL-3.0",
+    "url": "https://github.com/kayrockscreenprinting/ultramaster_kr106",
+    "kind": "open-source"
+  },
+  "github": {
+    "owner": "kayrockscreenprinting",
+    "repo": "ultramaster_kr106",
+    "snapshot": {
+      "stars": 203,
+      "pushed_at": "2026-05-07T15:36:04Z",
+      "latest_release": "v2.5.13",
+      "at": "2026-11-04"
+    }
+  },
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "org.kayrock.kr106"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer",
+        "analog"
+      ],
+      "paths": [
+        "Ultramaster KR-106.clap"
+      ],
+      "categories": {
+        "org.kayrock.kr106": "subtractive"
+      }
+    },
+    "vst3": {
+      "class_ids": [
+        "abcdef019182faeb4b726f6b4b723136"
+      ],
+      "bundles": [
+        "Ultramaster KR-106.vst3"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "github-release-asset",
+      "version": "2.5.13",
+      "url": "https://github.com/kayrockscreenprinting/ultramaster_kr106/releases/download/v2.5.13/KR106-Linux.zip",
+      "sha256": "a594943be8b98dc14a762203e92f4ca0e2703429fbab03cc9a1dc9790264ef64",
+      "size_bytes": 20587492,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.38",
+      "distro_hint": null,
+      "post_install_notes": null,
+      "link_url": null,
+      "link_label": null
+    }
+  }
+}

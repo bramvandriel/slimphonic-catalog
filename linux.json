@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-01",
-  "min_app_version": "0.7.0",
+  "generated_at": "2026-11-04",
+  "min_app_version": "0.7.1",
   "plugins": [
     {
       "catalog_id": "surge-xt",
@@ -4233,6 +4233,213 @@
           "link_label": null
         }
       }
+    },
+    {
+      "catalog_id": "kr106",
+      "name": "KR-106",
+      "vendor": "Kayrock",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "GPL-3.0",
+        "url": "https://github.com/kayrockscreenprinting/ultramaster_kr106",
+        "kind": "open-source"
+      },
+      "description": "Ultramaster KR-106, an emulation of the Roland Juno-6, Juno-60 and Juno-106: one oscillator with saw, pulse and sub, the famous high-pass and resonant low-pass, the stereo chorus, and a Juno-60 analog or Juno-106 firmware mode. 240 factory presets from both machines.",
+      "image": null,
+      "homepage": "https://kayrock.org/kr106/",
+      "source": "https://github.com/kayrockscreenprinting/ultramaster_kr106",
+      "github": {
+        "owner": "kayrockscreenprinting",
+        "repo": "ultramaster_kr106",
+        "snapshot": {
+          "stars": 203,
+          "pushed_at": "2026-05-07T15:36:04Z",
+          "latest_release": "v2.5.13",
+          "at": "2026-11-04"
+        }
+      },
+      "score": {
+        "editors_pick": true,
+        "note": "The Juno sound: the classic polysynth pad, chorus and all.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "org.kayrock.kr106"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer",
+            "analog"
+          ],
+          "paths": [
+            "Ultramaster KR-106.clap"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "abcdef019182faeb4b726f6b4b723136"
+          ],
+          "bundles": [
+            "Ultramaster KR-106.vst3"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "github-release-asset",
+          "version": "2.5.13",
+          "url": "https://github.com/kayrockscreenprinting/ultramaster_kr106/releases/download/v2.5.13/KR106-Linux.zip",
+          "sha256": "a594943be8b98dc14a762203e92f4ca0e2703429fbab03cc9a1dc9790264ef64",
+          "size_bytes": 20587492,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": "2.38",
+          "distro_hint": null,
+          "post_install_notes": null,
+          "link_url": null,
+          "link_label": null
+        }
+      }
+    },
+    {
+      "catalog_id": "tyrelln6",
+      "name": "Tyrell N6",
+      "vendor": "u-he",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "Freeware (u-he EULA)",
+        "url": "https://u-he.com/about/eula.html",
+        "kind": "free-closed-source"
+      },
+      "description": "u-he's free virtual analogue synthesizer, first made with the German magazine Amazona: two oscillators, noise and a ring modulator, a mixer with overdrive and filter feedback, a twin filter related to an early Diva, loopable analogue-style envelopes, two LFOs and a small modulation matrix, with over 580 factory presets. The 2025 beta adds CLAP. Free, closed source.",
+      "image": null,
+      "homepage": "https://u-he.com/products/tyrelln6/",
+      "source": null,
+      "github": null,
+      "score": {
+        "editors_pick": true,
+        "note": "A warm, simple classic analogue polysynth with a big factory library.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "com.u-he.TyrellN6"
+          ],
+          "features": [
+            "instrument",
+            "synthesizer",
+            "analogue",
+            "polyphonic"
+          ],
+          "paths": [
+            "*/TyrellN6/TyrellN6.64.so"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "d39d5b69d6af42fa1234567874596e36"
+          ],
+          "bundles": [
+            "*/TyrellN6/TyrellN6.64.so"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "vendor-download",
+          "version": "3.0.0 (rev. 16976)",
+          "url": "https://dl.u-he.com/releases/TyrellN6_300_public_beta_16976_Linux.tar.xz",
+          "sha256": "4d7a4ebd124dc2f341d9f53bc585b0ca508806accc32469bfe185ae99ba4c916",
+          "size_bytes": 8030972,
+          "archive": "tar.xz",
+          "companions": [],
+          "min_glibc": "2.28",
+          "distro_hint": null,
+          "post_install_notes": "Its presets and skins go to ~/.u-he/TyrellN6, where it also keeps your own presets; Uninstall removes that folder too. u-he calls its Linux builds beta.",
+          "link_url": null,
+          "link_label": null,
+          "data": {
+            "install_to": "UHeData",
+            "path": "*/TyrellN6"
+          }
+        }
+      }
+    },
+    {
+      "catalog_id": "charlatan3",
+      "name": "Charlatan 3",
+      "vendor": "BlauKraut Engineering",
+      "kind": "instrument",
+      "experimental": false,
+      "rolling_tag": false,
+      "license": {
+        "spdx": "Freeware (BlauKraut licence)",
+        "url": "https://blaukraut.info/",
+        "kind": "free-closed-source"
+      },
+      "description": "A virtual analogue synthesizer built for sound quality, speed and low CPU: two dual oscillators per voice with drawable waveforms, cross-modulation and hard sync, two multi-mode filters, up to seven unison voices, four modulation generators that work as LFOs or envelopes, and a master effects section. Free, closed source.",
+      "image": null,
+      "homepage": "https://blaukraut.info/",
+      "source": null,
+      "github": null,
+      "score": {
+        "editors_pick": false,
+        "note": "A raw, punchy, very light virtual analogue synth.",
+        "tested_with": null
+      },
+      "formats": {
+        "clap": {
+          "plugin_ids": [
+            "info.blaukraut.charlatan3"
+          ],
+          "features": [
+            "instrument",
+            "stereo"
+          ],
+          "paths": [
+            "Charlatan3.so"
+          ]
+        },
+        "vst3": {
+          "class_ids": [
+            "565354b493fb11636861726c6174616e"
+          ],
+          "bundles": [
+            "Charlatan3.so"
+          ]
+        }
+      },
+      "content": null,
+      "install": {
+        "linux-x86_64": {
+          "kind": "vendor-download",
+          "version": "3.3.2",
+          "url": "https://blaukraut.info/downloads/charlatan3_3.3.2_linux.zip",
+          "sha256": "cb242deadd25cc54dd44f774bfda165b4d66038cf36302e57616e3aa6969965e",
+          "size_bytes": 1337542,
+          "archive": "zip",
+          "companions": [],
+          "min_glibc": "2.34",
+          "distro_hint": null,
+          "post_install_notes": "Its factory presets go to ~/.local/share/charlatan/presets, where it also keeps your own; Uninstall removes only the factory files you have not changed.",
+          "link_url": null,
+          "link_label": null,
+          "data": {
+            "install_to": "XdgData",
+            "under": "charlatan",
+            "path": "presets"
+          }
+        }
+      }
     }
   ],
   "hidden": [
@@ -4492,6 +4699,11 @@
       "category": "modular"
     },
     {
+      "key": "clap:com.u-he.TyrellN6",
+      "name": "Tyrell N6",
+      "category": "subtractive"
+    },
+    {
       "key": "clap:com.u-he.Zebralette3",
       "name": "Zebralette 3",
       "category": "wavetable"
@@ -4537,6 +4749,11 @@
       "category": "sampler"
     },
     {
+      "key": "clap:info.blaukraut.charlatan3",
+      "name": "Charlatan 3",
+      "category": "subtractive"
+    },
+    {
       "key": "clap:net.stevefolta.sfzq",
       "name": "sfzq",
       "category": "sampler"
@@ -4555,6 +4772,11 @@
       "key": "clap:org.chowdsp.ChowKick",
       "name": "ChowKick",
       "category": "drums"
+    },
+    {
+      "key": "clap:org.kayrock.kr106",
+      "name": "KR-106",
+      "category": "subtractive"
     },
     {
       "key": "clap:org.spectmorph.clap.SpectMorph",

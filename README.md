@@ -54,10 +54,14 @@ has `"source": null` and an open-source one must name its source. A closed-sourc
 installed with one click only when its vendor offers a direct download (`install.kind`
 `vendor-download`, from a host on the app's allow-list); otherwise it is a `manual-link`.
 
-`install.data` (optional) is for a plugin that needs its vendor's data folder beside it, today
-only u-he's: `{"install_to": "UHeData", "path": "*/<Name>"}`. The folder at `path` in the
-archive goes to `~/.u-he/<Name>`, and the entry's one library path per format, a `.so` inside
-that folder, is copied to `~/.clap/<Name>.clap` or into the bundle `~/.vst3/<Name>.vst3`. The
+`install.data` (optional) is for a plugin that needs a data folder beside it:
+`{"install_to": "UHeData", "path": "*/<Name>"}` (u-he) puts the folder at `path` in the archive
+in `~/.u-he/<Name>`; `{"install_to": "XdgData", "under": "<vendor>", "path": "<Name>"}` puts it
+in `$XDG_DATA_HOME/<vendor>/<Name>` (`~/.local/share` without the variable; Charlatan 3:
+`~/.local/share/charlatan/presets`). The entry's one library path per format is a `.so`, copied
+to `~/.clap/<Product>.clap` or into the bundle `~/.vst3/<Product>.vst3`: `<Product>` is the
+folder's `<Name>` for a library inside it (u-he), else the library's own name less `.so` (which
+must then be a plain name, no `*`). `XdgData` needs app 0.7.1 (`min_app_version`). The
 vendor's `install.sh` is never run and nothing is symlinked.
 
 `tools/check_globs.py --overlay overlay/ --archives DIR...` lists each pinned archive found in

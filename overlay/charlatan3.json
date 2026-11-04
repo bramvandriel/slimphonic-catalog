@@ -1,0 +1,70 @@
+{
+  "catalog_id": "charlatan3",
+  "order": 61,
+  "oas_id": null,
+  "editors_pick": false,
+  "score_note": "A raw, punchy, very light virtual analogue synth.",
+  "tested_with": null,
+  "description": "A virtual analogue synthesizer built for sound quality, speed and low CPU: two dual oscillators per voice with drawable waveforms, cross-modulation and hard sync, two multi-mode filters, up to seven unison voices, four modulation generators that work as LFOs or envelopes, and a master effects section. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Charlatan 3",
+  "vendor": "BlauKraut Engineering",
+  "kind": "instrument",
+  "homepage": "https://blaukraut.info/",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware (BlauKraut licence)",
+    "url": "https://blaukraut.info/",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "info.blaukraut.charlatan3"
+      ],
+      "features": [
+        "instrument",
+        "stereo"
+      ],
+      "paths": [
+        "Charlatan3.so"
+      ],
+      "categories": {
+        "info.blaukraut.charlatan3": "subtractive"
+      }
+    },
+    "vst3": {
+      "class_ids": [
+        "565354b493fb11636861726c6174616e"
+      ],
+      "bundles": [
+        "Charlatan3.so"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "3.3.2",
+      "url": "https://blaukraut.info/downloads/charlatan3_3.3.2_linux.zip",
+      "sha256": "cb242deadd25cc54dd44f774bfda165b4d66038cf36302e57616e3aa6969965e",
+      "size_bytes": 1337542,
+      "archive": "zip",
+      "companions": [],
+      "min_glibc": "2.34",
+      "distro_hint": null,
+      "post_install_notes": "Its factory presets go to ~/.local/share/charlatan/presets, where it also keeps your own; Uninstall removes only the factory files you have not changed.",
+      "link_url": null,
+      "link_label": null,
+      "data": {
+        "install_to": "XdgData",
+        "under": "charlatan",
+        "path": "presets"
+      }
+    }
+  }
+}

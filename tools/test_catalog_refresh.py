@@ -211,7 +211,7 @@ class ValidatorTests(unittest.TestCase):
         m = self.manifest()
         closed = [p["catalog_id"] for p in m["plugins"]
                   if p["license"]["kind"] == "free-closed-source"]
-        self.assertEqual(len(closed), 11)
+        self.assertEqual(len(closed), 13)
         self.assertTrue(all(self.entry(m, c)["source"] is None for c in closed))
         def with_source(m): self.entry(m, "tal-noisemaker")["source"] = "https://github.com/a/b"
         def without(m): self.entry(m, "surge-xt")["source"] = None
@@ -245,9 +245,15 @@ class ValidatorTests(unittest.TestCase):
             self.entry(m, "podolski")["content"] = {
                 "note": "n", "url": "https://dl.u-he.com/x.tar.xz", "sha256": "a" * 64,
                 "size_bytes": 1, "install_to": "UHeData"}
-        self.assertTrue(any("not inside the data folder" in e for e in self.errors(outside)))
+        def under_on_uhe(m):
+            self.entry(m, "podolski")["install"]["linux-x86_64"]["data"]["under"] = "x"
+        def xdg_without_under(m):
+            self.entry(m, "charlatan3")["install"]["linux-x86_64"]["data"].pop("under")
+        self.assertTrue(any("neither inside the data folder" in e for e in self.errors(outside)))
+        self.assertTrue(any("only XdgData takes" in e for e in self.errors(under_on_uhe)))
+        self.assertTrue(any("XdgData needs" in e for e in self.errors(xdg_without_under)))
         self.assertTrue(any("must end with .so" in e for e in self.errors(clap_ext)))
-        self.assertTrue(any("only UHeData" in e for e in self.errors(target)))
+        self.assertTrue(any("only UHeData and XdgData" in e for e in self.errors(target)))
         self.assertTrue(any("plain folder name" in e for e in self.errors(name)))
         self.assertTrue(any("only for install.data" in e for e in self.errors(content)))
         # An entry without a data folder carries no `data` key.

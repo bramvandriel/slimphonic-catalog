@@ -1,0 +1,71 @@
+{
+  "catalog_id": "tyrelln6",
+  "order": 60,
+  "oas_id": null,
+  "editors_pick": true,
+  "score_note": "A warm, simple classic analogue polysynth with a big factory library.",
+  "tested_with": null,
+  "description": "u-he's free virtual analogue synthesizer, first made with the German magazine Amazona: two oscillators, noise and a ring modulator, a mixer with overdrive and filter feedback, a twin filter related to an early Diva, loopable analogue-style envelopes, two LFOs and a small modulation matrix, with over 580 factory presets. The 2025 beta adds CLAP. Free, closed source.",
+  "experimental": false,
+  "rolling_tag": false,
+  "name": "Tyrell N6",
+  "vendor": "u-he",
+  "kind": "instrument",
+  "homepage": "https://u-he.com/products/tyrelln6/",
+  "source": null,
+  "image": null,
+  "license": {
+    "spdx": "Freeware (u-he EULA)",
+    "url": "https://u-he.com/about/eula.html",
+    "kind": "free-closed-source"
+  },
+  "github": null,
+  "formats": {
+    "clap": {
+      "plugin_ids": [
+        "com.u-he.TyrellN6"
+      ],
+      "features": [
+        "instrument",
+        "synthesizer",
+        "analogue",
+        "polyphonic"
+      ],
+      "paths": [
+        "*/TyrellN6/TyrellN6.64.so"
+      ],
+      "categories": {
+        "com.u-he.TyrellN6": "subtractive"
+      }
+    },
+    "vst3": {
+      "class_ids": [
+        "d39d5b69d6af42fa1234567874596e36"
+      ],
+      "bundles": [
+        "*/TyrellN6/TyrellN6.64.so"
+      ]
+    }
+  },
+  "content": null,
+  "install": {
+    "linux-x86_64": {
+      "kind": "vendor-download",
+      "version": "3.0.0 (rev. 16976)",
+      "url": "https://dl.u-he.com/releases/TyrellN6_300_public_beta_16976_Linux.tar.xz",
+      "sha256": "4d7a4ebd124dc2f341d9f53bc585b0ca508806accc32469bfe185ae99ba4c916",
+      "size_bytes": 8030972,
+      "archive": "tar.xz",
+      "companions": [],
+      "min_glibc": "2.28",
+      "distro_hint": null,
+      "post_install_notes": "Its presets and skins go to ~/.u-he/TyrellN6, where it also keeps your own presets; Uninstall removes that folder too. u-he calls its Linux builds beta.",
+      "link_url": null,
+      "link_label": null,
+      "data": {
+        "install_to": "UHeData",
+        "path": "*/TyrellN6"
+      }
+    }
+  }
+}

@@ -27,7 +27,7 @@ import sys
 from pathlib import Path
 
 SCHEMA_VERSION = 1
-MIN_APP_VERSION = "0.7.0"
+MIN_APP_VERSION = "0.7.1"
 DEFAULT_PLATFORM = "linux-x86_64"
 
 # platform key -> (OAS system type, OAS architecture)
@@ -61,7 +61,7 @@ INSTALL_KEYS = [
     "distro_hint", "post_install_notes", "link_url", "link_label", "data",
 ]
 # Install keys written only when the overlay sets them (the app reads them as absent = none).
-OPTIONAL_INSTALL_KEYS = ("data",)
+OPTIONAL_INSTALL_KEYS = ("data", "under")
 LICENSE_KEYS = ["spdx", "url", "kind"]
 LICENSE_KINDS = ("open-source", "free-closed-source")
 HIDDEN_KEYS = ["key", "name"]
@@ -349,12 +349,26 @@ MAX_ARCHIVE_BYTES = 4 * 1024**3
 # Also the hosts a download may be redirected to (u-he's CDN and its own site).
 ASSET_HOSTS = ("github.com", "objects.githubusercontent.com", "release-assets.githubusercontent.com",
                "tal-software.com", "cdn1.resources.manda-audio.com", "dl.u-he.com",
-               "uhe-dl.b-cdn.net", "u-he.com", "www.auburnsounds.com")
+               "uhe-dl.b-cdn.net", "u-he.com", "www.auburnsounds.com", "blaukraut.info")
 ARCHIVES = ("tar.gz", "tar.xz", "tgz", "zip", "7z", "deb", "none")
 INSTALL_KINDS = ("github-release-asset", "deb-asset", "vendor-download", "manual-link")
 PLUGIN_KEY = re.compile(r"clap:[^\x00-\x1f\x7f]{1,256}|vst3:[0-9a-f]{32}|ladspa:[0-9]{1,20}")
-INSTALL_TO = ("ClapDir", "Vst3Dir", "SurgeData", "UHeData")
+INSTALL_TO = ("ClapDir", "Vst3Dir", "SurgeData", "UHeData", "XdgData")
 PRODUCT_NAME = re.compile(r"[A-Za-z0-9 ._-]{1,64}")
+
+
+def plain_name(name):
+    """The app's `plain_product_name`: letters, digits, space . _ -, not starting with `.`."""
+    return bool(PRODUCT_NAME.fullmatch(name)) and not name.startswith(".")
+
+
+def library_product(member, data_folder):
+    """The app's `DataInstall::library_product`: the data folder's name for a library inside
+    it, else the library's file name less `.so`."""
+    if member.startswith(data_folder + "/"):
+        return data_folder.rsplit("/", 1)[-1]
+    name = member.rsplit("/", 1)[-1]
+    return name[:-3] if name.endswith(".so") else name
 
 
 class _Checker:
@@ -591,8 +605,8 @@ def _entry(c, e):
         c.size("content.size_bytes", content["size_bytes"])
         if content["install_to"] not in INSTALL_TO:
             c.fail("content.install_to", "unknown location")
-        elif content["install_to"] == "UHeData":
-            c.fail("content.install_to", "UHeData is only for install.data")
+        elif content["install_to"] in ("UHeData", "XdgData"):
+            c.fail("content.install_to", "UHeData and XdgData are only for install.data")
     installs = e["install"]
     if not isinstance(installs, dict) or not installs:
         c.fail("install", "needs at least one platform")
@@ -644,8 +658,12 @@ def _formats(c, f, installable, data=None):
             if len(block[field]) != 1:
                 c.fail("formats", "a data-folder entry has one library path per format")
             for path in block[field]:
-                if not path.startswith(data["path"] + "/"):
-                    c.fail("formats", f"{path!r} is not inside the data folder {data['path']!r}")
+                inside = path.startswith(data["path"] + "/")
+                product = library_product(path, data["path"])
+                named = "*" not in path and plain_name(product)
+                if not inside and not named:
+                    c.fail("formats", f"{path!r} is neither inside the data folder "
+                                      f"{data['path']!r} nor a plainly named library")
 
 
 def _install(c, platform, i):
@@ -696,11 +714,18 @@ def _install(c, platform, i):
         if not ok:
             c.fail(w("archive"), "does not fit the install kind")
     data = i.get("data")
-    if data is not None and c.keys(w("data"), data, ["install_to", "path"]):
+    if data is not None and c.keys(w("data"), data, ["install_to", "path", "under"]):
         if i["kind"] == "manual-link":
             c.fail(w("data"), "a manual-link installs nothing")
-        if data["install_to"] != "UHeData":
-            c.fail(w("data.install_to"), "only UHeData takes a data folder")
+        to, under = data["install_to"], data.get("under")
+        if to == "UHeData":
+            if under is not None:
+                c.fail(w("data.under"), "only XdgData takes a folder name")
+        elif to == "XdgData":
+            if not (isinstance(under, str) and plain_name(under)):
+                c.fail(w("data.under"), "XdgData needs a plain folder name")
+        else:
+            c.fail(w("data.install_to"), "only UHeData and XdgData take a data folder")
         c.glob(w("data.path"), data["path"], None)
         name = str(data["path"]).rsplit("/", 1)[-1]
         if not PRODUCT_NAME.fullmatch(name) or name.startswith("."):
