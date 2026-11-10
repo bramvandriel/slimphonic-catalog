@@ -2,7 +2,7 @@
   "catalog_id": "charlatan3",
   "order": 61,
   "oas_id": null,
-  "editors_pick": false,
+  "editors_pick": true,
   "score_note": "A raw, punchy, very light virtual analogue synth.",
   "tested_with": null,
   "description": "A virtual analogue synthesizer built for sound quality, speed and low CPU: two dual oscillators per voice with drawable waveforms, cross-modulation and hard sync, two multi-mode filters, up to seven unison voices, four modulation generators that work as LFOs or envelopes, and a master effects section. Free, closed source.",
